@@ -1,0 +1,457 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>EONET Events</title>
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Leaflet -->
+    <script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
+    <link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
+    <!-- <script src="lib/leaflet/leaflet.js"></script>
+    <link rel="stylesheet" href="lib/leaflet/leaflet.css" /> -->
+    <link rel="stylesheet" href="lib/leaflet.awesome-markers.css" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.css">
+    <script src="lib/leaflet.awesome-markers.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <div id="content">
+    <h1>EONET Events</h1>
+  </div>
+  <div id="map" class="map"></div>
+
+  <script>
+
+    var server = "http://eonet.sci.gsfc.nasa.gov/api/v2.1";
+
+    var map;
+    var markers,
+        youtubeMarkers,
+        twitterMarkers;
+
+    var geojson = [];
+
+    // Call all open events
+    $( document ).ready(function() {
+
+      L.mapbox.accessToken = 'XXXXXXXXXXXXTOKENXXXXXXXXX';
+      map = L.mapbox.map('map');//.setView([0,0], 5);
+
+      // Create map
+			var mapboxAttribution = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
+				'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+				'Imagery © <a href="http://mapbox.com">Mapbox</a>',
+					mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=XXXXXXXXXXXXTOKENXXXXXXXXX';
+
+			var streets   = L.tileLayer(mbUrl, {id: 'mapbox.streets', attribution: mapboxAttribution}).addTo(map),
+          satellite = L.tileLayer(mbUrl, {id: 'mapbox.satellite', attribution: mapboxAttribution}),
+    			hybrid    = L.tileLayer(mbUrl, {id: 'mapbox.streets-satellite', attribution: mapboxAttribution})
+
+
+			// Create Layer Groups for markers
+      markers = L.mapbox.featureLayer().addTo(map);
+      youtubeMarkers = L.layerGroup().addTo(map);
+			twitterMarkers = L.layerGroup().addTo(map);
+
+			// Filters
+			var baseMaps = {
+				"Streets": streets,
+				"Satellite": satellite,
+				"Hybrid": hybrid
+			};
+			var overlays = {
+    		"Youtube": youtubeMarkers,
+    		"Twitter": twitterMarkers,
+			};
+
+			L.control.layers(baseMaps, overlays, {collapsed: false, position: 'topright'}).addTo(map);
+
+      // Show Events
+      loadEvents();
+    });
+
+    // First, show the list of events
+
+    function loadEvents(onComplete) {
+      $.getJSON( server + "/events", {
+          status: "closed",
+          // limit: 20,
+          days: 365,
+      }).done(function( data ) {
+          console.log(data.events.length + " closed events loaded");
+          mapEvents(data)
+      });
+
+      $.getJSON( server + "/events", {
+          status: "open",
+          // limit: 20,
+          // days: 365,
+      }).done(function( data ) {
+          console.log(data.events.length + " open events loaded");
+          mapEvents(data)
+      });
+    }
+
+    ///////////////////
+    // Event Mapping
+    ///////////////////
+
+    function mapEvents(data) {
+
+      $.each( data.events, function( key, event ) {
+        if (event.categories[0].title != 'Drought' &&
+            event.categories[0].title != 'Dust and Haze' &&
+            event.categories[0].title != 'Water Color')
+          addEventToGeoJSON(event);
+      });
+
+      // Add the iframe in a marker tooltip using the custom feature properties
+      markers.on('layeradd', function(e) {
+          var marker = e.layer,
+              feature = marker.feature;
+
+          var date = new Date(feature.properties.date);
+          date = date.getDate() + "/" + (date.getMonth()+1) + "/" + date.getFullYear();
+
+          // Create custom popup content
+          var popupContent = '<b>' + feature.properties.title_clean + '</b><br><br>' + feature.properties.categories[0].title + '<br>' + date;
+          if (feature.properties.description.length) {
+            popupContent += '<br><br>' + feature.properties.description;
+          }
+
+          if (feature.properties.sources.length) {
+
+          }
+
+          // bind the popup to the marker http://leafletjs.com/reference.html#popup
+          marker.bindPopup(popupContent,{
+              closeButton: false,
+              minWidth: 320
+          });
+      });
+
+      // markers.on('mouseover', function(e) {
+      //   e.layer.openPopup();
+      // });
+      //
+      // markers.on('mouseout', function(e) {
+      //   e.layer.closePopup();
+      // });
+
+      markers.on('click', function(e) {
+          var marker = e.layer,
+              feature = marker.feature;
+
+          // Center map to feature
+          var coords, zoom;
+          if (feature.geometry.type == 'Point') {
+            coords = marker.getLatLng();
+            zoom = 4;
+          } else if (feature.geometry.type == 'Polygon') {
+            coords = marker.getBounds().getCenter();
+            zoom = map.getBoundsZoom(marker.getBounds()) - 2;
+            if (zoom < 2) zoom = 2;
+          }
+          map.setView(coords, zoom);
+
+          clearMarkers();
+          loadSocialMediaByMarker(marker);
+      });
+
+      markers.setGeoJSON(geojson);
+      map.fitBounds(markers.getBounds());
+    }
+
+    function addEventToGeoJSON(event) {
+
+      if (event.geometries[0].type == 'Point') {
+
+        geojson.push({
+            type: 'Feature',
+            properties: {
+                'marker-color': '#3ca0a0',
+                'marker-size': 'large',
+                // 'marker-symbol': 'rocket',
+                id: event.id,
+                title: event.title,
+                title_clean: cleanEventTitle(event.title),
+                description: event.description,
+                link: event.link,
+                categories: event.categories,
+                sources: event.sources,
+                date: event.geometries[0].date
+            },
+            geometry: {
+                type: 'Point',
+                coordinates: event.geometries[0].coordinates
+            }
+        });
+
+      } else if (event.geometries[0].type == 'Polygon') {
+
+        geojson.push({
+          type: 'Feature',
+          properties: {
+              // fillColor: "#fbca19",
+              // fillOpacity: "0.8",
+              id: event.id,
+              title: event.title,
+              title_clean: cleanEventTitle(event.title),
+              description: event.description,
+              link: event.link,
+              categories: event.categories,
+              sources: event.sources,
+              date: event.geometries[0].date
+          },
+          geometry: {
+              type: 'Polygon',
+              coordinates: event.geometries[0].coordinates
+          }
+        })
+      }
+    }
+
+    //////////////////
+    // Social Media
+    //////////////////
+
+    function loadSocialMediaByMarker(marker) {
+
+      var feature = marker.feature;
+      var props = marker.feature.properties;
+
+      // Get query text
+      var queryText = props.title_clean;
+
+      var publishedAfter = props.date;
+
+      // Calculate geometries
+      var coords, radius;
+      if (feature.geometry.type == 'Point') {
+        coords = marker.getLatLng();
+        radius = 100;
+      } else if (feature.geometry.type == 'Polygon') {
+
+        coords = marker.getBounds().getCenter();
+
+        var sw = marker.getBounds().getSouthWest(),
+					  ne = marker.getBounds().getNorthEast();
+
+  			// Calculate max distance inside the bounds. Result in meters
+  			var distInMeters = Math.max(coords.distanceTo(sw), coords.distanceTo(ne));
+
+        // Convert to KM
+        radius = Math.round(distInMeters/1000);
+      }
+
+      var paramsYoutube = {
+        maxResults: 50,
+        location: coords.lat + ',' + coords.lng,
+        locationRadius: radius + 'km',
+        q: queryText,
+        publishedAfter: publishedAfter
+      };
+
+      loadVideos(paramsYoutube);
+
+      var paramsTwitter = {
+        count: 100,
+        geocode: coords.lat + ',' + coords.lng + ',' + radius + 'km',
+        q: queryText
+      };
+
+      loadTweets(paramsTwitter);
+    }
+
+    //////////////////////////
+    // Social Media markers
+    //////////////////////////
+
+    function clearMarkers() {
+			console.log("Remove all markers");
+			youtubeMarkers.clearLayers();
+			twitterMarkers.clearLayers();
+		}
+
+    /////////////
+		// Youtube
+		/////////////
+
+		function loadVideos(params) {
+
+			console.log("Search Videos - location: " + params.location + ", locationRadius: " + params.locationRadius + ", q: " + params.q + ", publishedAfter: " + params.publishedAfter + ", publishedBefore: " + params.publishedBefore);
+
+			$.ajax({
+				type: 'GET',
+				dataType: "json",
+				url: 'http://tostnik.deneb.uberspace.de/scrapalous-api/youtube/videos/',
+			  // url: 'http://localhost:61000/youtube/videos/',
+			  data: params,
+				//contentType: 'application/json',
+				success: function (data) {
+					console.log(data);
+					mapVideos(data); // data already comes in json format because of dataType var
+        },
+        error: function (xhr, status, error) {
+            alert('Error connecting to the server: ' + status);
+        },
+			});
+		}
+
+		function mapVideos(json) {
+
+			console.log("Mapping " + json.pageInfo.totalResults + " videos");
+			var videos = json.items;
+
+			// var bounds = locationFilter.getBounds();
+
+	    // Create markers
+			videos.forEach(function (video) {
+				var lat = video.recordingDetails.location.latitude;
+				var lng = video.recordingDetails.location.longitude;
+
+				// if (bounds.contains([lat, lng])) {
+
+					// Creates a red marker with the coffee icon
+					var youtubeIcon = L.AwesomeMarkers.icon({
+								icon: 'social-youtube',
+								prefix: 'ion',
+								markerColor: 'red'
+							});
+
+					L.marker([lat, lng], {icon: youtubeIcon}).addTo(youtubeMarkers)
+					 .bindPopup('<b>' + video.snippet.title + '</b><br />' + getYoutubeEmbedCode(video.id), {
+               closeButton: false,
+               minWidth: 320
+           });
+				// }
+	    });
+		}
+
+		////////////
+		// Tweets
+		////////////
+
+		function loadTweets(params) {
+
+			$.ajax({
+				type: 'GET',
+				dataType: "json",
+			  // url: 'http://localhost:61000/twitter/search/tweets',
+			  url: 'http://tostnik.deneb.uberspace.de/scrapalous-api/twitter/search/tweets/',
+			  data: params,
+				//contentType: 'application/json',
+				success: function (data) {
+					console.log(data);
+					mapTweets(data); // data already comes in json format because of dataType var
+        },
+        error: function (xhr, status, error) {
+            alert('Error connecting to the server: ' + status);
+        },
+			});
+		}
+
+		function mapTweets(json) {
+
+			console.log("Mapping " + json.statuses.length + " tweets");
+			var tweets = json.statuses;
+
+	    // Create markers
+			tweets.forEach(function (tweet) {
+				if (tweet.geo) {
+					var lat = tweet.geo.coordinates[0];
+					var lng = tweet.geo.coordinates[1];
+
+					// Creates a red marker with the coffee icon
+					var tweetIcon = L.AwesomeMarkers.icon({
+								icon: 'social-twitter',
+								prefix: 'ion',
+								markerColor: 'blue'
+							});
+
+					L.marker([lat, lng], {icon: tweetIcon}).addTo(twitterMarkers)
+					 .bindPopup("<p>" + autolink(tweet.text) + '</p> Posted by <a target="blank" href="http://twitter.com/' + tweet.user.screen_name + '">' + tweet.user.screen_name + '</a> on ' + tweet.created_at);
+				}
+	    });
+		}
+
+		///////////
+		// Utils
+		///////////
+
+		function getYoutubeEmbedCode(id) {
+			return '<iframe src="http://www.youtube.com/embed/' + id + '"></iframe>'
+		}
+
+		function autolink(str, attributes) {
+			attributes = attributes || {};
+			var attrs = "";
+			for(name in attributes)
+				attrs += " "+ name +'="'+ attributes[name] +'"';
+
+			var reg = new RegExp("(\\s?)((http|https|ftp)://[^\\s<]+[^\\s<\.)])", "gim");
+			str = str.toString().replace(reg, '$1<a target="blank" href="$2"'+ attrs +'>$2</a>');
+
+			return str;
+		}
+
+    function cleanEventTitle(str) {
+
+      // console.log("clean: " + str);
+
+      // Remove date and
+      var words = ['2015', 'Winter', 'Fall', 'Autumn', 'Spring', 'Summer', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+
+      // str = str.replace(new RegExp(words.join("|"),""));
+      for (var i = 0; i < words.length; i++) {
+        str = str.split(words[i]).join('');
+      }
+
+      // console.log("1. rep: " + str);
+
+      // Trim whitespaces at the end of the string
+      str = str.replace(/\s*$/,"");
+
+      // console.log("2. white: " + str);
+
+      // Remove other symbols
+      str = str.replace(/\,$/, '');
+      str = str.replace(/\-$/, '');
+
+      // Remove / and whitespace
+      str = str.replace(/\/$/, '');
+      str = str.replace(/\s*$/,"");
+
+      // Remove other symbols again
+      str = str.replace(/\,$/, '');
+      str = str.replace(/\-$/, '');
+
+      // console.log("3. slice: " + str);
+
+      // Clear whitespace again
+      str = str.replace(/\s*$/,"");
+
+      // console.log("4. white: " + str);
+
+      // console.log("clean: " + str);
+
+      return str;
+    }
+
+    function turnLatLng(coords) {
+      var turned = [];
+      for (var i=0; i<coords.length; i++) {
+        turned.push([coords[i][1], coords[i][0]]);
+      }
+      // console.log(turned);
+      return turned;
+    }
+
+  </script>
+
+</body>
+</html>

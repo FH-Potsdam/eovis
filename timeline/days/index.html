@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Earth Observatory Natural Disasters - Time Points</title>
+
+<link href='https://fonts.googleapis.com/css?family=Vollkorn:400,400italic' rel='stylesheet' type='text/css'>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: none;
+    }
+
+    .severe-storms { fill: #26D1F9; color: #26D1F9; }
+    .volcanoes { fill: #C99191; color: #C99191; }
+    .wildfires { fill: #ED5D5A; color: #ED5D5A; }
+    .floods { fill: #5E7CD3; color: #5E7CD3; }
+
+    body {
+        font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
+        /*background-color: #2A2C39*/
+    }
+
+    .inside {
+        position: relative;
+        margin: 0 auto;
+        padding: 220px 0 40px;
+    }
+
+    #page-head {
+        z-index: 9;
+        text-align: center;
+        margin-bottom: 45px;
+        width: 400px;
+
+        position: fixed;
+        top: 40px;
+        left: 50%;
+        margin-left: -200px;
+    }
+        #page-head .year {
+            font: 400 24px/1.5 'Vollkorn', serif;
+            font-style: italic;
+            margin-bottom: 0px;
+        }
+        #page-head h1 {
+            font-size: 40px;
+        }
+
+        #page-head .subtitle {
+            font: 400 20px/1.5 'Vollkorn', serif;
+            font-style: italic;
+
+            margin-top: 15px;
+            /*margin-top: 30px;*/
+        }
+
+    #vis-wrap {
+        position: relative;
+        display: block;
+        margin: 0 auto;
+    }
+
+    circle {
+        fill-opacity: 0.5;
+        fill: grey;
+        stroke-width: 2;
+        stroke: white;
+    }
+
+    circle:hover {
+        fill-opacity: 0.8;
+        cursor: pointer;
+    }
+
+    #text {
+        position: absolute;
+        width: 300px;
+        opacity: 0;
+        padding: 10px;
+
+        background-color: rgba(255,255,255,0.6);
+    }
+        #text #cat {
+            font-size: 10px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        #text #title {
+            font-size: 24px;
+            line-height: 1.3;
+            margin: 5px 0 9px;
+        }
+
+        #text #date {
+            font-size: 13px;
+        }
+
+        #text #desc {
+            font: 400 16px/1.5 'Vollkorn', serif;
+            margin-top: 25px;
+        }
+
+</style>
+
+</head>
+
+<body>
+    <div class="inside">
+        <div id="page-head">
+            <div class="year">2015</div>
+            <h1>Natural Hazards</h1>
+            <div class="subtitle">events per day</div>
+        </div>
+
+        <div id="vis-wrap">
+            <svg id="vis"></svg>
+
+            <div id="text">
+                <div id="cat"></div>
+                <h2 id="title"></h2>
+                <div id="date"></div>
+                <div id="desc"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- <script type="text/javascript" src="../lib/d3.v3.min.js"></script> -->
+<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+<script type="text/javascript">
+
+    var radius = 3;
+
+    var timePointItemsArray = [];
+
+    // Range
+    var x = d3.scale.linear();
+
+    var svg = d3.select("svg");
+
+    // On load data
+    d3.json("../data/eonet-events-2015.json", function(json) {
+
+        var data = json.events;
+
+        var visWidth = (2*radius+3)*data.length;
+        // var visWidth = (2*radius)*365;
+
+        x.range([0, visWidth])
+        //  .domain([0, 365])
+         .domain([d3.min(data, function(d) { return getItemStartDOY(d); }) - 5, 365]);
+
+        svg.attr("width", visWidth)
+           .attr("height", 200);
+        //    .attr("height", radius * data.length);
+
+        var circle = svg.selectAll("circle")
+            .data(data);
+
+        circle.enter().append("circle")
+            .attr("class", function(d) { return titleToSlug(d.categories[0].title); })
+            .attr("cx", function(d) { return x(getItemStartDOY(d)); })
+            .attr("cy", function(d) { return 2*itemsPerTimePoint(getItemStartDOY(d))*radius; })
+            .attr("r", function(d) { return radius; })
+            // .attr("transform", function(d, i) {
+            //     return "translate(0," + 2*itemsPerTimePoint(getItemStartDOY(d))*radius + ")";
+            // });
+
+        circle.on('mouseover',function(d) {
+
+            var thisCircle = d3.select(this);
+
+            d3.select("#text")
+                .style("left", (-10+parseInt(thisCircle.attr("cx"),10))+'px')
+                .style("top", (40+parseInt(thisCircle.attr("cy"),10))+'px')
+                .style('opacity', 1)
+            d3.select("#title")
+                .append("text")
+                .text(d.title)
+            d3.select("#date")
+                .append("text")
+                .text(getItemStartDateStr(d))
+            d3.select("#cat")
+                .append("text")
+                .attr("class", titleToSlug(d.categories[0].title))
+                .text(d.categories[0].title)
+            d3.select("#desc")
+                .append("text")
+                .text(d.description)
+        })
+        .on('mouseout',function(d){
+            d3.select(this)
+                .attr('fill','grey')
+                .attr('fill-opacity', 0)
+            d3.select("#text")
+                .style('opacity', 0)
+            d3.select("#title")
+                .select("text").remove()
+            d3.select("#date")
+                .select("text").remove()
+            d3.select("#cat")
+                .select("text").remove()
+            d3.select("#desc")
+                .select("text").remove()
+        });
+
+        circle.exit().remove();
+    });
+
+    ////////////////
+    // Date utils
+    ////////////////
+
+    function getItemStartMonth(d) {
+
+        // var dateArray = d.geometries[0].date.split("-");
+        // var month = parseInt(dateArray[1],10);
+
+        // var months = [ "January", "February", "March", "April", "May", "June",
+        //     "July", "August", "September", "October", "November", "December" ];
+        //
+        // console.log("The current month is " + months[parseInt(arr[1],10)])
+
+        var day = new Date(d.geometries[0].date);
+        return (day.getMonth()+1);
+    }
+
+    function getItemStartDOY(d) {
+        var day = new Date(d.geometries[0].date);
+        return day.getDOY();
+    }
+
+    function getItemStartDateStr(d) {
+        var day = new Date(d.geometries[0].date);
+        return day.toDateString();
+    }
+
+    ///////////////
+    // Vis utils
+    ///////////////
+
+    // Items per time point
+    function itemsPerTimePoint(timepoint) {
+
+        if (!timePointItemsArray[timepoint]) {
+            timePointItemsArray[timepoint] = 1;
+        } else {
+            timePointItemsArray[timepoint] = timePointItemsArray[timepoint]+1;
+        }
+        return timePointItemsArray[timepoint];
+    }
+
+    //////////////////
+    // String utils
+    //////////////////
+
+    function titleToSlug(str) {
+      str = str.toLowerCase();
+      str = str.replace(" ", "-");
+      return str;
+    }
+
+    ////////////////
+    // Time utils
+    ////////////////
+
+    Date.prototype.getDOY = function() {
+        var onejan = new Date(this.getFullYear(),0,1);
+        return Math.ceil((this - onejan) / 86400000);
+    }
+
+</script>
