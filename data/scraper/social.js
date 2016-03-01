@@ -42,7 +42,7 @@ function onYoutubeDataLoaded(err, i, videosData) {
         console.log("----- YOUTUBE DATA LOADING FINISHED!!!")
         console.log(" ");
 
-        saveFileFile('../eonet-events-2015-clean-social.json');
+        saveFileFile('../social/eonet-events-2015-youtube.json');
     }
 }
 
@@ -52,30 +52,30 @@ function onYoutubeDataLoaded(err, i, videosData) {
 
 //loadTweetsByIndex(iterator, onTwitterDataLoaded);
 
-function onTwitterDataLoaded(err, i, twitterData) {
-
-    if (err) {
-        console.log(err);
-
-    // Process incoming data
-    } else if (twitterData /*&& videosData.items.length > 0*/) {
-        //console.log("Save " + videosData.pageInfo.totalResults + " videos!");
-        data.events[i].twitter = twitterData;
-    }
-
-    // Keep iterating
-    twitterIt++;
-    if (twitterIt < data.events.length) {
-        loadTweetsByIndex(twitterIt, onTwitterDataLoaded);
-        // loadSocialMediaByIndex(index, onSocialMediaLoaded);
-    } else {
-        console.log(" ");
-        console.log("----- TWITTER DATA LOADING FINISHED!!!")
-        console.log(" ");
-
-        saveFileFile('../eonet-events-2015-clean-social.json');
-    }
-}
+// function onTwitterDataLoaded(err, i, twitterData) {
+//
+//     if (err) {
+//         console.log(err);
+//
+//     // Process incoming data
+//     } else if (twitterData /*&& videosData.items.length > 0*/) {
+//         //console.log("Save " + videosData.pageInfo.totalResults + " videos!");
+//         data.events[i].twitter = twitterData;
+//     }
+//
+//     // Keep iterating
+//     twitterIt++;
+//     if (twitterIt < data.events.length) {
+//         loadTweetsByIndex(twitterIt, onTwitterDataLoaded);
+//         // loadSocialMediaByIndex(index, onSocialMediaLoaded);
+//     } else {
+//         console.log(" ");
+//         console.log("----- TWITTER DATA LOADING FINISHED!!!")
+//         console.log(" ");
+//
+//         saveFileFile('../eonet-events-2015-clean-social.json');
+//     }
+// }
 
 
 // Loop all events
@@ -93,19 +93,17 @@ function onTwitterDataLoaded(err, i, twitterData) {
 
 function calculateLocationParams(i) {
 
-    var geom = data.events[i].geometries[0],
-        center, radius;
+    console.log("--------- calculate location params");
 
-    // Point
-    if (geom.type == 'Point') {
+    var event = data.events[i];
 
-        center = {latitude: geom.coordinates[1], longitude: geom.coordinates[0]};
-        radius = 100;
+    // Geometries
+    var center, radius;
 
     // Polygon
-    } else if (geom.type == 'Polygon') {
+    if (event.geometries[0].type == 'Polygon') {
 
-        var polygon = geom.coordinates[0];
+        var polygon = event.geometries[0].coordinates[0];
 
         //Calculate center
         var coordsObj = [];
@@ -119,8 +117,8 @@ function calculateLocationParams(i) {
         // Get bounds / distance to center
         var swCoords = polygon[0],
             neCoords = polygon[2];
-        var sw = {longitude: swCoords[0], latitude: swCoords[1]};
-        var ne = {longitude: neCoords[0], latitude: neCoords[1]};
+        var sw = {longitude: swCoords[0], latitude: swCoords[1]},
+            ne = {longitude: neCoords[0], latitude: neCoords[1]};
 
         // Calculate max distance inside the bounds. Result in meters
         var distInMeters = Math.max(geolib.getDistance(center, sw), geolib.getDistance(center, ne));
@@ -128,10 +126,46 @@ function calculateLocationParams(i) {
         // Convert to KM
         radius = Math.round(distInMeters/1000);
         if (radius < 50) radius = 50;
+
+    // One point
+    } else if (event.geometries[0].type == 'Point' && event.geometries.length == 1) {
+
+        var geom = event.geometries[0];
+        center = {latitude: geom.coordinates[1], longitude: geom.coordinates[0]};
+        radius = 100;
+
+    // More points (storm, etc.)
+    } else if (event.geometries.length > 1) {
+        console.log("more points: " + event.geometries.length + ", event: " + event.title);
+
+        var geom = event.geometries;
+
+        var coordsObj = [];
+        geom.forEach(function(point, index) {
+            coordsObj.push({longitude: point.coordinates[0], latitude: point.coordinates[1]})
+        });
+
+        center = geolib.getCenter(coordsObj);
+
+        var firstCoords = event.geometries[0].coordinates,
+            lastCoords  = event.geometries[event.geometries.length-1].coordinates;
+
+        var first = {longitude: firstCoords[0], latitude: firstCoords[1]},
+            last  = {longitude: lastCoords[0],  latitude: lastCoords[1]};
+
+        // Calculate max distance inside the bounds. Result in meters
+        var distInMeters = Math.max(geolib.getDistance(center, first), geolib.getDistance(center, last));
+
+        // Convert to KM
+        radius = Math.round(distInMeters/1000);
+        if (radius < 50) radius = 100;
+
+        console.log("center: " + JSON.stringify(center) + ", radius: " + radius);
+        console.log(" ");
     }
 
     data.events[i].location = center.latitude + ',' + center.longitude;
-    data.events[i].locationRadius = radius + 'km';
+    data.events[i].locationRadius = radius;
 }
 
 
@@ -151,16 +185,18 @@ function loadYoutubeVideosByIndex(i, callback) {
     var publishedAfter = event.startDate.date;
 
     // Calculate geometries
-    var coords, radius;
     if (!event.location || event.location == '') {
         calculateLocationParams(i);
         event = data.events[i];
     }
 
+    // Youtube doesn't accept values greater than 1000km
+    var radius = (event.locationRadius > 1000) ? 1000 : event.locationRadius;
+
     var paramsYoutube = {
         maxResults: 50,
         location: event.location,
-        locationRadius: event.locationRadius,
+        locationRadius: radius + 'km',
         q: queryText,
         publishedAfter: publishedAfter
     };

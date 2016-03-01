@@ -1,7 +1,7 @@
 var fs = require('fs')
 var geolib = require('geolib')
 
-var saveLocation = false;
+var saveLocation = true;
 
 var contents = fs.readFileSync('../eonet-events-2015.json');
 var data = JSON.parse(contents);
@@ -53,21 +53,16 @@ for (var i=0; i<events.length; i++) {
 
     // Center / Radius parameters
     if (saveLocation) {
+
         // Geometries
-        var geom = event.geometries[0],
-            center, radius;
+        var center, radius;
 
         // console.log(event.titleShort);
 
-        // Point
-        if (geom.type == 'Point') {
-            center = {latitude: geom.coordinates[1], longitude: geom.coordinates[0]};
-            radius = 100;
-
         // Polygon
-        } else if (geom.type == 'Polygon') {
+        if (event.geometries[0].type == 'Polygon') {
 
-            var polygon = geom.coordinates[0];
+            var polygon = event.geometries[0].coordinates[0];
 
             //Calculate center
             var coordsObj = [];
@@ -81,8 +76,8 @@ for (var i=0; i<events.length; i++) {
             // Get bounds / distance to center
             var swCoords = polygon[0],
                 neCoords = polygon[2];
-            var sw = {longitude: swCoords[0], latitude: swCoords[1]};
-            var ne = {longitude: neCoords[0], latitude: neCoords[1]};
+            var sw = {longitude: swCoords[0], latitude: swCoords[1]},
+                ne = {longitude: neCoords[0], latitude: neCoords[1]};
 
             // Calculate max distance inside the bounds. Result in meters
             var distInMeters = Math.max(geolib.getDistance(center, sw), geolib.getDistance(center, ne));
@@ -90,10 +85,46 @@ for (var i=0; i<events.length; i++) {
             // Convert to KM
             radius = Math.round(distInMeters/1000);
             if (radius < 50) radius = 50;
+
+        // One point
+        } else if (event.geometries[0].type == 'Point' && event.geometries.length == 1) {
+
+            var geom = event.geometries[0];
+            center = {latitude: geom.coordinates[1], longitude: geom.coordinates[0]};
+            radius = 100;
+
+        // More points (storm, etc.)
+        } else if (event.geometries.length > 1) {
+            //console.log("more points: " + event.geometries.length + ", event: " + event.title);
+
+            var geom = event.geometries;
+
+            var coordsObj = [];
+            geom.forEach(function(point, index) {
+                coordsObj.push({longitude: point.coordinates[0], latitude: point.coordinates[1]})
+            });
+
+            center = geolib.getCenter(coordsObj);
+
+            var firstCoords = event.geometries[0].coordinates,
+                lastCoords  = event.geometries[event.geometries.length-1].coordinates;
+
+            var first = {longitude: firstCoords[0], latitude: firstCoords[1]},
+                last  = {longitude: lastCoords[0],  latitude: lastCoords[1]};
+
+            // Calculate max distance inside the bounds. Result in meters
+            var distInMeters = Math.max(geolib.getDistance(center, first), geolib.getDistance(center, last));
+
+            // Convert to KM
+            radius = Math.round(distInMeters/1000);
+            if (radius < 50) radius = 100;
+
+            //console.log("center: " + JSON.stringify(center) + ", radius: " + radius);
+            //console.log(" ");
         }
 
         eventClean.location = center.latitude + ',' + center.longitude;
-        eventClean.locationRadius = radius + 'km';
+        eventClean.locationRadius = radius;
     }
 
     eventClean.geometries = event.geometries;
