@@ -1,0 +1,38 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_16",
+            "title": "Alaska Heat Wave, May 2015",
+            "titleShort": "Alaska Heat Wave",
+            "description": "In the third week of May, it was warmer in Fairbanks, Alaska, than in Washington, D.C. The small town of Eagle, Alaska, was hotter on May 23 than it has been on any day in Houston or Dallas this year. In what has become a frequent occurrence in the past few years, temperature profiles in North America appeared to be upside down.",
+            "categories": [{
+                "id": 18,
+                "title": "Temperature Extremes",
+                "slug": "temperature-extremes"
+            }],
+            "startDate": {
+                "date": "2015-05-17T00:00:00Z",
+                "doy": 137
+            },
+            "closedDate": {
+                "date": "2015-05-31T00:00:00Z",
+                "doy": 151
+            }
+        },
+        "geometry": {
+            "date": "2015-05-17T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-156.328125, 55.760619913833224],
+                    [-156.328125, 72.2178005359489],
+                    [-110.3125, 72.2178005359489],
+                    [-110.3125, 55.760619913833224],
+                    [-156.328125, 55.760619913833224]
+                ]
+            ]
+        }
+    }]
+}

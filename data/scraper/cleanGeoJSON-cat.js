@@ -83,6 +83,7 @@ function isRelevantCategory(categories) {
 
     for (var i=0; i<categories.length; i++) {
         var cat = categories[i];
+        //console.log("searching: " + category + ", this: " + titleToSlug(cat.title));
         if (category == titleToSlug(cat.title)) {
             return true;
         }
@@ -190,7 +191,8 @@ function cleanEventTitle(str) {
 }
 
 function titleToSlug(str) {
-  str = str.toLowerCase();
-  str = str.replace(" ", "-");
-  return str;
+    str = str.replace(" ", "-");
+    str = str.toLowerCase();
+    str = str.replace(" ", "-");
+    return str;
 }

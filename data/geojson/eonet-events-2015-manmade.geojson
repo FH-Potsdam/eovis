@@ -1,0 +1,42 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_103",
+            "title": "Explosion at Tianjin, China",
+            "titleShort": "Explosion at Tianjin, China",
+            "description": "Fires associated with a massive explosion in Tianjin, China, sent dark smoke drifting east and southeast.",
+            "categories": [{
+                "id": 7,
+                "title": "Dust and Haze",
+                "slug": "dust-and haze"
+            }, {
+                "id": 19,
+                "title": "Manmade",
+                "slug": "manmade"
+            }],
+            "startDate": {
+                "date": "2015-08-12T00:00:00Z",
+                "doy": 224
+            },
+            "closedDate": {
+                "date": "2015-08-13T00:00:00Z",
+                "doy": 225
+            }
+        },
+        "geometry": {
+            "date": "2015-08-12T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [117.099609375, 38.0171001312755],
+                    [117.099609375, 39.78083314629773],
+                    [121.795654296875, 39.78083314629773],
+                    [121.795654296875, 38.0171001312755],
+                    [117.099609375, 38.0171001312755]
+                ]
+            ]
+        }
+    }]
+}

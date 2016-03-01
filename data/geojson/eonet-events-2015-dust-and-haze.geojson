@@ -1,0 +1,212 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_38",
+            "title": "Dust storm over Libya and Egypt",
+            "titleShort": "Dust storm over Libya and Egypt",
+            "description": "",
+            "categories": [{
+                "id": 7,
+                "title": "Dust and Haze",
+                "slug": "dust-and-haze"
+            }],
+            "startDate": {
+                "date": "2015-06-27T00:00:00Z",
+                "doy": 178
+            },
+            "closedDate": {
+                "date": "2015-06-28T00:00:00Z",
+                "doy": 179
+            }
+        },
+        "geometry": {
+            "date": "2015-06-27T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [16.30859375, 22.59981039954622],
+                    [16.30859375, 33.57252400730273],
+                    [34.4921875, 33.57252400730273],
+                    [34.4921875, 22.59981039954622],
+                    [16.30859375, 22.59981039954622]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_64",
+            "title": "Dust Storm in South Algeria",
+            "titleShort": "Dust Storm in South Algeria",
+            "description": "",
+            "categories": [{
+                "id": 7,
+                "title": "Dust and Haze",
+                "slug": "dust-and-haze"
+            }],
+            "startDate": {
+                "date": "2015-07-21T00:00:00Z",
+                "doy": 202
+            },
+            "closedDate": {
+                "date": "2015-07-23T00:00:00Z",
+                "doy": 204
+            }
+        },
+        "geometry": {
+            "date": "2015-07-21T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-6.123046875, 19.11837532295704],
+                    [-6.123046875, 27.242109611064276],
+                    [13.701171875, 27.242109611064276],
+                    [13.701171875, 19.11837532295704],
+                    [-6.123046875, 19.11837532295704]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_104",
+            "title": "Dust Storm over Southern Egypt",
+            "titleShort": "Dust Storm over Southern Egypt",
+            "description": "A wall of dust rolled north from Sudan into southern Egypt.",
+            "categories": [{
+                "id": 7,
+                "title": "Dust and Haze",
+                "slug": "dust-and-haze"
+            }],
+            "startDate": {
+                "date": "2015-08-06T00:00:00Z",
+                "doy": 218
+            },
+            "closedDate": {
+                "date": "2015-08-07T00:00:00Z",
+                "doy": 219
+            }
+        },
+        "geometry": {
+            "date": "2015-08-06T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [24.375, 20.11184260460972],
+                    [24.375, 26.221669228651457],
+                    [38.75, 26.221669228651457],
+                    [38.75, 20.11184260460972],
+                    [24.375, 20.11184260460972]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_103",
+            "title": "Explosion at Tianjin, China",
+            "titleShort": "Explosion at Tianjin, China",
+            "description": "Fires associated with a massive explosion in Tianjin, China, sent dark smoke drifting east and southeast.",
+            "categories": [{
+                "id": 7,
+                "title": "Dust and Haze",
+                "slug": "dust-and-haze"
+            }, {
+                "id": 19,
+                "title": "Manmade",
+                "slug": "manmade"
+            }],
+            "startDate": {
+                "date": "2015-08-12T00:00:00Z",
+                "doy": 224
+            },
+            "closedDate": {
+                "date": "2015-08-13T00:00:00Z",
+                "doy": 225
+            }
+        },
+        "geometry": {
+            "date": "2015-08-12T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [117.099609375, 38.0171001312755],
+                    [117.099609375, 39.78083314629773],
+                    [121.795654296875, 39.78083314629773],
+                    [121.795654296875, 38.0171001312755],
+                    [117.099609375, 38.0171001312755]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_182",
+            "title": "Dust storms in Middle East",
+            "titleShort": "Dust storms in Middle East",
+            "description": "During early September 2015, a cyclone-shaped wall of dust and a series of dust storms swept across the Middle East and Persian Gulf.",
+            "categories": [{
+                "id": 7,
+                "title": "Dust and Haze",
+                "slug": "dust-and-haze"
+            }],
+            "startDate": {
+                "date": "2015-08-31T00:00:00Z",
+                "doy": 243
+            },
+            "closedDate": {
+                "date": "2015-09-13T00:00:00Z",
+                "doy": 256
+            }
+        },
+        "geometry": {
+            "date": "2015-08-31T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [34.130859375, 22.32384451850907],
+                    [34.130859375, 37.114057047669355],
+                    [60.72265625, 37.114057047669355],
+                    [60.72265625, 22.32384451850907],
+                    [34.130859375, 22.32384451850907]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_237",
+            "title": "Dust Storm over Red Sea",
+            "titleShort": "Dust Storm over Red Sea",
+            "description": "",
+            "categories": [{
+                "id": 7,
+                "title": "Dust and Haze",
+                "slug": "dust-and-haze"
+            }],
+            "startDate": {
+                "date": "2015-11-24T00:00:00Z",
+                "doy": 328
+            },
+            "closedDate": {
+                "date": "2015-11-27T00:00:00Z",
+                "doy": 331
+            }
+        },
+        "geometry": {
+            "date": "2015-11-24T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [32.8564453125, 19.159891565948797],
+                    [32.8564453125, 28.793832723894273],
+                    [40.5517578125, 28.793832723894273],
+                    [40.5517578125, 19.159891565948797],
+                    [32.8564453125, 19.159891565948797]
+                ]
+            ]
+        }
+    }]
+}

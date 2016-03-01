@@ -1,0 +1,208 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_13",
+            "title": "North Sea Phytoplankton Bloom",
+            "titleShort": "North Sea Phytoplankton Bloom",
+            "description": "",
+            "categories": [{
+                "id": 13,
+                "title": "Water Color",
+                "slug": "water-color"
+            }],
+            "startDate": {
+                "date": "2015-05-01T00:00:00Z",
+                "doy": 121
+            },
+            "closedDate": {
+                "date": "2015-08-19T00:00:00Z",
+                "doy": 231
+            }
+        },
+        "geometry": {
+            "date": "2015-05-01T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-1.97021484375, 51.27166698535326],
+                    [-1.97021484375, 57.91903848898713],
+                    [9.7900390625, 57.91903848898713],
+                    [9.7900390625, 51.27166698535326],
+                    [-1.97021484375, 51.27166698535326]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_15",
+            "title": "Sea of Marmara Phytoplankton Bloom",
+            "titleShort": "Sea of Marmara Phytoplankton Bloom",
+            "description": "Freshened surface water and abundant nutrients lead to an explosion of algae in the inland sea.",
+            "categories": [{
+                "id": 13,
+                "title": "Water Color",
+                "slug": "water-color"
+            }],
+            "startDate": {
+                "date": "2015-05-22T00:00:00Z",
+                "doy": 142
+            },
+            "closedDate": {
+                "date": "2015-06-08T00:00:00Z",
+                "doy": 159
+            }
+        },
+        "geometry": {
+            "date": "2015-05-22T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [26.572265625, 40.12360770080628],
+                    [26.572265625, 41.27547942309457],
+                    [29.49951171875, 41.27547942309457],
+                    [29.49951171875, 40.12360770080628],
+                    [26.572265625, 40.12360770080628]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_14",
+            "title": "NE U.S. Atlantic Phytoplankton Bloom",
+            "titleShort": "NE U.S. Atlantic Phytoplankton Bloom",
+            "description": "",
+            "categories": [{
+                "id": 13,
+                "title": "Water Color",
+                "slug": "water-color"
+            }],
+            "startDate": {
+                "date": "2015-05-25T00:00:00Z",
+                "doy": 145
+            },
+            "closedDate": {
+                "date": "2015-09-10T00:00:00Z",
+                "doy": 253
+            }
+        },
+        "geometry": {
+            "date": "2015-05-25T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-75.23803710937494, 38.82617451259085],
+                    [-75.23803710937494, 40.51979720380876],
+                    [-73.15673828125, 40.51979720380876],
+                    [-73.15673828125, 38.82617451259085],
+                    [-75.23803710937494, 38.82617451259085]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_30",
+            "title": "Santa Barbara Channel Bloom",
+            "titleShort": "Santa Barbara Channel Bloom",
+            "description": "",
+            "categories": [{
+                "id": 13,
+                "title": "Water Color",
+                "slug": "water-color"
+            }],
+            "startDate": {
+                "date": "2015-06-01T00:00:00Z",
+                "doy": 152
+            },
+            "closedDate": {
+                "date": "2015-06-19T00:00:00Z",
+                "doy": 170
+            }
+        },
+        "geometry": {
+            "date": "2015-06-01T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-120.4052734375, 33.97616327652347],
+                    [-120.4052734375, 34.47395924839458],
+                    [-119.2230224609375, 34.47395924839458],
+                    [-119.2230224609375, 33.97616327652347],
+                    [-120.4052734375, 33.97616327652347]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_59",
+            "title": "Queen Charlotte Sound, Canada, Phytoplankton Bloom",
+            "titleShort": "Queen Charlotte Sound, Canada, Phytoplankton Bloom",
+            "description": "",
+            "categories": [{
+                "id": 13,
+                "title": "Water Color",
+                "slug": "water-color"
+            }],
+            "startDate": {
+                "date": "2015-06-20T00:00:00Z",
+                "doy": 171
+            },
+            "closedDate": {
+                "date": "2015-07-29T00:00:00Z",
+                "doy": 210
+            }
+        },
+        "geometry": {
+            "date": "2015-06-20T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-131.630859375, 49.84803367107379],
+                    [-131.630859375, 52.42063462717089],
+                    [-127.2314453125, 52.42063462717089],
+                    [-127.2314453125, 49.84803367107379],
+                    [-131.630859375, 49.84803367107379]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_71",
+            "title": "Lake Erie Algal Bloom",
+            "titleShort": "Lake Erie Algal Bloom",
+            "description": "A bloom of algae continues to grow in Lake Erie and surrounding waters.",
+            "categories": [{
+                "id": 13,
+                "title": "Water Color",
+                "slug": "water-color"
+            }],
+            "startDate": {
+                "date": "2015-07-20T00:00:00Z",
+                "doy": 201
+            },
+            "closedDate": {
+                "date": "2015-10-13T00:00:00Z",
+                "doy": 286
+            }
+        },
+        "geometry": {
+            "date": "2015-07-20T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-83.73046875, 41.206916841620696],
+                    [-83.73046875, 42.76893812178128],
+                    [-81.3525390625, 42.76893812178128],
+                    [-81.3525390625, 41.206916841620696],
+                    [-83.73046875, 41.206916841620696]
+                ]
+            ]
+        }
+    }]
+}
