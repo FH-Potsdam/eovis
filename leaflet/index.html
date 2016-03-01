@@ -3,6 +3,9 @@
     <meta charset="utf-8">
     <title>EONET Events</title>
 
+    <!-- Config file -->
+    <script src="../config.js"></script>
+
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 
     <!-- Leaflet -->
@@ -10,12 +13,12 @@
     <link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
     <!-- <script src="lib/leaflet/leaflet.js"></script>
     <link rel="stylesheet" href="lib/leaflet/leaflet.css" /> -->
-    <link rel="stylesheet" href="lib/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="../lib/leaflet.awesome-markers.css" />
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.css">
-    <script src="lib/leaflet.awesome-markers.js"></script>
+    <script src="../lib/leaflet.awesome-markers.js"></script>
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
 </head>
 <body>
@@ -38,14 +41,14 @@
     // Call all open events
     $( document ).ready(function() {
 
-      L.mapbox.accessToken = 'XXXXXXXXXXXXTOKENXXXXXXXXX';
+      L.mapbox.accessToken = config.mapbox.accessToken;
       map = L.mapbox.map('map');//.setView([0,0], 5);
 
       // Create map
 			var mapboxAttribution = 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, ' +
 				'<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
 				'Imagery © <a href="http://mapbox.com">Mapbox</a>',
-					mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=XXXXXXXXXXXXTOKENXXXXXXXXX';
+					mbUrl = 'https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token='+config.mapbox.accessToken;
 
 			var streets   = L.tileLayer(mbUrl, {id: 'mapbox.streets', attribution: mapboxAttribution}).addTo(map),
           satellite = L.tileLayer(mbUrl, {id: 'mapbox.satellite', attribution: mapboxAttribution}),

@@ -1,0 +1,138 @@
+{
+    "title": "EONET Events",
+    "description": "Natural events from EONET.",
+    "link": "http://eonet.sci.gsfc.nasa.gov/api/v2.1/events",
+    "events": [{
+        "id": "EONET_63",
+        "title": "Pakistan Floods, Spring/Summer 2015",
+        "titleShort": "Pakistan Floods",
+        "description": "Heavy rainfall has resulted in flash flooding in northern and central Pakistan from the early spring through the monsoon in July and August.",
+        "categories": [{
+            "id": 9,
+            "title": "Floods",
+            "slug": "floods"
+        }],
+        "startDate": {
+            "date": "2015-03-03T00:00:00Z",
+            "doy": 62
+        },
+        "closedDate": {
+            "date": "2015-08-26T00:00:00Z",
+            "doy": 238
+        },
+        "geometries": [{
+            "date": "2015-03-03T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [65.947265625, 26.248281812543624],
+                    [65.947265625, 35.770745331336784],
+                    [76.3671875, 35.770745331336784],
+                    [76.3671875, 26.248281812543624],
+                    [65.947265625, 26.248281812543624]
+                ]
+            ]
+        }]
+    }, {
+        "id": "EONET_9",
+        "title": "Colombia: Floods and Landslides, Spring 2015",
+        "titleShort": "Colombia: Floods and Landslides",
+        "description": "Flooding, windstorms and landslides affected more than 20,000 people in Colombia in April 2015. The rainy season in the southern and western departments had a particularly strong impact in the Amazonas department near the Peruvian and Brazilian border.",
+        "categories": [{
+            "id": 9,
+            "title": "Floods",
+            "slug": "floods"
+        }, {
+            "id": 14,
+            "title": "Landslides",
+            "slug": "landslides"
+        }],
+        "startDate": {
+            "date": "2015-03-23T00:00:00Z",
+            "doy": 82
+        },
+        "closedDate": {
+            "date": "2015-05-25T00:00:00Z",
+            "doy": 145
+        },
+        "geometries": [{
+            "date": "2015-03-23T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-80.21484374999994, -1.2587267170218541],
+                    [-80.21484374999994, 10.603576135312025],
+                    [-71.2890625, 10.603576135312025],
+                    [-71.2890625, -1.2587267170218541],
+                    [-80.21484374999994, -1.2587267170218541]
+                ]
+            ]
+        }]
+    }, {
+        "id": "EONET_39",
+        "title": "Fires in Eastern Russia, Summer 2015",
+        "titleShort": "Fires in Eastern Russia",
+        "description": "",
+        "categories": [{
+            "id": 8,
+            "title": "Wildfires",
+            "slug": "wildfires"
+        }],
+        "startDate": {
+            "date": "2015-06-16T00:00:00Z",
+            "doy": 167
+        },
+        "closedDate": {
+            "date": "2015-09-07T00:00:00Z",
+            "doy": 250
+        },
+        "geometries": [{
+            "date": "2015-06-16T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [93.212890625, 49.586498691055894],
+                    [93.212890625, 63.15137895965993],
+                    [139.2138671875, 63.15137895965993],
+                    [139.2138671875, 49.586498691055894],
+                    [93.212890625, 49.586498691055894]
+                ]
+            ]
+        }]
+    }, {
+        "id": "EONET_7",
+        "title": "Rwanda: Floods and Landslides",
+        "titleShort": "Rwanda: Floods and Landslides",
+        "description": "On 3 April 2015, heavy rainfall caused flooding and landslides in Nyamasheke and Rubavu districts in Rwanda&#039;s Western Province.",
+        "categories": [{
+            "id": 9,
+            "title": "Floods",
+            "slug": "floods"
+        }, {
+            "id": 14,
+            "title": "Landslides",
+            "slug": "landslides"
+        }],
+        "startDate": {
+            "date": "2015-04-03T00:00:00Z",
+            "doy": 93
+        },
+        "closedDate": {
+            "date": "2015-04-19T00:00:00Z",
+            "doy": 109
+        },
+        "geometries": [{
+            "date": "2015-04-03T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [29.0826416015625, -2.373261352203938],
+                    [29.0826416015625, -2.106503512855471],
+                    [29.334716796875, -2.106503512855471],
+                    [29.334716796875, -2.373261352203938],
+                    [29.0826416015625, -2.373261352203938]
+                ]
+            ]
+        }]
+    }]
+}

@@ -10,26 +10,33 @@ var events = data.events;
 
 // console.log("Number of events: " + events.length);
 
-var index = 0;
+var iterator = 0;
 var allDataLoaded = false;
 
-loadSocialMediaByIndex(index, onSocialMediaLoaded);
+loadYoutubeVideosByIndex(iterator, onYoutubeDataLoaded);
 
-function onSocialMediaLoaded(err, socialData) {
+function onYoutubeDataLoaded(err, i, videosData) {
 
     if (err) {
         console.log(err);
-        return;
+
+    // Process incoming data
+    } else if (videosData && videosData.items.length > 0) {
+        console.log("Save " + videosData.pageInfo.totalResults + " videos!");
+        data.events[i].youtube = videosData;
     }
 
-    // Process data
-    index++;
-    if (index < data.events.length) {
-        loadSocialMediaByIndex(index, onSocialMediaLoaded);
+    // Keep iterating
+    iterator++;
+    if (iterator < data.events.length) {
+        loadYoutubeVideosByIndex(iterator, onYoutubeDataLoaded);
+        // loadSocialMediaByIndex(index, onSocialMediaLoaded);
     } else {
         console.log(" ");
-        console.log("----- SOCIAL MEDIA LOADING FINISHED!!!")
+        console.log("----- YOUTUBE DATA LOADING FINISHED!!!")
         console.log(" ");
+
+        saveFileFile('../eonet-events-2015-clean-social.json');
     }
 }
 
@@ -89,20 +96,20 @@ function calculateLocationParams(i) {
     data.events[i].locationRadius = radius + 'km';
 }
 
+
 ////////////////////////
 // Social Media Load
 ////////////////////////
 
-function loadSocialMediaByIndex(i, callback) {
+function loadYoutubeVideosByIndex(i, callback) {
 
     var event = data.events[i];
 
     console.log(" ");
-    console.log("Load social media for " + i + ": " + event.titleShort);
+    console.log("Load youtube videos for " + i + ": " + event.titleShort);
 
     // Get query text
     var queryText = event.titleShort;
-
     var publishedAfter = event.startDate.date;
 
     // Calculate geometries
@@ -122,25 +129,20 @@ function loadSocialMediaByIndex(i, callback) {
 
     var socialData = {};
 
+    // First load videos
     loadYoutubeVideos(paramsYoutube, function(err, videosData) {
         if (err) {
             return callback("Error retrieving videos! Error: " + err);
         }
 
-        if (videosData && videosData.pageInfo) {
-            socialData.youtube = videosData;
+        if (videosData == null) {
+            videosData = {};
+            //socialData.youtube = videosData;
         }
 
-        callback(null, socialData);
+        // Load tweets
+        callback(null, i, videosData);
     });
-
-    // var paramsTwitter = {
-    //     count: 100,
-    //     geocode: event.location + ',' + event.locationRadius,
-    //     q: queryText
-    // };
-
-    //loadTweets(paramsTwitter);
 }
 
 function loadYoutubeVideos(params, callback) {
@@ -155,7 +157,7 @@ function loadYoutubeVideos(params, callback) {
     var videosData;
     request.get(apiBaseUrl + '?'+paramsStr, function (error, response, body) {
         if (error || response.statusCode != 200) {
-            return callback(error);
+            return (error) ? callback(error) : callback(response.statusCode);
         }
 
         console.log("Videos successfully retrieved");
@@ -170,14 +172,51 @@ function loadYoutubeVideos(params, callback) {
     });
 }
 
+/*function loadTweetsByIndex(i, callback) {
+
+    var event = data.events[i];
+
+    console.log(" ");
+    console.log("Load tweets for " + i + ": " + event.titleShort);
+
+    // Get query text
+    var queryText = event.titleShort;
+    var publishedAfter = event.startDate.date;
+
+    // Calculate geometries
+    var coords, radius;
+    if (!event.location || event.location == '') {
+        calculateLocationParams(i);
+        event = data.events[i];
+    }
+
+    var paramsTwitter = {
+        count: 100,
+        geocode: event.location + ',' + event.locationRadius,
+        q: queryText
+    };
+
+    loadTweets(paramsTwitter, function(err, twitterData) {
+        if (err) {
+            return callback("Error retrieving tweets! Error: " + err);
+        }
+
+        if (videosData && videosData.pageInfo) {
+            socialData.twitter = twitterData;
+        }
+
+        callback(null, socialData);
+    });
+}*/
+
 ////////////////////
 // File Functions
 ////////////////////
 
-function saveFileFile() {
+function saveFileFile(file) {
   console.log("Saving social file...");
 
-  fs.writeFile('../eonet-events-2015-social.json', JSON.stringify(data), function (err) {
+  fs.writeFile(file, JSON.stringify(data), function (err) {
       if (err) throw err;
       console.log('Social file saved!');
   });

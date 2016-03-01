@@ -8,7 +8,12 @@ var markerOpacity = 0.6;
 
 var eventFilter = document.getElementById('event-filter');
 
-mapboxgl.accessToken = 'XXXXXXXXXXXXTOKENXXXXXXXXX';
+///////////////
+// Mapbox GL
+///////////////
+
+// Config file must be loaded before
+mapboxgl.accessToken = config.mapbox.accessToken;
 
 var map = new mapboxgl.Map({
     container: 'map', // container id
