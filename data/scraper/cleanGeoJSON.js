@@ -75,12 +75,12 @@ fs.writeFile('../geojson/eonet-events-2015-clean.geojson', JSON.stringify(geojso
 
 function isRelevantCategory(catTitle) {
 
-    if (catTitle == 'Drought' ||
-        catTitle == 'Dust and Haze' ||
-        catTitle == 'Temperature Extremes' ||
-        catTitle == 'Water Color') {
-        return false;
-    }
+    // if (catTitle == 'Drought' ||
+    //     catTitle == 'Dust and Haze' ||
+    //     catTitle == 'Temperature Extremes' ||
+    //     catTitle == 'Water Color') {
+    //     return false;
+    // }
 
     return true;
 }
@@ -184,6 +184,7 @@ function cleanEventTitle(str) {
 }
 
 function titleToSlug(str) {
+  str = str.replace(" ", "-");
   str = str.toLowerCase();
   str = str.replace(" ", "-");
   return str;
