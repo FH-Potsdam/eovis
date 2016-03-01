@@ -1,0 +1,106 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_18",
+            "title": "Calbuco Volcano, Chile",
+            "titleShort": "Calbuco Volcano, Chile",
+            "description": "Calbuco volcano, located in the province of Llanquihue, state of Los Lagos, southern Chile, erupted on 22 Apr 2015.",
+            "categories": [{
+                "id": 12,
+                "title": "Volcanoes",
+                "slug": "volcanoes"
+            }],
+            "startDate": {
+                "date": "2015-04-22T00:00:00Z",
+                "doy": 112
+            },
+            "closedDate": {
+                "date": "0015-05-28T00:00:00Z",
+                "doy": -693812
+            }
+        },
+        "geometry": {
+            "date": "2015-04-22T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-72.8125, -41.4624898319733],
+                    [-72.8125, -41.229074122819455],
+                    [-72.437744140625, -41.229074122819455],
+                    [-72.437744140625, -41.4624898319733],
+                    [-72.8125, -41.4624898319733]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_5",
+            "title": "Wolf Volcano",
+            "titleShort": "Wolf Volcano",
+            "description": "After 33 years of inactivity, Wolf volcano in the Galapagos has reawakened.",
+            "categories": [{
+                "id": 12,
+                "title": "Volcanoes",
+                "slug": "volcanoes"
+            }],
+            "startDate": {
+                "date": "2015-05-24T00:00:00Z",
+                "doy": 144
+            },
+            "closedDate": {
+                "date": "2015-06-02T00:00:00Z",
+                "doy": 153
+            }
+        },
+        "geometry": {
+            "date": "2015-05-24T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-91.3934326171875, -0.05307846058326546],
+                    [-91.3934326171875, 0.10127366828906795],
+                    [-91.26770019531256, 0.10127366828906795],
+                    [-91.26770019531256, -0.05307846058326546],
+                    [-91.3934326171875, -0.05307846058326546]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_57",
+            "title": "Raung Volcano, Indonesia, July-August 2015",
+            "titleShort": "Raung Volcano, Indonesia",
+            "description": "One of the most active volcanoes on the Indonesian island of Java spewed fresh ash and gases in early July 2015.",
+            "categories": [{
+                "id": 12,
+                "title": "Volcanoes",
+                "slug": "volcanoes"
+            }],
+            "startDate": {
+                "date": "2015-07-01T00:00:00Z",
+                "doy": 182
+            },
+            "closedDate": {
+                "date": "2015-09-29T00:00:00Z",
+                "doy": 272
+            }
+        },
+        "geometry": {
+            "date": "2015-07-01T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [113.966064453125, -8.188656438197183],
+                    [113.966064453125, -8.060315883623133],
+                    [114.10186767578125, -8.060315883623133],
+                    [114.10186767578125, -8.188656438197183],
+                    [113.966064453125, -8.188656438197183]
+                ]
+            ]
+        }
+    }]
+}

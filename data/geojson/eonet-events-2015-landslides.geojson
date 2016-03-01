@@ -1,0 +1,156 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_9",
+            "title": "Colombia: Floods and Landslides, Spring 2015",
+            "titleShort": "Colombia: Floods and Landslides",
+            "description": "Flooding, windstorms and landslides affected more than 20,000 people in Colombia in April 2015. The rainy season in the southern and western departments had a particularly strong impact in the Amazonas department near the Peruvian and Brazilian border.",
+            "categories": [{
+                "id": 9,
+                "title": "Floods",
+                "slug": "floods"
+            }, {
+                "id": 14,
+                "title": "Landslides",
+                "slug": "landslides"
+            }],
+            "startDate": {
+                "date": "2015-03-23T00:00:00Z",
+                "doy": 82
+            },
+            "closedDate": {
+                "date": "2015-05-25T00:00:00Z",
+                "doy": 145
+            }
+        },
+        "geometry": {
+            "date": "2015-03-23T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-80.21484374999994, -1.2587267170218541],
+                    [-80.21484374999994, 10.603576135312025],
+                    [-71.2890625, 10.603576135312025],
+                    [-71.2890625, -1.2587267170218541],
+                    [-80.21484374999994, -1.2587267170218541]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_7",
+            "title": "Rwanda: Floods and Landslides",
+            "titleShort": "Rwanda: Floods and Landslides",
+            "description": "On 3 April 2015, heavy rainfall caused flooding and landslides in Nyamasheke and Rubavu districts in Rwanda&#039;s Western Province.",
+            "categories": [{
+                "id": 9,
+                "title": "Floods",
+                "slug": "floods"
+            }, {
+                "id": 14,
+                "title": "Landslides",
+                "slug": "landslides"
+            }],
+            "startDate": {
+                "date": "2015-04-03T00:00:00Z",
+                "doy": 93
+            },
+            "closedDate": {
+                "date": "2015-04-19T00:00:00Z",
+                "doy": 109
+            }
+        },
+        "geometry": {
+            "date": "2015-04-03T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [29.0826416015625, -2.373261352203938],
+                    [29.0826416015625, -2.106503512855471],
+                    [29.334716796875, -2.106503512855471],
+                    [29.334716796875, -2.373261352203938],
+                    [29.0826416015625, -2.373261352203938]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_8",
+            "title": "Tajikistan: Floods and Mudslides",
+            "titleShort": "Tajikistan: Floods and Mudslides",
+            "description": "Prolonged torrential rains caused a number of floods and mudslides between 11 and 13 May 2015 in Khatlon province and Hoit administrative center of the Rasht valley of Tajikistan.",
+            "categories": [{
+                "id": 9,
+                "title": "Floods",
+                "slug": "floods"
+            }, {
+                "id": 14,
+                "title": "Landslides",
+                "slug": "landslides"
+            }],
+            "startDate": {
+                "date": "2015-05-11T00:00:00Z",
+                "doy": 131
+            },
+            "closedDate": {
+                "date": "2015-05-22T00:00:00Z",
+                "doy": 142
+            }
+        },
+        "geometry": {
+            "date": "2015-05-11T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [67.63916015625, 36.89208686626949],
+                    [67.63916015625, 38.33060991012091],
+                    [70.3466796875, 38.33060991012091],
+                    [70.3466796875, 36.89208686626949],
+                    [67.63916015625, 36.89208686626949]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_42",
+            "title": "Bangladesh: Floods and Landslides, Summer 2015",
+            "titleShort": "Bangladesh: Floods and Landslides",
+            "description": "Since June 24, torrential rains have set off flash floods and landslides in the low-lying areas in the south-eastern districts of Cox&rsquo; Bazar, Bandarban and Chittagong. Tropical Cyclone Komen hit on July 31, affecting more than 1.5 million people across these same coastal districts.",
+            "categories": [{
+                "id": 9,
+                "title": "Floods",
+                "slug": "floods"
+            }, {
+                "id": 14,
+                "title": "Landslides",
+                "slug": "landslides"
+            }],
+            "startDate": {
+                "date": "2015-06-24T00:00:00Z",
+                "doy": 175
+            },
+            "closedDate": {
+                "date": "2015-08-10T00:00:00Z",
+                "doy": 222
+            }
+        },
+        "geometry": {
+            "date": "2015-06-24T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [91.2353515625, 20.782820620659265],
+                    [91.2353515625, 23.819522533901992],
+                    [92.87353515625, 23.819522533901992],
+                    [92.87353515625, 20.782820620659265],
+                    [91.2353515625, 20.782820620659265]
+                ]
+            ]
+        }
+    }]
+}

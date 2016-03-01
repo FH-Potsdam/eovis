@@ -1,0 +1,4536 @@
+{
+    "type": "FeatureCollection",
+    "features": [{
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_3",
+            "title": "Mud Lake Complex Fire",
+            "titleShort": "Mud Lake Complex Fire",
+            "description": "The Mud Lake Complex is comprised of several fires caused by lightning strikes on Big Cypress National Preserve both north and south of Interstate 75 (Alligator Alley).",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-05-08T00:00:00Z",
+                "doy": 128
+            },
+            "closedDate": {
+                "date": "2015-06-11T00:00:00Z",
+                "doy": 162
+            }
+        },
+        "geometry": {
+            "date": "2015-05-08T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-81.16790771484375, 25.96218030801014],
+                    [-81.16790771484375, 26.264780095453933],
+                    [-80.9954833984375, 26.264780095453933],
+                    [-80.9954833984375, 25.96218030801014],
+                    [-81.16790771484375, 25.96218030801014]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_87",
+            "title": "Paradise Fire, Washington",
+            "titleShort": "Paradise Fire, Washington",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-05-15T15:00:00Z",
+                "doy": 135
+            },
+            "closedDate": {
+                "date": "2015-09-03T00:00:00Z",
+                "doy": 246
+            }
+        },
+        "geometry": {
+            "date": "2015-05-15T15:00:00Z",
+            "type": "Point",
+            "coordinates": [-123.80055555556, 47.703611111111]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_4",
+            "title": "Oak Tree Fire",
+            "titleShort": "Oak Tree Fire",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-05-20T00:00:00Z",
+                "doy": 140
+            },
+            "closedDate": {
+                "date": "2015-05-23T00:00:00Z",
+                "doy": 143
+            }
+        },
+        "geometry": {
+            "date": "2015-05-20T00:00:00Z",
+            "type": "Point",
+            "coordinates": [-110.70819854736328, 31.808727969741742]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_10",
+            "title": "Fires in Northern Canada",
+            "titleShort": "Fires in Northern Canada",
+            "description": "Fires burned in the Northwest Territories, spreading smoke across the region.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-05-28T00:00:00Z",
+                "doy": 148
+            },
+            "closedDate": {
+                "date": "2015-07-16T00:00:00Z",
+                "doy": 197
+            }
+        },
+        "geometry": {
+            "date": "2015-05-28T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-127.5, 57.876420573187154],
+                    [-127.5, 63.67900449279358],
+                    [-111.80664062499994, 63.67900449279358],
+                    [-111.80664062499994, 57.876420573187154],
+                    [-127.5, 57.876420573187154]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_21",
+            "title": "Democratic Republic of the Congo Fires, June 2015",
+            "titleShort": "Democratic Republic of the Congo Fires",
+            "description": "In June 2015, seasonal fires dotted central Africa.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-05-31T00:00:00Z",
+                "doy": 151
+            },
+            "closedDate": {
+                "date": "2015-06-13T00:00:00Z",
+                "doy": 164
+            }
+        },
+        "geometry": {
+            "date": "2015-05-31T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [22.109375, -14.640992214408566],
+                    [22.109375, -6.627503531424016],
+                    [31.0205078125, -6.627503531424016],
+                    [31.0205078125, -14.640992214408566],
+                    [22.109375, -14.640992214408566]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_6",
+            "title": "Guadalupe Fire",
+            "titleShort": "Guadalupe Fire",
+            "description": "http://inciweb.nwcg.gov/incident/4268/",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-02T00:00:00Z",
+                "doy": 153
+            },
+            "closedDate": {
+                "date": "2015-06-09T00:00:00Z",
+                "doy": 160
+            }
+        },
+        "geometry": {
+            "date": "2015-06-02T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-109.04777526855457, 31.451920113201094],
+                    [-109.04777526855457, 31.478153713159465],
+                    [-109.00169372558594, 31.478153713159465],
+                    [-109.00169372558594, 31.451920113201094],
+                    [-109.04777526855457, 31.451920113201094]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_12",
+            "title": "Fires in Shoalwater, Queensland, Australia",
+            "titleShort": "Fires in Shoalwater, Queensland, Australia",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-02T00:00:00Z",
+                "doy": 153
+            },
+            "closedDate": {
+                "date": "2015-06-08T00:00:00Z",
+                "doy": 159
+            }
+        },
+        "geometry": {
+            "date": "2015-06-02T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [149.827880859375, -22.771940354393376],
+                    [149.827880859375, -22.017231261741493],
+                    [151.00830078125, -22.017231261741493],
+                    [151.00830078125, -22.771940354393376],
+                    [149.827880859375, -22.771940354393376]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_11",
+            "title": "Fires in Northern Territory, Australia",
+            "titleShort": "Fires in Northern Territory, Australia",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-02T00:00:00Z",
+                "doy": 153
+            },
+            "closedDate": {
+                "date": "2015-06-08T00:00:00Z",
+                "doy": 159
+            }
+        },
+        "geometry": {
+            "date": "2015-06-02T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [128.96484375, -14.802302314748188],
+                    [128.96484375, -10.025997519517665],
+                    [137.36328125, -10.025997519517665],
+                    [137.36328125, -14.802302314748188],
+                    [128.96484375, -14.802302314748188]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_20",
+            "title": "Saddle Fire, California",
+            "titleShort": "Saddle Fire, California",
+            "description": "The lightning-caused Saddle Fire began on Tuesday, June 9, 2015.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-09T00:00:00Z",
+                "doy": 160
+            },
+            "closedDate": {
+                "date": "2015-06-24T00:00:00Z",
+                "doy": 175
+            }
+        },
+        "geometry": {
+            "date": "2015-06-09T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-123.5415267944336, 40.69045172249166],
+                    [-123.5415267944336, 40.700892154501524],
+                    [-123.5272598266601, 40.700892154501524],
+                    [-123.5272598266601, 40.69045172249166],
+                    [-123.5415267944336, 40.69045172249166]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_19",
+            "title": "Chisana River 2 Fire, Alaska",
+            "titleShort": "Chisana River 2 Fire, Alaska",
+            "description": "The Chisana River 2 wildfire, burning 25 miles West of Beaver Creek, Yukon, Canada started on the Wrangell-St. Elias National Park and Preserve by a lightning strike June 9.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-09T00:00:00Z",
+                "doy": 160
+            },
+            "closedDate": {
+                "date": "2015-07-09T00:00:00Z",
+                "doy": 190
+            }
+        },
+        "geometry": {
+            "date": "2015-06-09T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-141.76681518554693, 62.41187284042703],
+                    [-141.76681518554693, 62.506740218044314],
+                    [-141.541748046875, 62.506740218044314],
+                    [-141.541748046875, 62.41187284042703],
+                    [-141.76681518554693, 62.41187284042703]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_22",
+            "title": "Buckskin Fire, Oregon",
+            "titleShort": "Buckskin Fire, Oregon",
+            "description": "The Buckskin Fire began on June 11 and is burning in the Rogue River &ndash; Siskiyou National Forest, southwest of Cave Junction, OR, in an area previously burnt by the 2002 Biscuit Fire.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-11T00:00:00Z",
+                "doy": 162
+            },
+            "closedDate": {
+                "date": "2015-06-30T00:00:00Z",
+                "doy": 181
+            }
+        },
+        "geometry": {
+            "date": "2015-06-11T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-123.88931274414062, 42.03480920752599],
+                    [-123.88931274414062, 42.1147288373417],
+                    [-123.8043212890625, 42.1147288373417],
+                    [-123.8043212890625, 42.03480920752599],
+                    [-123.88931274414062, 42.03480920752599]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_23",
+            "title": "Sockeye Fire, Alaska",
+            "titleShort": "Sockeye Fire, Alaska",
+            "description": "The fast-moving Sockeye Fire has grown very quickly and is expected to continue to grow due to hot, dry weather.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-14T00:00:00Z",
+                "doy": 165
+            },
+            "closedDate": {
+                "date": "2015-06-28T00:00:00Z",
+                "doy": 179
+            }
+        },
+        "geometry": {
+            "date": "2015-06-14T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-150.16860961914062, 61.7359472951922],
+                    [-150.16860961914062, 61.84396915165064],
+                    [-150.030746459961, 61.84396915165064],
+                    [-150.030746459961, 61.7359472951922],
+                    [-150.16860961914062, 61.7359472951922]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_36",
+            "title": "Red Canyon Fire, New Mexico",
+            "titleShort": "Red Canyon Fire, New Mexico",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-15T00:00:00Z",
+                "doy": 166
+            },
+            "closedDate": {
+                "date": "2015-07-08T00:00:00Z",
+                "doy": 189
+            }
+        },
+        "geometry": {
+            "date": "2015-06-15T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-107.49908447265625, 33.72639430097322],
+                    [-107.49908447265625, 33.80562642253118],
+                    [-107.41958618164062, 33.80562642253118],
+                    [-107.41958618164062, 33.72639430097322],
+                    [-107.49908447265625, 33.72639430097322]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_27",
+            "title": "Card Street Fire, Alaska",
+            "titleShort": "Card Street Fire, Alaska",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-15T00:00:00Z",
+                "doy": 166
+            },
+            "closedDate": {
+                "date": "2015-07-10T00:00:00Z",
+                "doy": 191
+            }
+        },
+        "geometry": {
+            "date": "2015-06-15T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-150.69320678710943, 60.45437295475556],
+                    [-150.69320678710943, 60.50336620972415],
+                    [-150.54916381835938, 60.50336620972415],
+                    [-150.54916381835938, 60.45437295475556],
+                    [-150.69320678710943, 60.45437295475556]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_35",
+            "title": "Moore Fire, New Mexico",
+            "titleShort": "Moore Fire, New Mexico",
+            "description": "The lightning-caused Moore Fire was detected on June 16, 2015 and is located seven miles east of Gila Hot Springs in the Gila Wilderness, New Mexico.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-16T00:00:00Z",
+                "doy": 167
+            },
+            "closedDate": {
+                "date": "2015-06-28T00:00:00Z",
+                "doy": 179
+            }
+        },
+        "geometry": {
+            "date": "2015-06-16T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-108.1719970703125, 33.12926994570563],
+                    [-108.1719970703125, 33.269925502915946],
+                    [-108.01422119140625, 33.269925502915946],
+                    [-108.01422119140625, 33.12926994570563],
+                    [-108.1719970703125, 33.12926994570563]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_39",
+            "title": "Fires in Eastern Russia, Summer 2015",
+            "titleShort": "Fires in Eastern Russia",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-16T00:00:00Z",
+                "doy": 167
+            },
+            "closedDate": {
+                "date": "2015-09-07T00:00:00Z",
+                "doy": 250
+            }
+        },
+        "geometry": {
+            "date": "2015-06-16T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [93.212890625, 49.586498691055894],
+                    [93.212890625, 63.15137895965993],
+                    [139.2138671875, 63.15137895965993],
+                    [139.2138671875, 49.586498691055894],
+                    [93.212890625, 49.586498691055894]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_28",
+            "title": "Healy Lake and Michigan Creek Fires, Alaska",
+            "titleShort": "Healy Lake and Michigan Creek Fires, Alaska",
+            "description": "The Healy Lake Fire was started by lightning on June 16, 2015. The Michigan Creek Fire started on June 17, approximately 9-10 miles northeast of Healy Lake. Dry fuels and strong winds caused the fires to rapidly grow in size.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-16T00:00:00Z",
+                "doy": 167
+            },
+            "closedDate": {
+                "date": "2015-08-01T00:00:00Z",
+                "doy": 213
+            }
+        },
+        "geometry": {
+            "date": "2015-06-16T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-144.9267578125, 63.887127257205535],
+                    [-144.9267578125, 64.17600515376682],
+                    [-144.43939208984375, 64.17600515376682],
+                    [-144.43939208984375, 63.887127257205535],
+                    [-144.9267578125, 63.887127257205535]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_25",
+            "title": "Lake Fire, California",
+            "titleShort": "Lake Fire, California",
+            "description": "The Lake Fire was reported just before 4:00 pm on June 17, 2015.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-17T00:00:00Z",
+                "doy": 168
+            },
+            "closedDate": {
+                "date": "2015-07-09T00:00:00Z",
+                "doy": 190
+            }
+        },
+        "geometry": {
+            "date": "2015-06-17T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-116.89505577087402, 34.159529979074634],
+                    [-116.89505577087402, 34.164816469429816],
+                    [-116.88851356506348, 34.164816469429816],
+                    [-116.88851356506348, 34.159529979074634],
+                    [-116.89505577087402, 34.159529979074634]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_24",
+            "title": "Kearney River Fire, Arizona",
+            "titleShort": "Kearney River Fire, Arizona",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-17T00:00:00Z",
+                "doy": 168
+            },
+            "closedDate": {
+                "date": "2015-06-27T00:00:00Z",
+                "doy": 178
+            }
+        },
+        "geometry": {
+            "date": "2015-06-17T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-110.92613220214844, 33.04182278536318],
+                    [-110.92613220214844, 33.06012742481834],
+                    [-110.90499877929688, 33.06012742481834],
+                    [-110.90499877929688, 33.04182278536318],
+                    [-110.92613220214844, 33.04182278536318]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_53",
+            "title": "Hay Slough Fire, Alaska",
+            "titleShort": "Hay Slough Fire, Alaska",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-19T00:00:00Z",
+                "doy": 170
+            },
+            "closedDate": {
+                "date": "2015-07-28T00:00:00Z",
+                "doy": 209
+            }
+        },
+        "geometry": {
+            "date": "2015-06-19T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-151.78222656250006, 65.05638113512845],
+                    [-151.78222656250006, 65.19870413318122],
+                    [-151.44042968750023, 65.19870413318122],
+                    [-151.44042968750023, 65.05638113512845],
+                    [-151.78222656250006, 65.05638113512845]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_54",
+            "title": "Tanana Area Fires, Alaska",
+            "titleShort": "Tanana Area Fires, Alaska",
+            "description": "The Tanana Area Fires include Spicer Creek, Bering Creek, Harper Bend, Moose Point, and Kokrine fires, all of natural causes.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-19T00:00:00Z",
+                "doy": 170
+            },
+            "closedDate": {
+                "date": "2015-08-12T00:00:00Z",
+                "doy": 224
+            }
+        },
+        "geometry": {
+            "date": "2015-06-19T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-152.5100708007813, 64.87390554866823],
+                    [-152.5100708007813, 65.35492897244566],
+                    [-151.75628662109352, 65.35492897244566],
+                    [-151.75628662109352, 64.87390554866823],
+                    [-152.5100708007813, 64.87390554866823]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_29",
+            "title": "Washington Fire, California",
+            "titleShort": "Washington Fire, California",
+            "description": "The lightning caused Washington Fire started 45 miles south of Carson City Nevada on June 19. The extreme fire activity being witnessed is primarily due to strong erratic winds and severe drought conditions.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-19T00:00:00Z",
+                "doy": 170
+            },
+            "closedDate": {
+                "date": "2015-07-07T00:00:00Z",
+                "doy": 188
+            }
+        },
+        "geometry": {
+            "date": "2015-06-19T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-119.77218627929688, 38.57801604576036],
+                    [-119.77218627929688, 38.60420911755454],
+                    [-119.72221374511713, 38.60420911755454],
+                    [-119.72221374511713, 38.57801604576036],
+                    [-119.77218627929688, 38.57801604576036]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_50",
+            "title": "Tok Area Fires, Alaska",
+            "titleShort": "Tok Area Fires, Alaska",
+            "description": "The Tetlin HIlls, Long Lake, and Moose Creek fires were started by lightning strikes south of Tok, Alaska on June 20.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-20T00:00:00Z",
+                "doy": 171
+            },
+            "closedDate": {
+                "date": "2015-08-19T00:00:00Z",
+                "doy": 231
+            }
+        },
+        "geometry": {
+            "date": "2015-06-20T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-142.861328125, 62.8731840092702],
+                    [-142.861328125, 63.35163722801563],
+                    [-141.6653442382813, 63.35163722801563],
+                    [-141.6653442382813, 62.8731840092702],
+                    [-142.861328125, 62.8731840092702]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_37",
+            "title": "Blair Fire, Alaska",
+            "titleShort": "Blair Fire, Alaska",
+            "description": "The Blair fire started on June 20 by lightning. The fire started on State Forestry land, then moved on to military land.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-20T00:00:00Z",
+                "doy": 171
+            },
+            "closedDate": {
+                "date": "2015-07-18T00:00:00Z",
+                "doy": 199
+            }
+        },
+        "geometry": {
+            "date": "2015-06-20T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-147.288818359375, 64.2092447191892],
+                    [-147.288818359375, 64.34537901868568],
+                    [-146.93878173828102, 64.34537901868568],
+                    [-146.93878173828102, 64.2092447191892],
+                    [-147.288818359375, 64.2092447191892]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_34",
+            "title": "Anaconda Creek Fire, Alaska",
+            "titleShort": "Anaconda Creek Fire, Alaska",
+            "description": "The Anaconda Creek Fire was started by lightning on June 20.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-20T00:00:00Z",
+                "doy": 171
+            },
+            "closedDate": {
+                "date": "2015-07-08T00:00:00Z",
+                "doy": 189
+            }
+        },
+        "geometry": {
+            "date": "2015-06-20T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-146.8218994140625, 64.96675166940913],
+                    [-146.8218994140625, 65.01836291789466],
+                    [-146.70326232910156, 65.01836291789466],
+                    [-146.70326232910156, 64.96675166940913],
+                    [-146.8218994140625, 64.96675166940913]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_33",
+            "title": "Tozitna Fire, Alaska",
+            "titleShort": "Tozitna Fire, Alaska",
+            "description": "The Tozitna fire was detected in the early morning hours of Monday, June 20th, approximately fourteen miles northwest of Tanana, Alaska. By Tuesday morning, June 21st, conservative estimates were that the fire had grown to 25,000 acres.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-20T00:00:00Z",
+                "doy": 171
+            },
+            "closedDate": {
+                "date": "2015-07-13T00:00:00Z",
+                "doy": 194
+            }
+        },
+        "geometry": {
+            "date": "2015-06-20T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-152.5787353515625, 65.01928956761577],
+                    [-152.5787353515625, 65.4669303327839],
+                    [-151.28662109374977, 65.4669303327839],
+                    [-151.28662109374977, 65.01928956761577],
+                    [-152.5787353515625, 65.01928956761577]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_31",
+            "title": "Rex Complex Fires, Alaska",
+            "titleShort": "Rex Complex Fires, Alaska",
+            "description": "This complex of fires includes both the Kobi Fire which is west of the Parks Highway, and the Fish Creek Fire which is on the east side. The fire is creating it&#039;s own weather with thunderstorm cells in the area.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-20T00:00:00Z",
+                "doy": 171
+            },
+            "closedDate": {
+                "date": "2015-07-28T00:00:00Z",
+                "doy": 209
+            }
+        },
+        "geometry": {
+            "date": "2015-06-20T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-149.4091796875, 64.14224385522003],
+                    [-149.4091796875, 64.32634652465822],
+                    [-148.99047851562483, 64.32634652465822],
+                    [-148.99047851562483, 64.14224385522003],
+                    [-149.4091796875, 64.14224385522003]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_96",
+            "title": "Tetlin Hills Fire, Alaska",
+            "titleShort": "Tetlin Hills Fire, Alaska",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-20T18:00:00Z",
+                "doy": 171
+            },
+            "closedDate": {
+                "date": "2015-08-19T00:00:00Z",
+                "doy": 231
+            }
+        },
+        "geometry": {
+            "date": "2015-06-20T18:00:00Z",
+            "type": "Point",
+            "coordinates": [-142.95888888889, 63.186388888889]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_32",
+            "title": "Aggie Creek Fire, Alaska",
+            "titleShort": "Aggie Creek Fire, Alaska",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-22T00:00:00Z",
+                "doy": 173
+            },
+            "closedDate": {
+                "date": "2015-08-19T00:00:00Z",
+                "doy": 231
+            }
+        },
+        "geometry": {
+            "date": "2015-06-22T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-148.3135986328125, 65.1930283848678],
+                    [-148.3135986328125, 65.25311105873865],
+                    [-148.050537109375, 65.25311105873865],
+                    [-148.050537109375, 65.1930283848678],
+                    [-148.3135986328125, 65.1930283848678]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_44",
+            "title": "Hansen Fire, Florida",
+            "titleShort": "Hansen Fire, Florida",
+            "description": "The Hansen wildfire was ignited naturally by lightning in Big Cypress National Preserve on June 26, 2015.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-26T00:00:00Z",
+                "doy": 177
+            },
+            "closedDate": {
+                "date": "2015-07-09T00:00:00Z",
+                "doy": 190
+            }
+        },
+        "geometry": {
+            "date": "2015-06-26T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-81.0000610351562, 25.987426581073052],
+                    [-81.0000610351562, 26.08540281072048],
+                    [-80.90682983398438, 26.08540281072048],
+                    [-80.90682983398438, 25.987426581073052],
+                    [-81.0000610351562, 25.987426581073052]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_40",
+            "title": "Wildfires in Alberta and Saskatchewan",
+            "titleShort": "Wildfires in Alberta and Saskatchewan",
+            "description": "Dozens of uncontrolled fires are burning in northern Alberta and Saskatchewan.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-27T00:00:00Z",
+                "doy": 178
+            },
+            "closedDate": {
+                "date": "2015-07-11T00:00:00Z",
+                "doy": 192
+            }
+        },
+        "geometry": {
+            "date": "2015-06-27T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-115.17578125, 55.97748575251253],
+                    [-115.17578125, 59.797319128481185],
+                    [-105.47363281250006, 59.797319128481185],
+                    [-105.47363281250006, 55.97748575251253],
+                    [-115.17578125, 55.97748575251253]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_41",
+            "title": "Sleepy Hollow Fire, Washington",
+            "titleShort": "Sleepy Hollow Fire, Washington",
+            "description": "The Sleepy Hollow Fire, located near Wenatchee, Washington, started in the early afternoon of June 28 and spread quickly in the 100+ degree temperatures and windy conditions.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-28T00:00:00Z",
+                "doy": 179
+            },
+            "closedDate": {
+                "date": "2015-07-06T00:00:00Z",
+                "doy": 187
+            }
+        },
+        "geometry": {
+            "date": "2015-06-28T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-120.43685913085949, 47.467370451243696],
+                    [-120.43685913085949, 47.4969788228537],
+                    [-120.3803634643557, 47.4969788228537],
+                    [-120.3803634643557, 47.467370451243696],
+                    [-120.43685913085949, 47.467370451243696]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_43",
+            "title": "Corner Creek Fire, Oregon",
+            "titleShort": "Corner Creek Fire, Oregon",
+            "description": "The Corner Creek Fire was ignited by lightning on June 29.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-29T00:00:00Z",
+                "doy": 180
+            },
+            "closedDate": {
+                "date": "2015-07-20T00:00:00Z",
+                "doy": 201
+            }
+        },
+        "geometry": {
+            "date": "2015-06-29T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-119.61425781250006, 44.30301522513692],
+                    [-119.61425781250006, 44.34074496763789],
+                    [-119.56634521484398, 44.34074496763789],
+                    [-119.56634521484398, 44.30301522513692],
+                    [-119.61425781250006, 44.30301522513692]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_75",
+            "title": "Wolverine Fire, Washington",
+            "titleShort": "Wolverine Fire, Washington",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-06-29T07:30:00Z",
+                "doy": 180
+            },
+            "closedDate": {
+                "date": "2015-09-20T00:00:00Z",
+                "doy": 263
+            }
+        },
+        "geometry": {
+            "date": "2015-06-29T07:30:00Z",
+            "type": "Point",
+            "coordinates": [-120.66388888889, 48.226111111111]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_91",
+            "title": "Springs Fire, Arizona",
+            "titleShort": "s Fire, Arizona",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-02T00:00:00Z",
+                "doy": 183
+            },
+            "closedDate": {
+                "date": "2015-08-21T00:00:00Z",
+                "doy": 233
+            }
+        },
+        "geometry": {
+            "date": "2015-07-02T00:00:00Z",
+            "type": "Point",
+            "coordinates": [-112.15361111111, 35.110555555556]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_49",
+            "title": "Alex Camp Road Fire, Montana",
+            "titleShort": "Alex Camp Road Fire, Montana",
+            "description": "The lightning-caused Alex Camp Road Fire was first reported July 2.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-02T00:00:00Z",
+                "doy": 183
+            },
+            "closedDate": {
+                "date": "2015-07-10T00:00:00Z",
+                "doy": 191
+            }
+        },
+        "geometry": {
+            "date": "2015-07-02T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-108.11431884765625, 47.44229879706998],
+                    [-108.11431884765625, 47.46820804882292],
+                    [-108.06503295898443, 47.46820804882292],
+                    [-108.06503295898443, 47.44229879706998],
+                    [-108.11431884765625, 47.44229879706998]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_46",
+            "title": "Twenty-One Mile Grade Fire, Washington",
+            "titleShort": "Twenty-One Mile Grade Fire, Washington",
+            "description": "The human-caused Twenty-One Mile Grade Fire began on the afternoon of July 2.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-02T00:00:00Z",
+                "doy": 183
+            },
+            "closedDate": {
+                "date": "2015-07-09T00:00:00Z",
+                "doy": 190
+            }
+        },
+        "geometry": {
+            "date": "2015-07-02T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-118.75457763671875, 48.39027467063767],
+                    [-118.75457763671875, 48.43485095356679],
+                    [-118.70941162109398, 48.43485095356679],
+                    [-118.70941162109398, 48.39027467063767],
+                    [-118.75457763671875, 48.39027467063767]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_45",
+            "title": "Newby Lake Fire, Washington",
+            "titleShort": "Newby Lake Fire, Washington",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-02T00:00:00Z",
+                "doy": 183
+            },
+            "closedDate": {
+                "date": "2015-07-23T00:00:00Z",
+                "doy": 204
+            }
+        },
+        "geometry": {
+            "date": "2015-07-02T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-119.94247436523438, 48.989498683553904],
+                    [-119.94247436523438, 49.00652952602081],
+                    [-119.91035461425793, 49.00652952602081],
+                    [-119.91035461425793, 48.989498683553904],
+                    [-119.94247436523438, 48.989498683553904]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_47",
+            "title": "231 Complex Fire, Washington",
+            "titleShort": "231 Complex Fire, Washington",
+            "description": "The 231 Complex includes the 231 Fire and the Little Spokane Fire. The 231 Fire started on July 3 and the Little Spokane Fire started on July 6. The cause of both fires are under investigation. ",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-03T00:00:00Z",
+                "doy": 184
+            },
+            "closedDate": {
+                "date": "2015-07-12T00:00:00Z",
+                "doy": 193
+            }
+        },
+        "geometry": {
+            "date": "2015-07-03T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-117.80426025390625, 47.872879879774864],
+                    [-117.80426025390625, 47.992863703760534],
+                    [-117.6519775390625, 47.992863703760534],
+                    [-117.6519775390625, 47.872879879774864],
+                    [-117.80426025390625, 47.872879879774864]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_141",
+            "title": "Burnt Complex, Arizona",
+            "titleShort": "Burnt Complex, Arizona",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-05T00:00:00Z",
+                "doy": 186
+            },
+            "closedDate": {
+                "date": "2015-08-19T00:00:00Z",
+                "doy": 231
+            }
+        },
+        "geometry": {
+            "date": "2015-07-05T00:00:00Z",
+            "type": "Point",
+            "coordinates": [-112.35138888889, 36.496666666667]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_48",
+            "title": "Cape Horn Fire, Idaho",
+            "titleShort": "Cape Horn Fire, Idaho",
+            "description": "The Cape Horn Fire was first reported on July 5. The cause is not known at this time.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-05T00:00:00Z",
+                "doy": 186
+            },
+            "closedDate": {
+                "date": "2015-07-29T00:00:00Z",
+                "doy": 210
+            }
+        },
+        "geometry": {
+            "date": "2015-07-05T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-116.53396606445312, 47.98697946333924],
+                    [-116.53396606445312, 48.02088675453045],
+                    [-116.496353149414, 48.02088675453045],
+                    [-116.496353149414, 47.98697946333924],
+                    [-116.53396606445312, 47.98697946333924]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_58",
+            "title": "Last Dance Fire, Florida",
+            "titleShort": "Last Dance Fire, Florida",
+            "description": "A lightning strike on July 9, 2015 started a wildfire in the northern section of Loxahatchee National Wildlife Refuge.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-09T00:00:00Z",
+                "doy": 190
+            },
+            "closedDate": {
+                "date": "2015-07-23T00:00:00Z",
+                "doy": 204
+            }
+        },
+        "geometry": {
+            "date": "2015-07-09T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-80.45516967773443, 26.528765898358106],
+                    [-80.45516967773443, 26.55075235867705],
+                    [-80.43174743652344, 26.55075235867705],
+                    [-80.43174743652344, 26.528765898358106],
+                    [-80.45516967773443, 26.528765898358106]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_65",
+            "title": "Fires on Melville Island, Australia",
+            "titleShort": "Fires on Melville Island, Australia",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-11T00:00:00Z",
+                "doy": 192
+            },
+            "closedDate": {
+                "date": "2015-08-21T00:00:00Z",
+                "doy": 233
+            }
+        },
+        "geometry": {
+            "date": "2015-07-11T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [129.99755859375, -12.013331359191433],
+                    [129.99755859375, -11.159883137235186],
+                    [131.5625, -11.159883137235186],
+                    [131.5625, -12.013331359191433],
+                    [129.99755859375, -12.013331359191433]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_60",
+            "title": "Bales Creek Fire, Montana",
+            "titleShort": "Bales Creek Fire, Montana",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-11T00:00:00Z",
+                "doy": 192
+            },
+            "closedDate": {
+                "date": "2015-07-18T00:00:00Z",
+                "doy": 199
+            }
+        },
+        "geometry": {
+            "date": "2015-07-11T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-106.1480712890625, 44.975824664219026],
+                    [-106.1480712890625, 45.050963337801306],
+                    [-106.00860595703125, 45.050963337801306],
+                    [-106.00860595703125, 44.975824664219026],
+                    [-106.1480712890625, 44.975824664219026]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_95",
+            "title": "High Meadow Fire, Arizona",
+            "titleShort": "High Meadow Fire, Arizona",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-14T19:45:00Z",
+                "doy": 195
+            },
+            "closedDate": {
+                "date": "2015-08-26T00:00:00Z",
+                "doy": 238
+            }
+        },
+        "geometry": {
+            "date": "2015-07-14T19:45:00Z",
+            "type": "Point",
+            "coordinates": [-113.18666666667, 36.376388888889]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_80",
+            "title": "Bald Knob, North Carolina",
+            "titleShort": "Bald Knob, North Carolina",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-17T06:15:00Z",
+                "doy": 198
+            },
+            "closedDate": {
+                "date": "2015-08-17T00:00:00Z",
+                "doy": 229
+            }
+        },
+        "geometry": {
+            "date": "2015-07-17T06:15:00Z",
+            "type": "Point",
+            "coordinates": [-81.990277777778, 35.786388888889]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_248",
+            "title": "North Fire, California",
+            "titleShort": "North Fire, California",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-17T14:33:00Z",
+                "doy": 198
+            },
+            "closedDate": {
+                "date": "2015-07-27T00:00:00Z",
+                "doy": 208
+            }
+        },
+        "geometry": {
+            "date": "2015-07-17T14:33:00Z",
+            "type": "Point",
+            "coordinates": [-117.47777777778, 34.339444444444]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_81",
+            "title": "Cabin Fire, California",
+            "titleShort": "Cabin Fire, California",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-19T08:00:00Z",
+                "doy": 200
+            },
+            "closedDate": {
+                "date": "2015-09-14T00:00:00Z",
+                "doy": 257
+            }
+        },
+        "geometry": {
+            "date": "2015-07-19T08:00:00Z",
+            "type": "Point",
+            "coordinates": [-118.54722222222, 36.245555555556]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_93",
+            "title": "Solitude, Utah",
+            "titleShort": "Solitude, Utah",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-19T15:15:00Z",
+                "doy": 200
+            },
+            "closedDate": {
+                "date": "2015-09-14T00:00:00Z",
+                "doy": 257
+            }
+        },
+        "geometry": {
+            "date": "2015-07-19T15:15:00Z",
+            "type": "Point",
+            "coordinates": [-112.16333333333, 38.886388888889]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_61",
+            "title": "Blue Creek Fire, Washington",
+            "titleShort": "Blue Creek Fire, Washington",
+            "description": "The Blue Creek Fire started on Monday, July 20 at approximately 12:30 p.m. local time. The cause is currently under investigation.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-20T00:00:00Z",
+                "doy": 201
+            },
+            "closedDate": {
+                "date": "2015-08-04T00:00:00Z",
+                "doy": 216
+            }
+        },
+        "geometry": {
+            "date": "2015-07-20T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-118.12179565429688, 46.06439304719508],
+                    [-118.12179565429688, 46.070487027834055],
+                    [-118.11296463012695, 46.070487027834055],
+                    [-118.11296463012695, 46.06439304719508],
+                    [-118.12179565429688, 46.06439304719508]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_62",
+            "title": "Reynolds Creek Fire, Montana",
+            "titleShort": "Reynolds Creek Fire, Montana",
+            "description": "The Reynolds Creek fire was reported in the afternoon of July 21 and has prompted evacuations within Glacier National Park.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-21T00:00:00Z",
+                "doy": 202
+            },
+            "closedDate": {
+                "date": "2015-09-10T00:00:00Z",
+                "doy": 253
+            }
+        },
+        "geometry": {
+            "date": "2015-07-21T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-113.62701416015625, 48.63231814509437],
+                    [-113.62701416015625, 48.73694185176192],
+                    [-113.4271240234375, 48.73694185176192],
+                    [-113.4271240234375, 48.63231814509437],
+                    [-113.62701416015625, 48.63231814509437]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_67",
+            "title": "Lowell Fire, California",
+            "titleShort": "Lowell Fire, California",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-25T00:00:00Z",
+                "doy": 206
+            },
+            "closedDate": {
+                "date": "2015-08-13T00:00:00Z",
+                "doy": 225
+            }
+        },
+        "geometry": {
+            "date": "2015-07-25T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-120.89550018310547, 39.17582530101178],
+                    [-120.89550018310547, 39.19474141557626],
+                    [-120.85525512695312, 39.19474141557626],
+                    [-120.85525512695312, 39.17582530101178],
+                    [-120.89550018310547, 39.17582530101178]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_66",
+            "title": "Willow Fire, California",
+            "titleShort": "Willow Fire, California",
+            "description": "The Willow Fire started on July 25 and is in steep and rugged terrain within the Sierra National Forest.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-25T00:00:00Z",
+                "doy": 206
+            },
+            "closedDate": {
+                "date": "2015-08-31T00:00:00Z",
+                "doy": 243
+            }
+        },
+        "geometry": {
+            "date": "2015-07-25T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-119.50847625732422, 37.276620217497666],
+                    [-119.50847625732422, 37.2920765764388],
+                    [-119.49054718017578, 37.2920765764388],
+                    [-119.49054718017578, 37.276620217497666],
+                    [-119.50847625732422, 37.276620217497666]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_100",
+            "title": "Cable Crossing Fire, Oregon",
+            "titleShort": "Cable Crossing Fire, Oregon",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-28T15:30:00Z",
+                "doy": 209
+            },
+            "closedDate": {
+                "date": "2015-08-16T00:00:00Z",
+                "doy": 228
+            }
+        },
+        "geometry": {
+            "date": "2015-07-28T15:30:00Z",
+            "type": "Point",
+            "coordinates": [-122.95972222222, 43.320833333333]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_72",
+            "title": "Rocky Fire, California",
+            "titleShort": "Rocky Fire, California",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-29T00:00:00Z",
+                "doy": 210
+            },
+            "closedDate": {
+                "date": "2015-08-14T00:00:00Z",
+                "doy": 226
+            }
+        },
+        "geometry": {
+            "date": "2015-07-29T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-122.56507873535156, 38.8529161032964],
+                    [-122.56507873535156, 39.011442776687325],
+                    [-122.33428955078125, 39.011442776687325],
+                    [-122.33428955078125, 38.8529161032964],
+                    [-122.56507873535156, 38.8529161032964]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_107",
+            "title": "Parker Ridge, Idaho",
+            "titleShort": "Parker Ridge, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-29T15:00:00Z",
+                "doy": 210
+            },
+            "closedDate": {
+                "date": "2015-09-03T00:00:00Z",
+                "doy": 246
+            }
+        },
+        "geometry": {
+            "date": "2015-07-29T15:00:00Z",
+            "type": "Point",
+            "coordinates": [-116.53388888889, 48.906944444444]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_68",
+            "title": "Stouts Fire, Oregon",
+            "titleShort": "Stouts Fire, Oregon",
+            "description": "The Stouts Fire was reported on Thursday, July 30, 2015 on forestlands protected by the Douglas Forest Protective Association (DFPA). The Stouts Fire has displayed extreme fire conditions and is growing quickly.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-30T00:00:00Z",
+                "doy": 211
+            },
+            "closedDate": {
+                "date": "2015-09-18T00:00:00Z",
+                "doy": 261
+            }
+        },
+        "geometry": {
+            "date": "2015-07-30T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-123.05431365966797, 42.917815021151334],
+                    [-123.05431365966797, 42.92701233538411],
+                    [-123.04393768310547, 42.92701233538411],
+                    [-123.04393768310547, 42.917815021151334],
+                    [-123.05431365966797, 42.917815021151334]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_86",
+            "title": "South Complex, California",
+            "titleShort": "South Complex, California",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-30T16:00:00Z",
+                "doy": 211
+            },
+            "closedDate": {
+                "date": "2015-09-29T00:00:00Z",
+                "doy": 272
+            }
+        },
+        "geometry": {
+            "date": "2015-07-30T16:00:00Z",
+            "type": "Point",
+            "coordinates": [-123.44777777778, 40.619722222222]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_76",
+            "title": "Mad River Complex, California",
+            "titleShort": "Mad River Complex, California",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-30T16:00:00Z",
+                "doy": 211
+            },
+            "closedDate": {
+                "date": "2015-09-11T00:00:00Z",
+                "doy": 254
+            }
+        },
+        "geometry": {
+            "date": "2015-07-30T16:00:00Z",
+            "type": "Point",
+            "coordinates": [-123.38333333333, 40.335]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_83",
+            "title": "Frog Fire, California",
+            "titleShort": "Frog Fire, California",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-30T17:45:00Z",
+                "doy": 211
+            },
+            "closedDate": {
+                "date": "2015-09-01T00:00:00Z",
+                "doy": 244
+            }
+        },
+        "geometry": {
+            "date": "2015-07-30T17:45:00Z",
+            "type": "Point",
+            "coordinates": [-121.39222222222, 41.398888888889]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_77",
+            "title": "Route Complex, California",
+            "titleShort": "Route Complex, California",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-30T18:00:00Z",
+                "doy": 211
+            },
+            "closedDate": {
+                "date": "2015-09-15T00:00:00Z",
+                "doy": 258
+            }
+        },
+        "geometry": {
+            "date": "2015-07-30T18:00:00Z",
+            "type": "Point",
+            "coordinates": [-123.58611111111, 40.641666666667]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_85",
+            "title": "Fork Complex, California",
+            "titleShort": "Fork Complex, California",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-30T22:30:00Z",
+                "doy": 211
+            },
+            "closedDate": {
+                "date": "2015-09-09T00:00:00Z",
+                "doy": 252
+            }
+        },
+        "geometry": {
+            "date": "2015-07-30T22:30:00Z",
+            "type": "Point",
+            "coordinates": [-123.12777777778, 40.4525]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_79",
+            "title": "River Complex, California",
+            "titleShort": "River Complex, California",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-30T22:30:00Z",
+                "doy": 211
+            },
+            "closedDate": {
+                "date": "2015-09-26T00:00:00Z",
+                "doy": 269
+            }
+        },
+        "geometry": {
+            "date": "2015-07-30T22:30:00Z",
+            "type": "Point",
+            "coordinates": [-123.43666666667, 40.912777777778]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_98",
+            "title": "General Fire, Arizona",
+            "titleShort": "General Fire, Arizona",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-31T11:54:00Z",
+                "doy": 212
+            },
+            "closedDate": {
+                "date": "2015-08-31T00:00:00Z",
+                "doy": 243
+            }
+        },
+        "geometry": {
+            "date": "2015-07-31T11:54:00Z",
+            "type": "Point",
+            "coordinates": [-111.20611111111, 34.526388888889]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_82",
+            "title": "Rough Fire, California",
+            "titleShort": "Rough Fire, California",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-31T19:00:00Z",
+                "doy": 212
+            },
+            "closedDate": {
+                "date": "2015-11-05T00:00:00Z",
+                "doy": 309
+            }
+        },
+        "geometry": {
+            "date": "2015-07-31T19:00:00Z",
+            "type": "Point",
+            "coordinates": [-118.90472222222, 36.873611111111]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_90",
+            "title": "Gasquet Complex, California",
+            "titleShort": "Gasquet Complex, California",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-07-31T21:00:00Z",
+                "doy": 212
+            },
+            "closedDate": {
+                "date": "2015-09-27T00:00:00Z",
+                "doy": 270
+            }
+        },
+        "geometry": {
+            "date": "2015-07-31T21:00:00Z",
+            "type": "Point",
+            "coordinates": [-123.96944444444, 41.846111111111]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_92",
+            "title": "Nickowitz, California",
+            "titleShort": "Nickowitz, California",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-01T11:30:00Z",
+                "doy": 213
+            },
+            "closedDate": {
+                "date": "2015-09-28T00:00:00Z",
+                "doy": 271
+            }
+        },
+        "geometry": {
+            "date": "2015-08-01T11:30:00Z",
+            "type": "Point",
+            "coordinates": [-123.75194444444, 41.468611111111]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_97",
+            "title": "National Creek Complex, Oregon",
+            "titleShort": "National Creek Complex, Oregon",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-01T14:15:00Z",
+                "doy": 213
+            },
+            "closedDate": {
+                "date": "2015-09-22T00:00:00Z",
+                "doy": 265
+            }
+        },
+        "geometry": {
+            "date": "2015-08-01T14:15:00Z",
+            "type": "Point",
+            "coordinates": [-122.27833333333, 43.038333333333]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_84",
+            "title": "Phillips Creek Fire, Oregon",
+            "titleShort": "Phillips Creek Fire, Oregon",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-01T15:15:00Z",
+                "doy": 213
+            },
+            "closedDate": {
+                "date": "2015-08-15T00:00:00Z",
+                "doy": 227
+            }
+        },
+        "geometry": {
+            "date": "2015-08-01T15:15:00Z",
+            "type": "Point",
+            "coordinates": [-118.06111111111, 45.608055555556]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_78",
+            "title": "Collier Butte Fire, Oregon",
+            "titleShort": "Collier Butte Fire, Oregon",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-02T15:00:00Z",
+                "doy": 214
+            },
+            "closedDate": {
+                "date": "2015-09-04T00:00:00Z",
+                "doy": 247
+            }
+        },
+        "geometry": {
+            "date": "2015-08-02T15:00:00Z",
+            "type": "Point",
+            "coordinates": [-124.10722222222, 42.362222222222]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_88",
+            "title": "Dodge Fire, California",
+            "titleShort": "Dodge Fire, California",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-03T14:15:00Z",
+                "doy": 215
+            },
+            "closedDate": {
+                "date": "2015-08-19T00:00:00Z",
+                "doy": 231
+            }
+        },
+        "geometry": {
+            "date": "2015-08-03T14:15:00Z",
+            "type": "Point",
+            "coordinates": [-120.10472222222, 40.937777777778]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_94",
+            "title": "Highway 8 Fire, Washington",
+            "titleShort": "Highway 8 Fire, Washington",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-04T15:00:00Z",
+                "doy": 216
+            },
+            "closedDate": {
+                "date": "2015-08-10T00:00:00Z",
+                "doy": 222
+            }
+        },
+        "geometry": {
+            "date": "2015-08-04T15:00:00Z",
+            "type": "Point",
+            "coordinates": [-120.31527777778, 45.717222222222]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_89",
+            "title": "Az-Cra-Willow Fire, Arizona",
+            "titleShort": "Az-Cra-Willow Fire, Arizona",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-08T10:00:00Z",
+                "doy": 220
+            },
+            "closedDate": {
+                "date": "2015-08-17T00:00:00Z",
+                "doy": 229
+            }
+        },
+        "geometry": {
+            "date": "2015-08-08T10:00:00Z",
+            "type": "Point",
+            "coordinates": [-114.54194444444, 34.81]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_74",
+            "title": "Thompson Fire, Montana",
+            "titleShort": "Thompson Fire, Montana",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-09T13:30:00Z",
+                "doy": 221
+            },
+            "closedDate": {
+                "date": "2015-09-10T00:00:00Z",
+                "doy": 253
+            }
+        },
+        "geometry": {
+            "date": "2015-08-09T13:30:00Z",
+            "type": "Point",
+            "coordinates": [-113.6125, 48.550833333333]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_153",
+            "title": "Upper Skagit Complex Fire, Washington",
+            "titleShort": "Upper Skagit Complex Fire, Washington",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-10T00:00:00Z",
+                "doy": 222
+            },
+            "closedDate": {
+                "date": "2015-08-31T00:00:00Z",
+                "doy": 243
+            }
+        },
+        "geometry": {
+            "date": "2015-08-10T00:00:00Z",
+            "type": "Point",
+            "coordinates": [-121.25555555556, 48.685]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_148",
+            "title": "Grizzly Complex Fire, Idaho",
+            "titleShort": "Grizzly Complex Fire, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-10T00:00:00Z",
+                "doy": 222
+            },
+            "closedDate": {
+                "date": "2015-10-14T00:00:00Z",
+                "doy": 287
+            }
+        },
+        "geometry": {
+            "date": "2015-08-10T00:00:00Z",
+            "type": "Point",
+            "coordinates": [-116.13083333333, 47.733611111111]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_126",
+            "title": "Sucker Creek Fire, Montana",
+            "titleShort": "Sucker Creek Fire, Montana",
+            "description": "The lightning-caused Sucker Creek Fire is in very rugged, steep terrain and burning in a stand of tree snags. ",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-10T00:00:00Z",
+                "doy": 222
+            },
+            "closedDate": {
+                "date": "2015-09-14T00:00:00Z",
+                "doy": 257
+            }
+        },
+        "geometry": {
+            "date": "2015-08-10T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-112.65403747558594, 47.009850567858514],
+                    [-112.65403747558594, 47.03783797548075],
+                    [-112.59010314941406, 47.03783797548075],
+                    [-112.59010314941406, 47.009850567858514],
+                    [-112.65403747558594, 47.009850567858514]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_73",
+            "title": "Soda Fire, Idaho",
+            "titleShort": "Soda Fire, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-10T11:00:00Z",
+                "doy": 222
+            },
+            "closedDate": {
+                "date": "2015-09-10T00:00:00Z",
+                "doy": 253
+            }
+        },
+        "geometry": {
+            "date": "2015-08-10T11:00:00Z",
+            "type": "Point",
+            "coordinates": [-116.95722222222, 43.1225]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_171",
+            "title": "Clearwater-Municipal-Motorway North Fire, Idaho",
+            "titleShort": "Clearwater-Municipal-Motorway North Fire, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-10T13:15:00Z",
+                "doy": 222
+            },
+            "closedDate": {
+                "date": "2015-09-22T00:00:00Z",
+                "doy": 265
+            }
+        },
+        "geometry": {
+            "date": "2015-08-10T13:15:00Z",
+            "type": "Point",
+            "coordinates": [-116.13333333333, 46.222777777778]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_99",
+            "title": "Cornet Fire, Oregon",
+            "titleShort": "Cornet Fire, Oregon",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-10T16:58:00Z",
+                "doy": 222
+            },
+            "closedDate": {
+                "date": "2015-08-29T00:00:00Z",
+                "doy": 241
+            }
+        },
+        "geometry": {
+            "date": "2015-08-10T16:58:00Z",
+            "type": "Point",
+            "coordinates": [-117.88138888889, 44.508888888889]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_101",
+            "title": "Lawyer Complex, Idaho",
+            "titleShort": "Lawyer Complex, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-10T17:30:00Z",
+                "doy": 222
+            },
+            "closedDate": {
+                "date": "2015-08-28T00:00:00Z",
+                "doy": 240
+            }
+        },
+        "geometry": {
+            "date": "2015-08-10T17:30:00Z",
+            "type": "Point",
+            "coordinates": [-116.13611111111, 46.226944444444]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_102",
+            "title": "Cougar Creek, Washington",
+            "titleShort": "Cougar Creek, Washington",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-10T18:00:00Z",
+                "doy": 222
+            },
+            "closedDate": {
+                "date": "2015-09-15T00:00:00Z",
+                "doy": 258
+            }
+        },
+        "geometry": {
+            "date": "2015-08-10T18:00:00Z",
+            "type": "Point",
+            "coordinates": [-121.37361111111, 46.133888888889]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_163",
+            "title": "Selway Complex 2015 Fire, Idaho",
+            "titleShort": "Selway Complex  Fire, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-10T19:00:00Z",
+                "doy": 222
+            },
+            "closedDate": {
+                "date": "2015-09-25T00:00:00Z",
+                "doy": 268
+            }
+        },
+        "geometry": {
+            "date": "2015-08-10T19:00:00Z",
+            "type": "Point",
+            "coordinates": [-115.71444444444, 45.926111111111]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_162",
+            "title": "Baldy (idaho) Fire, Idaho",
+            "titleShort": "Baldy (idaho) Fire, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-10T19:00:00Z",
+                "doy": 222
+            },
+            "closedDate": {
+                "date": "2015-09-01T00:00:00Z",
+                "doy": 244
+            }
+        },
+        "geometry": {
+            "date": "2015-08-10T19:00:00Z",
+            "type": "Point",
+            "coordinates": [-115.71444444444, 45.926111111111]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_195",
+            "title": "Kaniksu Complex Fire, Washington",
+            "titleShort": "Kaniksu Complex Fire, Washington",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-11T00:00:00Z",
+                "doy": 223
+            },
+            "closedDate": {
+                "date": "2015-10-30T00:00:00Z",
+                "doy": 303
+            }
+        },
+        "geometry": {
+            "date": "2015-08-11T00:00:00Z",
+            "type": "Point",
+            "coordinates": [-117.13861111111, 48.424444444444]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_123",
+            "title": "Tower Fire, Idaho",
+            "titleShort": "Tower Fire, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-11T00:00:00Z",
+                "doy": 223
+            },
+            "closedDate": {
+                "date": "2015-09-20T00:00:00Z",
+                "doy": 263
+            }
+        },
+        "geometry": {
+            "date": "2015-08-11T00:00:00Z",
+            "type": "Point",
+            "coordinates": [-117.13722222222, 48.426388888889]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_139",
+            "title": "Kettle Complex, Washington",
+            "titleShort": "Kettle Complex, Washington",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-11T03:30:00Z",
+                "doy": 223
+            },
+            "closedDate": {
+                "date": "2015-09-29T00:00:00Z",
+                "doy": 272
+            }
+        },
+        "geometry": {
+            "date": "2015-08-11T03:30:00Z",
+            "type": "Point",
+            "coordinates": [-118.46138888889, 48.756388888889]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_109",
+            "title": "Marston Fire, Montana",
+            "titleShort": "Marston Fire, Montana",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-11T08:00:00Z",
+                "doy": 223
+            },
+            "closedDate": {
+                "date": "2015-09-08T00:00:00Z",
+                "doy": 251
+            }
+        },
+        "geometry": {
+            "date": "2015-08-11T08:00:00Z",
+            "type": "Point",
+            "coordinates": [-114.81611111111, 48.749722222222]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_117",
+            "title": "Bendire Complex, Oregon",
+            "titleShort": "Bendire Complex, Oregon",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-11T09:00:00Z",
+                "doy": 223
+            },
+            "closedDate": {
+                "date": "2015-08-21T00:00:00Z",
+                "doy": 233
+            }
+        },
+        "geometry": {
+            "date": "2015-08-11T09:00:00Z",
+            "type": "Point",
+            "coordinates": [-118.06138888889, 43.989166666667]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_110",
+            "title": "Windy Ridge, Oregon",
+            "titleShort": "Windy Ridge, Oregon",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-11T09:56:00Z",
+                "doy": 223
+            },
+            "closedDate": {
+                "date": "2015-08-16T00:00:00Z",
+                "doy": 228
+            }
+        },
+        "geometry": {
+            "date": "2015-08-11T09:56:00Z",
+            "type": "Point",
+            "coordinates": [-117.64305555556, 44.555]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_179",
+            "title": "Avery Complex Fire, Idaho",
+            "titleShort": "Avery Complex Fire, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-11T14:00:00Z",
+                "doy": 223
+            },
+            "closedDate": {
+                "date": "2015-10-08T00:00:00Z",
+                "doy": 281
+            }
+        },
+        "geometry": {
+            "date": "2015-08-11T14:00:00Z",
+            "type": "Point",
+            "coordinates": [-115.9175, 47.253055555556]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_105",
+            "title": "Stickpin Fire, Washington",
+            "titleShort": "Stickpin Fire, Washington",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-11T14:00:00Z",
+                "doy": 223
+            },
+            "closedDate": {
+                "date": "2015-08-19T00:00:00Z",
+                "doy": 231
+            }
+        },
+        "geometry": {
+            "date": "2015-08-11T14:00:00Z",
+            "type": "Point",
+            "coordinates": [-118.46138888889, 48.756388888889]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_143",
+            "title": "Marble Creek Fire, Idaho",
+            "titleShort": "Marble Creek Fire, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-11T16:00:00Z",
+                "doy": 223
+            },
+            "closedDate": {
+                "date": "2015-08-30T00:00:00Z",
+                "doy": 242
+            }
+        },
+        "geometry": {
+            "date": "2015-08-11T16:00:00Z",
+            "type": "Point",
+            "coordinates": [-116.03083333333, 47.190277777778]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_201",
+            "title": "Middle Fork Complex Fires, Idaho",
+            "titleShort": "Middle Fork Complex Fires, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-11T20:00:00Z",
+                "doy": 223
+            },
+            "closedDate": {
+                "date": "2015-10-27T00:00:00Z",
+                "doy": 300
+            }
+        },
+        "geometry": {
+            "date": "2015-08-11T20:00:00Z",
+            "type": "Point",
+            "coordinates": [-114.7, 45.1]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_127",
+            "title": "Eagle Complex FIres, Oregon",
+            "titleShort": "Eagle Complex FIres, Oregon",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-12T00:00:00Z",
+                "doy": 224
+            },
+            "closedDate": {
+                "date": "2015-09-28T00:00:00Z",
+                "doy": 271
+            }
+        },
+        "geometry": {
+            "date": "2015-08-12T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-117.43274688720697, 45.0035049617238],
+                    [-117.43274688720697, 45.025975250420885],
+                    [-117.38460540771484, 45.025975250420885],
+                    [-117.38460540771484, 45.0035049617238],
+                    [-117.43274688720697, 45.0035049617238]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_119",
+            "title": "Canyon Creek Complex, Oregon",
+            "titleShort": "Canyon Creek Complex, Oregon",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-12T00:00:00Z",
+                "doy": 224
+            },
+            "closedDate": {
+                "date": "2015-09-24T00:00:00Z",
+                "doy": 267
+            }
+        },
+        "geometry": {
+            "date": "2015-08-12T00:00:00Z",
+            "type": "Point",
+            "coordinates": [-118.96138888889, 44.284444444444]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_106",
+            "title": "Fisher Fire, Idaho",
+            "titleShort": "Fisher Fire, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-12T06:30:00Z",
+                "doy": 224
+            },
+            "closedDate": {
+                "date": "2015-08-28T00:00:00Z",
+                "doy": 240
+            }
+        },
+        "geometry": {
+            "date": "2015-08-12T06:30:00Z",
+            "type": "Point",
+            "coordinates": [-116.43361111111, 46.344722222222]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_108",
+            "title": "Tepee Springs, Idaho",
+            "titleShort": "Tepee s, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-12T07:30:00Z",
+                "doy": 224
+            },
+            "closedDate": {
+                "date": "2015-09-07T00:00:00Z",
+                "doy": 250
+            }
+        },
+        "geometry": {
+            "date": "2015-08-12T07:30:00Z",
+            "type": "Point",
+            "coordinates": [-116.24833333333, 45.208333333333]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_140",
+            "title": "Bear Creek Fires, Montana",
+            "titleShort": "Bear Creek Fires, Montana",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-12T08:15:00Z",
+                "doy": 224
+            },
+            "closedDate": {
+                "date": "2015-08-25T00:00:00Z",
+                "doy": 237
+            }
+        },
+        "geometry": {
+            "date": "2015-08-12T08:15:00Z",
+            "type": "Point",
+            "coordinates": [-113.59305555556, 47.839722222222]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_158",
+            "title": "Trail Creek Fire, Montana",
+            "titleShort": "Trail Creek Fire, Montana",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-12T11:45:00Z",
+                "doy": 224
+            },
+            "closedDate": {
+                "date": "2015-09-09T00:00:00Z",
+                "doy": 252
+            }
+        },
+        "geometry": {
+            "date": "2015-08-12T11:45:00Z",
+            "type": "Point",
+            "coordinates": [-113.42916666667, 47.946666666667]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_122",
+            "title": "County Line 2 Fire, Oregon",
+            "titleShort": "County Line 2 Fire, Oregon",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-12T13:30:00Z",
+                "doy": 224
+            },
+            "closedDate": {
+                "date": "2015-09-03T00:00:00Z",
+                "doy": 246
+            }
+        },
+        "geometry": {
+            "date": "2015-08-12T13:30:00Z",
+            "type": "Point",
+            "coordinates": [-121.37666666667, 44.83]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_165",
+            "title": "Bear Creek Fire, Montana",
+            "titleShort": "Bear Creek Fire, Montana",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-12T13:35:00Z",
+                "doy": 224
+            },
+            "closedDate": {
+                "date": "2015-09-09T00:00:00Z",
+                "doy": 252
+            }
+        },
+        "geometry": {
+            "date": "2015-08-12T13:35:00Z",
+            "type": "Point",
+            "coordinates": [-113.59305555556, 47.839722222222]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_124",
+            "title": "Scotchman Peak, Idaho",
+            "titleShort": "Scotchman Peak, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-13T00:00:00Z",
+                "doy": 225
+            },
+            "closedDate": {
+                "date": "2015-08-18T00:00:00Z",
+                "doy": 230
+            }
+        },
+        "geometry": {
+            "date": "2015-08-13T00:00:00Z",
+            "type": "Point",
+            "coordinates": [-116.06333333333, 48.182222222222]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_149",
+            "title": "Grizzly Bear Complex Fire, Oregon",
+            "titleShort": "Grizzly Bear Complex Fire, Oregon",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-13T13:00:00Z",
+                "doy": 225
+            },
+            "closedDate": {
+                "date": "2015-10-29T00:00:00Z",
+                "doy": 302
+            }
+        },
+        "geometry": {
+            "date": "2015-08-13T13:00:00Z",
+            "type": "Point",
+            "coordinates": [-117.67916666667, 46.110277777778]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_115",
+            "title": "Nine Mile, Washington",
+            "titleShort": "Nine Mile, Washington",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-13T13:00:00Z",
+                "doy": 225
+            },
+            "closedDate": {
+                "date": "2015-08-20T00:00:00Z",
+                "doy": 232
+            }
+        },
+        "geometry": {
+            "date": "2015-08-13T13:00:00Z",
+            "type": "Point",
+            "coordinates": [-119.30916666667, 48.937777777778]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_114",
+            "title": "Clearwater Complex, Idaho",
+            "titleShort": "Clearwater Complex, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-13T13:15:00Z",
+                "doy": 225
+            },
+            "closedDate": {
+                "date": "2015-08-28T00:00:00Z",
+                "doy": 240
+            }
+        },
+        "geometry": {
+            "date": "2015-08-13T13:15:00Z",
+            "type": "Point",
+            "coordinates": [-116.13333333333, 46.222777777778]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_133",
+            "title": "Lafayette, Louisiana Fire",
+            "titleShort": "Lafayette, Louisiana Fire",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-13T13:30:00Z",
+                "doy": 225
+            },
+            "closedDate": {
+                "date": "2015-08-24T00:00:00Z",
+                "doy": 236
+            }
+        },
+        "geometry": {
+            "date": "2015-08-13T13:30:00Z",
+            "type": "Point",
+            "coordinates": [-93.016388888889, 31.481666666667]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_118",
+            "title": "North Star, Washington",
+            "titleShort": "North Star, Washington",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-13T15:30:00Z",
+                "doy": 225
+            },
+            "closedDate": {
+                "date": "2015-09-24T00:00:00Z",
+                "doy": 267
+            }
+        },
+        "geometry": {
+            "date": "2015-08-13T15:30:00Z",
+            "type": "Point",
+            "coordinates": [-119.00166666667, 48.338055555556]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_170",
+            "title": "Spotted Eagle Fire - Family Peak Complex, Montana",
+            "titleShort": "Spotted Eagle Fire - Family Peak Complex, Montana",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-13T15:30:00Z",
+                "doy": 225
+            },
+            "closedDate": {
+                "date": "2015-08-30T00:00:00Z",
+                "doy": 242
+            }
+        },
+        "geometry": {
+            "date": "2015-08-13T15:30:00Z",
+            "type": "Point",
+            "coordinates": [-113.05638888889, 48.171666666667]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_159",
+            "title": "Cougar Fire, Idaho",
+            "titleShort": "Cougar Fire, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-13T16:00:00Z",
+                "doy": 225
+            },
+            "closedDate": {
+                "date": "2015-09-04T00:00:00Z",
+                "doy": 247
+            }
+        },
+        "geometry": {
+            "date": "2015-08-13T16:00:00Z",
+            "type": "Point",
+            "coordinates": [-115.72916666667, 44.609166666667]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_131",
+            "title": "Campbells, Idaho",
+            "titleShort": "Campbells, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-13T17:45:00Z",
+                "doy": 225
+            },
+            "closedDate": {
+                "date": "2015-10-12T00:00:00Z",
+                "doy": 285
+            }
+        },
+        "geometry": {
+            "date": "2015-08-13T17:45:00Z",
+            "type": "Point",
+            "coordinates": [-115.32277777778, 45.484444444444]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_152",
+            "title": "Wash Fire, Idaho",
+            "titleShort": "Wash Fire, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-13T19:00:00Z",
+                "doy": 225
+            },
+            "closedDate": {
+                "date": "2015-08-31T00:00:00Z",
+                "doy": 243
+            }
+        },
+        "geometry": {
+            "date": "2015-08-13T19:00:00Z",
+            "type": "Point",
+            "coordinates": [-115.40555555556, 46.078055555556]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_150",
+            "title": "Slide Fire, Idaho",
+            "titleShort": "Slide Fire, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-13T19:00:00Z",
+                "doy": 225
+            },
+            "closedDate": {
+                "date": "2015-09-15T00:00:00Z",
+                "doy": 258
+            }
+        },
+        "geometry": {
+            "date": "2015-08-13T19:00:00Z",
+            "type": "Point",
+            "coordinates": [-115.44583333333, 46.099722222222]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_121",
+            "title": "Clark Fork Complex, Idaho",
+            "titleShort": "Clark Fork Complex, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-13T20:00:00Z",
+                "doy": 225
+            },
+            "closedDate": {
+                "date": "2015-09-24T00:00:00Z",
+                "doy": 267
+            }
+        },
+        "geometry": {
+            "date": "2015-08-13T20:00:00Z",
+            "type": "Point",
+            "coordinates": [-116.16166666667, 48.008333333333]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_169",
+            "title": "West Fork Fish Creek Fire, Montana",
+            "titleShort": "West Fork Fish Creek Fire, Montana",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-14T00:00:00Z",
+                "doy": 226
+            },
+            "closedDate": {
+                "date": "2015-09-15T00:00:00Z",
+                "doy": 258
+            }
+        },
+        "geometry": {
+            "date": "2015-08-14T00:00:00Z",
+            "type": "Point",
+            "coordinates": [-114.84944444444, 46.872777777778]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_146",
+            "title": "Motorway Complex Fire, Idaho",
+            "titleShort": "Motorway Complex Fire, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-14T00:00:00Z",
+                "doy": 226
+            },
+            "closedDate": {
+                "date": "2015-09-25T00:00:00Z",
+                "doy": 268
+            }
+        },
+        "geometry": {
+            "date": "2015-08-14T00:00:00Z",
+            "type": "Point",
+            "coordinates": [-115.60166666667, 46.4225]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_145",
+            "title": "Marble Valley Fire, Washington",
+            "titleShort": "Marble Valley Fire, Washington",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-14T00:00:00Z",
+                "doy": 226
+            },
+            "closedDate": {
+                "date": "2015-08-31T00:00:00Z",
+                "doy": 243
+            }
+        },
+        "geometry": {
+            "date": "2015-08-14T00:00:00Z",
+            "type": "Point",
+            "coordinates": [-117.89194444444, 48.383611111111]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_199",
+            "title": "Indonesia Fires, Fall 2015",
+            "titleShort": "Indonesia Fires",
+            "description": "Smoke poured from seasonal fires in Indonesia in the fall of 2015.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-14T00:00:00Z",
+                "doy": 226
+            },
+            "closedDate": {
+                "date": "2015-10-31T00:00:00Z",
+                "doy": 304
+            }
+        },
+        "geometry": {
+            "date": "2015-08-14T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [100.48828125, -6.474496893538693],
+                    [100.48828125, 1.1723588986323183],
+                    [107.0849609375, 1.1723588986323183],
+                    [107.0849609375, -6.474496893538693],
+                    [100.48828125, -6.474496893538693]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_116",
+            "title": "Walker Fire, California",
+            "titleShort": "Walker Fire, California",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-14T00:00:00Z",
+                "doy": 226
+            },
+            "closedDate": {
+                "date": "2015-08-31T00:00:00Z",
+                "doy": 243
+            }
+        },
+        "geometry": {
+            "date": "2015-08-14T00:00:00Z",
+            "type": "Point",
+            "coordinates": [-119.15888888889, 37.877777777778]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_129",
+            "title": "Chelan Complex, Washington",
+            "titleShort": "Chelan Complex, Washington",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-14T05:00:00Z",
+                "doy": 226
+            },
+            "closedDate": {
+                "date": "2015-09-18T00:00:00Z",
+                "doy": 261
+            }
+        },
+        "geometry": {
+            "date": "2015-08-14T05:00:00Z",
+            "type": "Point",
+            "coordinates": [-120.03888888889, 47.813611111111]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_111",
+            "title": "El Dorado Fire, Oregon",
+            "titleShort": "El Dorado Fire, Oregon",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-14T06:55:00Z",
+                "doy": 226
+            },
+            "closedDate": {
+                "date": "2015-08-29T00:00:00Z",
+                "doy": 241
+            }
+        },
+        "geometry": {
+            "date": "2015-08-14T06:55:00Z",
+            "type": "Point",
+            "coordinates": [-118.10166666667, 44.327222222222]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_132",
+            "title": "Rapid, Idaho Fire",
+            "titleShort": "Rapid, Idaho Fire",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-14T08:00:00Z",
+                "doy": 226
+            },
+            "closedDate": {
+                "date": "2015-11-03T00:00:00Z",
+                "doy": 307
+            }
+        },
+        "geometry": {
+            "date": "2015-08-14T08:00:00Z",
+            "type": "Point",
+            "coordinates": [-115.91777777778, 44.821388888889]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_113",
+            "title": "Eustis Fire, Montana",
+            "titleShort": "Eustis Fire, Montana",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-14T10:30:00Z",
+                "doy": 226
+            },
+            "closedDate": {
+                "date": "2015-08-20T00:00:00Z",
+                "doy": 232
+            }
+        },
+        "geometry": {
+            "date": "2015-08-14T10:30:00Z",
+            "type": "Point",
+            "coordinates": [-111.44222222222, 46.055277777778]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_125",
+            "title": "Black Canyon, Washington",
+            "titleShort": "Black Canyon, Washington",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-14T11:45:00Z",
+                "doy": 226
+            },
+            "closedDate": {
+                "date": "2015-08-21T00:00:00Z",
+                "doy": 233
+            }
+        },
+        "geometry": {
+            "date": "2015-08-14T11:45:00Z",
+            "type": "Point",
+            "coordinates": [-120.11333333333, 48.051388888889]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_112",
+            "title": "Cabin, California",
+            "titleShort": "Cabin, California",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-14T13:00:00Z",
+                "doy": 226
+            },
+            "closedDate": {
+                "date": "2015-08-19T00:00:00Z",
+                "doy": 231
+            }
+        },
+        "geometry": {
+            "date": "2015-08-14T13:00:00Z",
+            "type": "Point",
+            "coordinates": [-117.84722222222, 34.251111111111]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_178",
+            "title": "Tunk Block Fire, Washington",
+            "titleShort": "Tunk Block Fire, Washington",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-14T14:03:00Z",
+                "doy": 226
+            },
+            "closedDate": {
+                "date": "2015-09-24T00:00:00Z",
+                "doy": 267
+            }
+        },
+        "geometry": {
+            "date": "2015-08-14T14:03:00Z",
+            "type": "Point",
+            "coordinates": [-119.46305555556, 48.526111111111]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_120",
+            "title": "Cabin Creek, Montana",
+            "titleShort": "Cabin Creek, Montana",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-14T16:00:00Z",
+                "doy": 226
+            },
+            "closedDate": {
+                "date": "2015-09-05T00:00:00Z",
+                "doy": 248
+            }
+        },
+        "geometry": {
+            "date": "2015-08-14T16:00:00Z",
+            "type": "Point",
+            "coordinates": [-112.47861111111, 45.086111111111]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_156",
+            "title": "Colville Complex Fire, Washington",
+            "titleShort": "Colville Complex Fire, Washington",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-14T16:45:00Z",
+                "doy": 226
+            },
+            "closedDate": {
+                "date": "2015-08-31T00:00:00Z",
+                "doy": 243
+            }
+        },
+        "geometry": {
+            "date": "2015-08-14T16:45:00Z",
+            "type": "Point",
+            "coordinates": [-118.01583333333, 48.631944444444]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_144",
+            "title": "Carpenter Road Fire, Washington",
+            "titleShort": "Carpenter Road Fire, Washington",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-14T20:00:00Z",
+                "doy": 226
+            },
+            "closedDate": {
+                "date": "2015-09-19T00:00:00Z",
+                "doy": 262
+            }
+        },
+        "geometry": {
+            "date": "2015-08-14T20:00:00Z",
+            "type": "Point",
+            "coordinates": [-118.15944444444, 47.999722222222]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_130",
+            "title": "Okanogan Complex, Washington",
+            "titleShort": "Okanogan Complex, Washington",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-15T18:00:00Z",
+                "doy": 227
+            },
+            "closedDate": {
+                "date": "2015-09-22T00:00:00Z",
+                "doy": 265
+            }
+        },
+        "geometry": {
+            "date": "2015-08-15T18:00:00Z",
+            "type": "Point",
+            "coordinates": [-119.66222222222, 48.518611111111]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_164",
+            "title": "Lochsa South Complex Fire, Idaho",
+            "titleShort": "Lochsa South Complex Fire, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-15T20:45:00Z",
+                "doy": 227
+            },
+            "closedDate": {
+                "date": "2015-09-25T00:00:00Z",
+                "doy": 268
+            }
+        },
+        "geometry": {
+            "date": "2015-08-15T20:45:00Z",
+            "type": "Point",
+            "coordinates": [-115.16583333333, 46.339166666667]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_128",
+            "title": "Northeast Kootenai Complex, Montana",
+            "titleShort": "Northeast Kootenai Complex, Montana",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-16T06:00:00Z",
+                "doy": 228
+            },
+            "closedDate": {
+                "date": "2015-09-12T00:00:00Z",
+                "doy": 255
+            }
+        },
+        "geometry": {
+            "date": "2015-08-16T06:00:00Z",
+            "type": "Point",
+            "coordinates": [-114.86722222222, 48.736666666667]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_138",
+            "title": "Cuesta Fire, California",
+            "titleShort": "Cuesta Fire, California",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-16T18:15:00Z",
+                "doy": 228
+            },
+            "closedDate": {
+                "date": "2015-08-28T00:00:00Z",
+                "doy": 240
+            }
+        },
+        "geometry": {
+            "date": "2015-08-16T18:15:00Z",
+            "type": "Point",
+            "coordinates": [-120.62416666667, 35.3225]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_166",
+            "title": "Red River Complex Fire, Idaho",
+            "titleShort": "Red River Complex Fire, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-17T12:00:00Z",
+                "doy": 229
+            },
+            "closedDate": {
+                "date": "2015-09-01T00:00:00Z",
+                "doy": 244
+            }
+        },
+        "geometry": {
+            "date": "2015-08-17T12:00:00Z",
+            "type": "Point",
+            "coordinates": [-115.33333333333, 45.666666666667]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_191",
+            "title": "Snow Peak Complex Fire, Idaho",
+            "titleShort": "Snow Peak Complex Fire, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-17T13:00:00Z",
+                "doy": 229
+            },
+            "closedDate": {
+                "date": "2015-10-08T00:00:00Z",
+                "doy": 281
+            }
+        },
+        "geometry": {
+            "date": "2015-08-17T13:00:00Z",
+            "type": "Point",
+            "coordinates": [-115.63305555556, 47.045555555556]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_160",
+            "title": "Jay Point Fire, Idaho",
+            "titleShort": "Jay Point Fire, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-17T13:15:00Z",
+                "doy": 229
+            },
+            "closedDate": {
+                "date": "2015-09-15T00:00:00Z",
+                "doy": 258
+            }
+        },
+        "geometry": {
+            "date": "2015-08-17T13:15:00Z",
+            "type": "Point",
+            "coordinates": [-114.7575, 46.498611111111]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_167",
+            "title": "Larkin Complex Fire, Idaho",
+            "titleShort": "Larkin Complex Fire, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-17T14:30:00Z",
+                "doy": 229
+            },
+            "closedDate": {
+                "date": "2015-10-01T00:00:00Z",
+                "doy": 274
+            }
+        },
+        "geometry": {
+            "date": "2015-08-17T14:30:00Z",
+            "type": "Point",
+            "coordinates": [-115.45944444444, 46.928611111111]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_151",
+            "title": "Municipal Complex Fire, Idaho",
+            "titleShort": "Municipal Complex Fire, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-18T08:46:00Z",
+                "doy": 230
+            },
+            "closedDate": {
+                "date": "2015-08-28T00:00:00Z",
+                "doy": 240
+            }
+        },
+        "geometry": {
+            "date": "2015-08-18T08:46:00Z",
+            "type": "Point",
+            "coordinates": [-116.23944444444, 46.467222222222]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_187",
+            "title": "Goat Rock Complex Fires, Montana",
+            "titleShort": "Goat Rock Complex Fires, Montana",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-20T00:00:00Z",
+                "doy": 232
+            },
+            "closedDate": {
+                "date": "2015-09-14T00:00:00Z",
+                "doy": 257
+            }
+        },
+        "geometry": {
+            "date": "2015-08-20T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-115.85929870605469, 48.11417015181168],
+                    [-115.85929870605469, 48.19286559913621],
+                    [-115.77476501464844, 48.19286559913621],
+                    [-115.77476501464844, 48.11417015181168],
+                    [-115.85929870605469, 48.11417015181168]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_157",
+            "title": "Ojo Blanco Fire, Arizona",
+            "titleShort": "Ojo Blanco Fire, Arizona",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-20T12:00:00Z",
+                "doy": 232
+            },
+            "closedDate": {
+                "date": "2015-09-04T00:00:00Z",
+                "doy": 247
+            }
+        },
+        "geometry": {
+            "date": "2015-08-20T12:00:00Z",
+            "type": "Point",
+            "coordinates": [-110.7, 31.883333333333]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_155",
+            "title": "Bear Lake Fire, Montana",
+            "titleShort": "Bear Lake Fire, Montana",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-20T20:00:00Z",
+                "doy": 232
+            },
+            "closedDate": {
+                "date": "2015-10-12T00:00:00Z",
+                "doy": 285
+            }
+        },
+        "geometry": {
+            "date": "2015-08-20T20:00:00Z",
+            "type": "Point",
+            "coordinates": [-113.23555555556, 45.518888888889]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_168",
+            "title": "Wilderness Complex Fire, Idaho",
+            "titleShort": "Wilderness Complex Fire, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-21T12:00:00Z",
+                "doy": 233
+            },
+            "closedDate": {
+                "date": "2015-10-01T00:00:00Z",
+                "doy": 274
+            }
+        },
+        "geometry": {
+            "date": "2015-08-21T12:00:00Z",
+            "type": "Point",
+            "coordinates": [-114.90611111111, 46.200833333333]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_183",
+            "title": "Rocky Mountain Rd Fires, Montana",
+            "titleShort": "Rocky Mountain Rd Fires, Montana",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-24T06:00:00Z",
+                "doy": 236
+            },
+            "closedDate": {
+                "date": "2015-11-03T00:00:00Z",
+                "doy": 307
+            }
+        },
+        "geometry": {
+            "date": "2015-08-24T06:00:00Z",
+            "type": "Point",
+            "coordinates": [-112.90111111111, 47.492222222222]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_161",
+            "title": "Elevenmile Fire, Idaho",
+            "titleShort": "Elevenmile Fire, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-24T15:00:00Z",
+                "doy": 236
+            },
+            "closedDate": {
+                "date": "2015-11-03T00:00:00Z",
+                "doy": 307
+            }
+        },
+        "geometry": {
+            "date": "2015-08-24T15:00:00Z",
+            "type": "Point",
+            "coordinates": [-114.52444444444, 44.456388888889]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_177",
+            "title": "Tucannon Fire, Washington",
+            "titleShort": "Tucannon Fire, Washington",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-08-29T09:30:00Z",
+                "doy": 241
+            },
+            "closedDate": {
+                "date": "2015-09-03T00:00:00Z",
+                "doy": 246
+            }
+        },
+        "geometry": {
+            "date": "2015-08-29T09:30:00Z",
+            "type": "Point",
+            "coordinates": [-117.69527777778, 46.358055555556]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_192",
+            "title": "Spruce Fire, Wyoming",
+            "titleShort": "Spruce Fire, Wyoming",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-09-04T12:00:00Z",
+                "doy": 247
+            },
+            "closedDate": {
+                "date": "2015-09-15T00:00:00Z",
+                "doy": 258
+            }
+        },
+        "geometry": {
+            "date": "2015-09-04T12:00:00Z",
+            "type": "Point",
+            "coordinates": [-110.59111111111, 44.578055555556]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_190",
+            "title": "Butte Fire, California",
+            "titleShort": "Butte Fire, California",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-09-09T00:00:00Z",
+                "doy": 252
+            },
+            "closedDate": {
+                "date": "2015-10-15T00:00:00Z",
+                "doy": 288
+            }
+        },
+        "geometry": {
+            "date": "2015-09-09T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-120.67766189575195, 38.33435781933695],
+                    [-120.67766189575195, 38.34286283704294],
+                    [-120.66505432128906, 38.34286283704294],
+                    [-120.66505432128906, 38.33435781933695],
+                    [-120.67766189575195, 38.33435781933695]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_197",
+            "title": "Valley Fire, California",
+            "titleShort": "Valley Fire, California",
+            "description": "The Valley Fire in northern California has already consumed 70,000 acres and over 600 homes and structures.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-09-12T00:00:00Z",
+                "doy": 255
+            },
+            "closedDate": {
+                "date": "2015-10-15T00:00:00Z",
+                "doy": 288
+            }
+        },
+        "geometry": {
+            "date": "2015-09-12T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-122.76763916015625, 38.69553142468425],
+                    [-122.76763916015625, 38.89931118341154],
+                    [-122.44827270507812, 38.89931118341154],
+                    [-122.44827270507812, 38.69553142468425],
+                    [-122.76763916015625, 38.69553142468425]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_194",
+            "title": "Dry Gulch Fire, Oregon",
+            "titleShort": "Dry Gulch Fire, Oregon",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-09-12T00:00:00Z",
+                "doy": 255
+            },
+            "closedDate": {
+                "date": "2015-10-15T00:00:00Z",
+                "doy": 288
+            }
+        },
+        "geometry": {
+            "date": "2015-09-12T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [-117.30537414550776, 44.797282278095665],
+                    [-117.30537414550776, 44.91254284410344],
+                    [-117.13088989257818, 44.91254284410344],
+                    [-117.13088989257818, 44.797282278095665],
+                    [-117.30537414550776, 44.797282278095665]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_200",
+            "title": "Meeks Table Fire, Washington",
+            "titleShort": "Meeks Table Fire, Washington",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-09-12T15:00:00Z",
+                "doy": 255
+            },
+            "closedDate": {
+                "date": "2015-09-21T00:00:00Z",
+                "doy": 264
+            }
+        },
+        "geometry": {
+            "date": "2015-09-12T15:00:00Z",
+            "type": "Point",
+            "coordinates": [-121.07055555556, 46.821666666667]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_211",
+            "title": "Volga River Delta Fires (Russia, Kazakhstan)",
+            "titleShort": "Volga River Delta Fires (Russia, Kazakhstan)",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-09-17T00:00:00Z",
+                "doy": 260
+            },
+            "closedDate": {
+                "date": "2015-10-07T00:00:00Z",
+                "doy": 280
+            }
+        },
+        "geometry": {
+            "date": "2015-09-17T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [47.138671875, 45.17753504022387],
+                    [47.138671875, 46.970643547806986],
+                    [50.1318359375, 46.970643547806986],
+                    [50.1318359375, 45.17753504022387],
+                    [47.138671875, 45.17753504022387]
+                ]
+            ]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_214",
+            "title": "Walker Fire, Idaho",
+            "titleShort": "Walker Fire, Idaho",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-10-10T15:00:00Z",
+                "doy": 283
+            },
+            "closedDate": {
+                "date": "2015-10-23T00:00:00Z",
+                "doy": 296
+            }
+        },
+        "geometry": {
+            "date": "2015-10-10T15:00:00Z",
+            "type": "Point",
+            "coordinates": [-115.98527777778, 43.786944444444]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_217",
+            "title": "Zippo Fire, North Dakota",
+            "titleShort": "Zippo Fire, North Dakota",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-10-11T13:30:00Z",
+                "doy": 284
+            },
+            "closedDate": {
+                "date": "2015-10-16T00:00:00Z",
+                "doy": 289
+            }
+        },
+        "geometry": {
+            "date": "2015-10-11T13:30:00Z",
+            "type": "Point",
+            "coordinates": [-100.61277777778, 46.405]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_216",
+            "title": "Cannonball Fire, North Dakota",
+            "titleShort": "Cannonball Fire, North Dakota",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-10-11T15:15:00Z",
+                "doy": 284
+            },
+            "closedDate": {
+                "date": "2015-11-13T00:00:00Z",
+                "doy": 317
+            }
+        },
+        "geometry": {
+            "date": "2015-10-11T15:15:00Z",
+            "type": "Point",
+            "coordinates": [-100.65583333333, 46.371111111111]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_215",
+            "title": "Oak Creek Fire, North Dakota",
+            "titleShort": "Oak Creek Fire, North Dakota",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-10-12T03:30:00Z",
+                "doy": 285
+            },
+            "closedDate": {
+                "date": "2015-11-13T00:00:00Z",
+                "doy": 317
+            }
+        },
+        "geometry": {
+            "date": "2015-10-12T03:30:00Z",
+            "type": "Point",
+            "coordinates": [-100.63, 45.747777777778]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_218",
+            "title": "Red Rock Fire, Montana",
+            "titleShort": "Red Rock Fire, Montana",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-10-12T14:45:00Z",
+                "doy": 285
+            },
+            "closedDate": {
+                "date": "2015-10-15T00:00:00Z",
+                "doy": 288
+            }
+        },
+        "geometry": {
+            "date": "2015-10-12T14:45:00Z",
+            "type": "Point",
+            "coordinates": [-112.03305555556, 44.659722222222]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_223",
+            "title": "Hidden Pines Fire, Texas",
+            "titleShort": "Hidden Pines Fire, Texas",
+            "description": "",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-10-13T12:00:00Z",
+                "doy": 286
+            },
+            "closedDate": {
+                "date": "2015-10-25T00:00:00Z",
+                "doy": 298
+            }
+        },
+        "geometry": {
+            "date": "2015-10-13T12:00:00Z",
+            "type": "Point",
+            "coordinates": [-97.149722222222, 30.076111111111]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "id": "EONET_235",
+            "title": "Esperance Fires, Australia",
+            "titleShort": "Esperance Fires, Australia",
+            "description": "Bush fires have damaged power lines, burned 133,000 hectares, and destroyed two homes.",
+            "categories": [{
+                "id": 8,
+                "title": "Wildfires",
+                "slug": "wildfires"
+            }],
+            "startDate": {
+                "date": "2015-11-18T00:00:00Z",
+                "doy": 322
+            },
+            "closedDate": {
+                "date": "2015-11-24T00:00:00Z",
+                "doy": 328
+            }
+        },
+        "geometry": {
+            "date": "2015-11-18T00:00:00Z",
+            "type": "Polygon",
+            "coordinates": [
+                [
+                    [121.12060546875, -34.20345525625918],
+                    [121.12060546875, -32.83604455624987],
+                    [124.3115234375, -32.83604455624987],
+                    [124.3115234375, -34.20345525625918],
+                    [121.12060546875, -34.20345525625918]
+                ]
+            ]
+        }
+    }]
+}

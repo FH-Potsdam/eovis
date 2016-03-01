@@ -10,10 +10,16 @@ var events = data.events;
 
 // console.log("Number of events: " + events.length);
 
-var iterator = 0;
+var youtubeIt = 0,
+    twitterIt = 0;
 var allDataLoaded = false;
 
-loadYoutubeVideosByIndex(iterator, onYoutubeDataLoaded);
+
+//////////////////
+// Youtube Load
+//////////////////
+
+loadYoutubeVideosByIndex(youtubeIt, onYoutubeDataLoaded);
 
 function onYoutubeDataLoaded(err, i, videosData) {
 
@@ -27,9 +33,9 @@ function onYoutubeDataLoaded(err, i, videosData) {
     }
 
     // Keep iterating
-    iterator++;
-    if (iterator < data.events.length) {
-        loadYoutubeVideosByIndex(iterator, onYoutubeDataLoaded);
+    youtubeIt++;
+    if (youtubeIt < data.events.length) {
+        loadYoutubeVideosByIndex(youtubeIt, onYoutubeDataLoaded);
         // loadSocialMediaByIndex(index, onSocialMediaLoaded);
     } else {
         console.log(" ");
@@ -39,6 +45,38 @@ function onYoutubeDataLoaded(err, i, videosData) {
         saveFileFile('../eonet-events-2015-clean-social.json');
     }
 }
+
+//////////////////
+// Youtube Load
+//////////////////
+
+//loadTweetsByIndex(iterator, onTwitterDataLoaded);
+
+function onTwitterDataLoaded(err, i, twitterData) {
+
+    if (err) {
+        console.log(err);
+
+    // Process incoming data
+    } else if (twitterData /*&& videosData.items.length > 0*/) {
+        //console.log("Save " + videosData.pageInfo.totalResults + " videos!");
+        data.events[i].twitter = twitterData;
+    }
+
+    // Keep iterating
+    twitterIt++;
+    if (twitterIt < data.events.length) {
+        loadTweetsByIndex(twitterIt, onTwitterDataLoaded);
+        // loadSocialMediaByIndex(index, onSocialMediaLoaded);
+    } else {
+        console.log(" ");
+        console.log("----- TWITTER DATA LOADING FINISHED!!!")
+        console.log(" ");
+
+        saveFileFile('../eonet-events-2015-clean-social.json');
+    }
+}
+
 
 // Loop all events
 // for (var i=0; i<events.length; i++) {
@@ -172,7 +210,7 @@ function loadYoutubeVideos(params, callback) {
     });
 }
 
-/*function loadTweetsByIndex(i, callback) {
+function loadTweetsByIndex(i, callback) {
 
     var event = data.events[i];
 
@@ -196,18 +234,49 @@ function loadYoutubeVideos(params, callback) {
         q: queryText
     };
 
+    // First load videos
     loadTweets(paramsTwitter, function(err, twitterData) {
         if (err) {
             return callback("Error retrieving tweets! Error: " + err);
         }
 
-        if (videosData && videosData.pageInfo) {
-            socialData.twitter = twitterData;
+        if (twitterData == null) {
+            twitterData = {};
+            //socialData.twitter = twitterData;
         }
 
-        callback(null, socialData);
+        // Load tweets
+        callback(null, i, twitterData);
     });
-}*/
+}
+
+function loadTweets(params, callback) {
+
+    console.log("Search Tweets - geocode: " + params.geocode + ", q: " + params.q);
+
+    var apiBaseUrl = "http://tostnik.deneb.uberspace.de/scrapalous-api/twitter/search/tweets/";
+    var paramsStr = qs.stringify(params);
+
+    console.log("query: " + apiBaseUrl + '?'+paramsStr);
+
+    var videosData;
+    request.get(apiBaseUrl + '?'+paramsStr, function (error, response, body) {
+        if (error || response.statusCode != 200) {
+            return (error) ? callback(error) : callback(response.statusCode);
+        }
+
+        console.log("Videos successfully retrieved");
+
+        try {
+            videosData = JSON.parse(body);
+        } catch (e) {
+            return callback(error);
+        }
+
+        callback(null, videosData);
+    });
+}
+
 
 ////////////////////
 // File Functions

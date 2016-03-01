@@ -3,6 +3,10 @@ var fs = require('fs')
 var contents = fs.readFileSync('../eonet-events-2015.json');
 var data = JSON.parse(contents);
 
+// Read category from parameter
+var category = process.argv[2];//'severe-storms';
+console.log('Export GeoJSON file for category "' + category + '"');
+
 var events = data.events;
 
 var geojson = {
@@ -17,8 +21,10 @@ events.sort(sortEventsByStartTime);
 for (var i=0; i<events.length; i++) {
     var event = events[i];
 
-    if (!isRelevantCategory(event.categories[0].title))
+    // Check category 1
+    if (!isRelevantCategory(event.categories)) {
         continue;
+    }
 
     var obj = {
         type: 'Feature',
@@ -63,9 +69,9 @@ for (var i=0; i<events.length; i++) {
 
 // console.log(JSON.stringify(geojson));
 
-fs.writeFile('../geojson/eonet-events-2015-clean.geojson', JSON.stringify(geojson), function (err) {
+fs.writeFile('../geojson/eonet-events-2015-' + category + '.geojson', JSON.stringify(geojson), function (err) {
     if (err) throw err;
-    console.log('JSON file saved!');
+    console.log('JSON file saved for category "' + category + '"');
 });
 
 
@@ -73,16 +79,16 @@ fs.writeFile('../geojson/eonet-events-2015-clean.geojson', JSON.stringify(geojso
 // Filter options
 ////////////////////
 
-function isRelevantCategory(catTitle) {
+function isRelevantCategory(categories) {
 
-    if (catTitle == 'Drought' ||
-        catTitle == 'Dust and Haze' ||
-        catTitle == 'Temperature Extremes' ||
-        catTitle == 'Water Color') {
-        return false;
+    for (var i=0; i<categories.length; i++) {
+        var cat = categories[i];
+        if (category == titleToSlug(cat.title)) {
+            return true;
+        }
     }
 
-    return true;
+    return false;
 }
 
 ////////////////
