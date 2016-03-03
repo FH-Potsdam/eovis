@@ -155,15 +155,17 @@
     // Range
     var x = d3.scale.linear();
 
-    var svg = d3.select("svg");
+    var svg = d3.select("svg"),
+        sg = svg.append("g").attr("id", "sg"), // social group
+        eg = svg.append("g").attr("id", "eg"); // events group
 
     // On load data
-    d3.json("../data/eonet-events-2015.json", function(json) {
+    d3.json("../data/social/eonet-events-2015-social.json", function(json) {
 
         var data = json.events;
 
         // Sort data
-        data.sort(sortEventsByStartTime);
+        //data.sort(sortEventsByStartTime);
         // data = data.slice(data.length-40, data.length-1)
 
         var visWidth = 1100;//(lineSize + 3) * 365;
@@ -174,17 +176,17 @@
         //  .domain([0, 12])
         //  .domain([d3.min(data, function(d) { return getItemStartDOY(d); }), 365]);
 
-        svg.attr("width", visWidth+20)
+        /*svg.attr("width", visWidth+20)
            .attr("height", 120*lineSize)
-        //    .attr("height", lineSize * data.length);
+        //    .attr("height", lineSize * data.length);*/
 
-        var rect = svg.selectAll("rect")
+        var rect = eg.selectAll("rect")
             .data(data);
 
         rect.enter().append("rect")
-            .attr("class", function(d) { return titleToSlug(d.categories[0].title); })
-            .attr("x", function(d) { return x(getItemStartDOY(d)); })
-            .attr("y", function(d) { return (lineSize+lineSpacing)*getLineIndex(getItemStartDOY(d), getItemEndDOY(d)); })
+            .attr("class", function(d) { return d.categories[0].slug; })
+            .attr("x", function(d) { return x(d.startDate.doy); })
+            .attr("y", function(d) { return (lineSize+lineSpacing)*getLineIndex(d.startDate.doy, d.closedDate.doy); })
             // .attr("y", function(d, i) { return (lineSize+lineSpacing)*i; })
             // .attr("y", function(d) { return (lineSize+lineSpacing)*itemsPerTimePoint(getItemStartMonth(d)); })
             .attr("rx", 0.5*lineSize)
@@ -192,7 +194,7 @@
             .attr("height", lineSize)
             .attr("width", 0)
             .transition().duration(500)
-            .attr("width", function(d) { return x(getItemEndDOY(d)-getItemStartDOY(d)+1); });
+            .attr("width", function(d) { return x(d.closedDate.doy-d.startDate.doy+1); });
 
         rect.on('mouseover',function(d) {
 
@@ -233,7 +235,41 @@
         });
 
         rect.exit().remove();
+
+        var maxIndex = getMaxIndex(linesArray);
+
+        console.log("max: " + maxIndex);
+
+        // Update svg
+        svg.attr("width", visWidth+20)
+           .attr("height", (maxIndex+1)*(lineSize+lineSpacing))
+        //    .attr("height", lineSize * data.length);
     });
+
+    ////////////////
+    // Array utils
+    ////////////////
+
+    function getMaxIndex(array) {
+        var max = 0;
+        array.forEach(function(line) {
+            if (line && line.index > max) {
+                max = line.index;
+            }
+        });
+        return max;
+    }
+
+    function getMaxOfArray(numArray) {
+        var max = 0;
+        numArray.forEach(function(num) {
+            if (num && num > max) {
+                max = num;
+            }
+        });
+        return max;
+        //return Math.max.apply(null, numArray);
+    }
 
     ///////////////
     // Vis utils
@@ -268,7 +304,7 @@
 
         // If no previous line was found, we add another
         if (index == null) {
-            linesArray.push({ start: start, end: end });
+            linesArray.push({ start: start, end: end, index: linesArray.length });
             index = linesArray.length - 1;
         }
 
@@ -280,34 +316,36 @@
     ////////////////
 
     function getItemStartMonth(d) {
-        var day = new Date(d.geometries[0].date);
+        var day = new Date(d.startDate.date);
         return (day.getMonth()+1);
     }
 
     function getItemEndMonth(d) {
-        var day = new Date(d.closed);
+        var day = new Date(d.closedDate.date);
         // var day = new Date(d.geometries[d.geometries.length-1].date);
         return (day.getMonth()+1);
     }
 
     function getItemStartDOY(d) {
-        var day = new Date(d.geometries[0].date);
-        return day.getDOY();
+        return d.startDate.doy;
+        // var day = new Date(d.geometries[0].date);
+        // return day.getDOY();
     }
 
     function getItemEndDOY(d) {
-        var day = new Date(d.closed);
-        // var day = new Date(d.geometries[d.geometries.length-1].date);
-        return day.getDOY();
+        return d.closedDate.doy;
+        // var day = new Date(d.closed);
+        // // var day = new Date(d.geometries[d.geometries.length-1].date);
+        // return day.getDOY();
     }
 
     function getItemStartDateStr(d) {
-        var day = new Date(d.geometries[0].date);
+        var day = new Date(d.startDate.date);
         return day.toDateString();
     }
 
     function getItemEndDateStr(d) {
-        var day = new Date(d.closed);
+        var day = new Date(d.closedDate.date);
         // var day = new Date(d.geometries[d.geometries.length-1].date);
         return day.toDateString();
     }
@@ -317,8 +355,8 @@
     ////////////////
 
     function sortEventsByStartTime(a, b) {
-        var dateA = new Date(a.geometries[0].date);
-        var dateB = new Date(b.geometries[0].date);
+        var dateA = new Date(a.startDate.date);
+        var dateB = new Date(b.startDate.date);
 
         return dateA.getTime() - dateB.getTime();
     }

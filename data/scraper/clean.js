@@ -137,7 +137,7 @@ for (var i=0; i<events.length; i++) {
 // Update file contents
 data.events = eventsClean;
 
-fs.writeFile('../eonet-events-2015-clean.json', JSON.stringify(data), function (err) {
+fs.writeFile('../eonet-events-2015-clean.json', JSON.stringify(data, null, 1), function (err) {
     if (err) throw err;
     console.log('Clean file saved!');
 });

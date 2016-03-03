@@ -2,6 +2,7 @@ var fs = require('fs')
 var geolib = require('geolib')
 var request = require('request');
 var qs = require('querystring');
+var config = require('./config');
 
 var contents = fs.readFileSync('../eonet-events-2015-clean.json');
 var data = JSON.parse(contents);
@@ -21,19 +22,24 @@ var allDataLoaded = false;
 
 loadYoutubeVideosByIndex(youtubeIt, onYoutubeDataLoaded);
 
+console.log(" ");
+console.log("----- LOAD YOUTUBE DATA")
+console.log(" ");
+
 function onYoutubeDataLoaded(err, i, videosData) {
 
     if (err) {
         console.log(err);
 
     // Process incoming data
-    } else if (videosData && videosData.items.length > 0) {
-        console.log("Save " + videosData.pageInfo.totalResults + " videos!");
+    } else if (videosData) {
+        console.log("Save " + videosData.count + " videos of " + videosData.totalResults + " total results!");
         data.events[i].youtube = videosData;
     }
 
     // Keep iterating
     youtubeIt++;
+    // if (youtubeIt < 10) {
     if (youtubeIt < data.events.length) {
         loadYoutubeVideosByIndex(youtubeIt, onYoutubeDataLoaded);
         // loadSocialMediaByIndex(index, onSocialMediaLoaded);
@@ -42,49 +48,44 @@ function onYoutubeDataLoaded(err, i, videosData) {
         console.log("----- YOUTUBE DATA LOADING FINISHED!!!")
         console.log(" ");
 
-        saveFileFile('../social/eonet-events-2015-youtube.json');
+        console.log("----- LOAD TWITTER DATA")
+
+        loadTweetsByIndex(twitterIt, onTwitterDataLoaded);
+        //saveFile('../social/eonet-events-2015-short-social.json');
     }
 }
 
 //////////////////
-// Youtube Load
+// Twitter Load
 //////////////////
 
-//loadTweetsByIndex(iterator, onTwitterDataLoaded);
+//loadTweetsByIndex(twitterIt, onTwitterDataLoaded);
+function onTwitterDataLoaded(err, i, twitterData) {
 
-// function onTwitterDataLoaded(err, i, twitterData) {
-//
-//     if (err) {
-//         console.log(err);
-//
-//     // Process incoming data
-//     } else if (twitterData /*&& videosData.items.length > 0*/) {
-//         //console.log("Save " + videosData.pageInfo.totalResults + " videos!");
-//         data.events[i].twitter = twitterData;
-//     }
-//
-//     // Keep iterating
-//     twitterIt++;
-//     if (twitterIt < data.events.length) {
-//         loadTweetsByIndex(twitterIt, onTwitterDataLoaded);
-//         // loadSocialMediaByIndex(index, onSocialMediaLoaded);
-//     } else {
-//         console.log(" ");
-//         console.log("----- TWITTER DATA LOADING FINISHED!!!")
-//         console.log(" ");
-//
-//         saveFileFile('../eonet-events-2015-clean-social.json');
-//     }
-// }
+    if (err) {
+        console.log(err);
 
+    // Process incoming data
+    } else if (twitterData) {
+        console.log("Save " + twitterData.count + " tweets");
+        //console.log("Save " + videosData.pageInfo.totalResults + " videos!");
+        data.events[i].twitter = twitterData;
+    }
 
-// Loop all events
-// for (var i=0; i<events.length; i++) {
-//     console.log("");
-//     loadSocialMediaByIndex(i);
-// }
+    // Keep iterating
+    twitterIt++;
+    // if (twitterIt < 10) {
+    if (twitterIt < data.events.length) {
+        loadTweetsByIndex(twitterIt, onTwitterDataLoaded);
+        // loadSocialMediaByIndex(index, onSocialMediaLoaded);
+    } else {
+        console.log(" ");
+        console.log("----- TWITTER DATA LOADING FINISHED!!!")
+        console.log(" ");
 
-// console.log(JSON.stringify(data.events));
+        saveFile('../social/eonet-events-2015-social.json');
+    }
+}
 
 
 /////////////////////////
@@ -198,7 +199,10 @@ function loadYoutubeVideosByIndex(i, callback) {
         location: event.location,
         locationRadius: radius + 'km',
         q: queryText,
-        publishedAfter: publishedAfter
+        publishedAfter: publishedAfter,
+        publishedBefore: '2016-01-01T00:00:00Z',
+        // order: 'date'
+        order: 'relevance'
     };
 
     var socialData = {};
@@ -209,13 +213,70 @@ function loadYoutubeVideosByIndex(i, callback) {
             return callback("Error retrieving videos! Error: " + err);
         }
 
-        if (videosData == null) {
-            videosData = {};
-            //socialData.youtube = videosData;
+        var outData = {};
+        if (videosData != null) {
+            outData.count = videosData.items.length;
+            outData.totalResults = videosData.pageInfo.totalResults;
+
+            outData.items = [];
+            if (videosData.items.length > 0) {
+
+                var outItems = [];
+                // var videoItems = videosData.items;
+                //videoItems.sort(sortVideosByPublishedAt)
+                //videosData.items.sort(sortVideosByCreationDate);
+
+                videosData.items.forEach(function(item) {
+                    var outItem = {};
+
+                    // General metadata
+                    outItem.id = item.id;
+                    outItem.title = item.snippet.title;
+                    outItem.description = item.snippet.description;
+
+                    if (item.snippet.thumbnails.standard) {
+                        outItem.thumbUrl = item.snippet.thumbnails.standard.url;
+                    } else if (item.snippet.thumbnails.high) {
+                        outItem.thumbUrl = item.snippet.thumbnails.high.url;
+                    } else if (item.snippet.thumbnails.medium) {
+                        outItem.thumbUrl = item.snippet.thumbnails.medium;
+                    } else if (item.snippet.thumbnails.default) {
+                        outItem.thumbUrl = item.snippet.thumbnails.default;
+                    } else {
+                        outItem.thumbUrl = "";
+                    }
+
+                    // Further metadata
+                    outItem.channelId = item.snippet.channelId;
+                    outItem.channelTitle = item.channelTitle;
+
+                    outItem.tags = item.tags;
+                    outItem.categoryId = item.categoryId;
+
+                    // Date params
+                    outItem.publishedAt = {};
+                    outItem.publishedAt.date = item.snippet.publishedAt;
+                    outItem.publishedAt.doy = dateToDOY(item.snippet.publishedAt);
+
+                    outItem.recordingDate = {};
+                    outItem.recordingDate.date = item.recordingDetails.recordingDate;
+                    outItem.recordingDate.doy = dateToDOY(item.recordingDetails.recordingDate);
+
+                    // Location params
+                    outItem.location = item.recordingDetails.location;
+
+                    outItems.push(outItem);
+                    // outData.items.push(outItem);
+                });
+
+                outItems.sort(sortVideosByPublishedAt);
+                // outItems.sort(sortVideosByDOY);
+                outData.items = outItems;
+            }
         }
 
         // Load tweets
-        callback(null, i, videosData);
+        callback(null, i, outData);
     });
 }
 
@@ -223,7 +284,8 @@ function loadYoutubeVideos(params, callback) {
 
     console.log("Search Videos - location: " + params.location + ", locationRadius: " + params.locationRadius + ", q: " + params.q + ", publishedAfter: " + params.publishedAfter + ", publishedBefore: " + params.publishedBefore);
 
-    var apiBaseUrl = "http://tostnik.deneb.uberspace.de/scrapalous-api/youtube/videos/";
+    //var apiBaseUrl = "http://tostnik.deneb.uberspace.de/scrapalous-api/youtube/videos/";
+    var apiBaseUrl = config.apiUrl + "/youtube/videos/";
     var paramsStr = qs.stringify(params);
 
     console.log("query: " + apiBaseUrl + '?'+paramsStr);
@@ -276,13 +338,24 @@ function loadTweetsByIndex(i, callback) {
             return callback("Error retrieving tweets! Error: " + err);
         }
 
-        if (twitterData == null) {
-            twitterData = {};
-            //socialData.twitter = twitterData;
+        var outData = {};
+        if (twitterData != null) {
+            outData.count = twitterData.statuses.length;
+            outData.totalResults = twitterData.statuses.length;
+            //outData.totalResults = videosData.pageInfo.totalResults;
+
+            outData.statuses = [];
+            if (twitterData.statuses.length > 0) {
+                twitterData.statuses.forEach(function(status) {
+                    var outStatus = {};
+                    outStatus = status;
+                    outData.statuses.push(outStatus);
+                });
+            }
         }
 
         // Load tweets
-        callback(null, i, twitterData);
+        callback(null, i, outData);
     });
 }
 
@@ -290,38 +363,73 @@ function loadTweets(params, callback) {
 
     console.log("Search Tweets - geocode: " + params.geocode + ", q: " + params.q);
 
-    var apiBaseUrl = "http://tostnik.deneb.uberspace.de/scrapalous-api/twitter/search/tweets/";
+    var apiBaseUrl = config.apiUrl + "/twitter/search/tweets/";
     var paramsStr = qs.stringify(params);
 
     console.log("query: " + apiBaseUrl + '?'+paramsStr);
 
-    var videosData;
+    var twitterData;
     request.get(apiBaseUrl + '?'+paramsStr, function (error, response, body) {
         if (error || response.statusCode != 200) {
             return (error) ? callback(error) : callback(response.statusCode);
         }
 
-        console.log("Videos successfully retrieved");
+        //console.log("Videos successfully retrieved");
 
         try {
-            videosData = JSON.parse(body);
+            twitterData = JSON.parse(body);
         } catch (e) {
             return callback(error);
         }
 
-        callback(null, videosData);
+        callback(null, twitterData);
     });
 }
 
+////////////////////
+// Date Functions
+////////////////////
+
+function dateToDOY(date) {
+    var day = new Date(date);
+    var onejan = new Date(day.getFullYear(),0,1);
+    return Math.ceil((day - onejan) / 86400000);
+    // return day.getDOY();
+}
+
+function sortVideosByDOY(a, b) {
+    return a.publishedAt.doy - b.publishedAt.doy;
+}
+
+function sortVideosByPublishedAt(a, b) {
+    var dateA = new Date(a.publishedAt.date);
+    var dateB = new Date(b.publishedAt.date);
+
+    return dateA.getTime() - dateB.getTime();
+}
+
+// function sortVideosByPublishedAt(a, b) {
+//     var dateA = new Date(a.snippet.publishedAt.date);
+//     var dateB = new Date(b.snippet.publishedAt.date);
+//
+//     return dateA.getTime() - dateB.getTime();
+// }
+
+function sortVideosByRecordingDate(a, b) {
+    var dateA = new Date(a.recordingDetails.recordingDate.date);
+    var dateB = new Date(b.recordingDetails.recordingDate.date);
+
+    return dateA.getTime() - dateB.getTime();
+}
 
 ////////////////////
 // File Functions
 ////////////////////
 
-function saveFileFile(file) {
+function saveFile(file) {
   console.log("Saving social file...");
 
-  fs.writeFile(file, JSON.stringify(data), function (err) {
+  fs.writeFile(file, JSON.stringify(data, null, 1), function (err) {
       if (err) throw err;
       console.log('Social file saved!');
   });
