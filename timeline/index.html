@@ -19,6 +19,8 @@
     .wildfires { fill: #ED5D5A; color: #ED5D5A; }
     .floods { fill: #5E7CD3; color: #5E7CD3; }
 
+    .youtube { fill: #ED5D5A; color: #ED5D5A; }
+
     body {
         font-family: Futura, 'Trebuchet MS', Arial, sans-serif;
         /*background-color: #2A2C39*/
@@ -63,11 +65,17 @@
         margin: 0 auto;
     }
 
+    #sg, #eg {
+        width: 100%;
+        display: block;
+    }
+
     rect,
     circle {
         fill-opacity: 0.5;
         fill: grey;
-        stroke-width: 3;
+        stroke-width: 1;
+        /*stroke-width: 3;*/
         stroke: white;
     }
 
@@ -78,11 +86,10 @@
     }
 
     #text {
-        position: fixed;
-        top: 350px;
-        left: 180px;
-        /*position: absolute;*/
-        width: 290px;
+        position: absolute;
+        /*top: 350px;
+        left: 180px;*/
+        width: 300px;
         opacity: 0;
         padding: 5px 8px;
 
@@ -104,6 +111,14 @@
         #text #date {
             font-size: 13px;
         }
+
+        #text #thumb {
+            max-width: 100%;
+            margin-top: 25px;
+        }
+            #text #thumb img {
+                max-width: 100%;
+            }
 
         #text #desc {
             font: 400 16px/1.5 'Vollkorn', serif;
@@ -130,6 +145,7 @@
                 <div id="cat"></div>
                 <h2 id="title"></h2>
                 <div id="date"></div>
+                <div id="thumb"></div>
                 <div id="desc"></div>
             </div>
         </div>
@@ -143,42 +159,138 @@
 
 <script type="text/javascript">
 
-    var lineSize = 6,
-        lineSpacing = 0;
+    var visWidth,
+        socialHeight,
+        eventsHeight;
+
+    var eventsData;
+
+    var x;
 
     // Points vis
     var timePointItemsArray = [];
+    var radius = 3;
 
-    // Range vis
+    // Lines vis
     var linesArray = [];
-
-    // Range
-    var x = d3.scale.linear();
+    var lineSize = 6,
+        lineSpacing = 0;
 
     var svg = d3.select("svg"),
         sg = svg.append("g").attr("id", "sg"), // social group
         eg = svg.append("g").attr("id", "eg"); // events group
 
+
     // On load data
     d3.json("../data/social/eonet-events-2015-social.json", function(json) {
 
-        var data = json.events;
+        eventsData = json.events;
 
         // Sort data
         //data.sort(sortEventsByStartTime);
         // data = data.slice(data.length-40, data.length-1)
 
-        var visWidth = 1100;//(lineSize + 3) * 365;
+        // visWidth = 2*radius*365;
+        visWidth = 1100;
+        // var visWidth = (lineSize + 3) * 365;
         // var visWidth = (lineSize+2)*(12+6);
+
+        // Range
+        x = d3.scale.linear();
 
         x.range([0, visWidth])
          .domain([0, 365])
-        //  .domain([0, 12])
-        //  .domain([d3.min(data, function(d) { return getItemStartDOY(d); }), 365]);
 
-        /*svg.attr("width", visWidth+20)
-           .attr("height", 120*lineSize)
-        //    .attr("height", lineSize * data.length);*/
+        // Social Timeline
+        sg.attr("width", visWidth)
+          .attr("transform", "translate(0,0)");
+
+        drawSocialTimeline();
+        socialHeight = (2*radius)*(getMaxOfArray(timePointItemsArray)+1);
+
+        // Events Timeline
+        eg.attr("transform", "translate(0," + socialHeight + ")");
+        drawEventsTimeline();
+        eventsHeight = (1+getMaxIndex(linesArray))*(lineSize+lineSpacing);
+
+        // Update svg
+        svg.attr("width", visWidth)
+           .attr("height", eventsHeight + socialHeight)
+    });
+
+    /////////////////////
+    // Social Timeline
+    /////////////////////
+
+    function drawSocialTimeline() {
+
+        var data = eventsData[0].youtube.items;
+
+        var circle = sg.selectAll("circle")
+            .data(data);
+
+        circle.enter().append("circle")
+            .attr("class", function(d) { return 'youtube'; })
+            .attr("cx", function(d) { return x(d.publishedAt.doy); })
+            .attr("cy", function(d) { return radius + (2*radius)*itemsPerTimePoint(d.publishedAt.doy); })
+            .attr("r", function(d) { return radius; })
+            // .attr("transform", function(d, i) {
+            //     return "translate(0," + 2*itemsPerTimePoint(getItemStartMonth(d))*radius + ")";
+            // });
+
+        circle.on('mouseover',function(d) {
+
+            var thisCircle = d3.select(this);
+
+            d3.select("#text")
+                .style("left", (-10+parseInt(thisCircle.attr("cx"),10))+'px')
+                .style("top", (40+parseInt(thisCircle.attr("cy"),10))+'px')
+                .style('opacity', 1)
+            d3.select("#title")
+                .append("text")
+                .text(d.title)
+            d3.select("#date")
+                .append("text")
+                .text(getDateStr(d.publishedAt.date))
+            d3.select("#cat")
+                .append("text")
+                .attr("class", "youtube")
+                .text("Youtube")
+            d3.select("#thumb")
+                // .append("text")
+                .html('<img src="' + d.thumbUrl + '" />')
+            // d3.select("#desc")
+            //     .append("text")
+            //     .text(d.description)
+        })
+        .on('mouseout',function(d){
+            d3.select(this)
+                .attr('fill','grey')
+                .attr('fill-opacity', 0)
+            d3.select("#text")
+                .style('opacity', 0)
+            d3.select("#title")
+                .select("text").remove()
+            d3.select("#date")
+                .select("text").remove()
+            d3.select("#cat")
+                .select("text").remove()
+            d3.select("#thumb")
+                .html("")
+            d3.select("#desc")
+                .select("text").remove()
+        });
+
+        circle.exit().remove();
+    }
+
+    /////////////////////
+    // Events Timeline
+    /////////////////////
+
+    function drawEventsTimeline() {
+
+        var data = eventsData;
 
         var rect = eg.selectAll("rect")
             .data(data);
@@ -201,8 +313,10 @@
             var thisRect = d3.select(this);
 
             d3.select("#text")
-                // .style("left", parseInt(thisRect.attr("x"),10)+'px')
-                // .style("top", (150+parseInt(thisRect.attr("y"),10))+'px')
+                // .style("left", (-10+parseInt(thisCircle.attr("cx"),10))+'px')
+                // .style("top", (40+parseInt(thisCircle.attr("cy"),10))+'px')
+                .style("left", -5+parseInt(thisRect.attr("x"),10)+'px')
+                .style("top", (socialHeight+40+parseInt(thisRect.attr("y"),10))+'px')
                 .style('opacity', 1)
             d3.select("#title")
                 .append("text")
@@ -235,16 +349,8 @@
         });
 
         rect.exit().remove();
+    }
 
-        var maxIndex = getMaxIndex(linesArray);
-
-        console.log("max: " + maxIndex);
-
-        // Update svg
-        svg.attr("width", visWidth+20)
-           .attr("height", (maxIndex+1)*(lineSize+lineSpacing))
-        //    .attr("height", lineSize * data.length);
-    });
 
     ////////////////
     // Array utils
@@ -269,6 +375,25 @@
         });
         return max;
         //return Math.max.apply(null, numArray);
+    }
+
+    ////////////////
+    // Date utils
+    ////////////////
+
+    function getMonth(date) {
+        var day = new Date(date);
+        return (day.getMonth()+1);
+    }
+
+    function getDay(date) {
+        var day = new Date(date);
+        return day.getDOY();
+    }
+
+    function getDateStr(date) {
+        var day = new Date(date);
+        return day.toDateString();
     }
 
     ///////////////

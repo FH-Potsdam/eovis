@@ -61,7 +61,7 @@
         }
 
     #vis-wrap {
-        width: 320px;
+        /*width: 320px;*/
         display: block;
         margin: 0 auto;
         position: relative;
@@ -167,18 +167,21 @@
 
         var data = json.events[0].youtube.items;
 
-        var visWidth = 300;//(2*radius+2)*(12+6);
+        // var visWidth = (2*radius)*365;
+        var visWidth = (2*radius)*(365 - d3.min(data, function(d) { return d.publishedAt.doy; }))
+        // var visWidth = (2*radius+3)*data.length;
 
         x.range([0, visWidth])
-         .domain([0, 12]);
+        //  .domain([0, 365])
+         .domain([d3.min(data, function(d) { return d.publishedAt.doy; }) - 5, 365]);
 
         var circle = sg.selectAll("circle")
             .data(data);
 
         circle.enter().append("circle")
             .attr("class", function(d) { return 'youtube'; })
-            .attr("cx", function(d) { return x(getMonth(d.publishedAt.date)); })
-            .attr("cy", function(d) { return radius + (2*radius)*itemsPerTimePoint(getMonth(d.publishedAt.date)); })
+            .attr("cx", function(d) { return x(d.publishedAt.doy); })
+            .attr("cy", function(d) { return radius + (2*radius)*itemsPerTimePoint(d.publishedAt.doy); })
             .attr("r", function(d) { return radius; })
             // .attr("transform", function(d, i) {
             //     return "translate(0," + 2*itemsPerTimePoint(getItemStartMonth(d))*radius + ")";
@@ -234,9 +237,8 @@
 
         console.log("data length: " + data.length + ", max: " + arrayMax);
 
-        svg.attr("width", visWidth+20)
+        svg.attr("width", visWidth)
            .attr("height", 2*radius*arrayMax);
-        //    .attr("height", radius * data.length);
     });
 
     ////////////////
