@@ -91,9 +91,9 @@
         left: 180px;*/
         width: 300px;
         opacity: 0;
-        padding: 5px 8px;
+        padding: 10px;
 
-        background-color: rgba(255,255,255,0.6);
+        background-color: rgba(255,255,255,0.8);
     }
         #text #cat {
             font-size: 10px;
@@ -202,8 +202,7 @@
          .domain([0, 365])
 
         // Social Timeline
-        sg.attr("width", visWidth)
-          .attr("transform", "translate(0,0)");
+        sg.attr("transform", "translate(0,0)");
 
         drawSocialTimeline();
         socialHeight = (2*radius)*(getMaxOfArray(timePointItemsArray)+1);
@@ -315,7 +314,7 @@
             d3.select("#text")
                 // .style("left", (-10+parseInt(thisCircle.attr("cx"),10))+'px')
                 // .style("top", (40+parseInt(thisCircle.attr("cy"),10))+'px')
-                .style("left", -5+parseInt(thisRect.attr("x"),10)+'px')
+                .style("left", -10+parseInt(thisRect.attr("x"),10)+'px')
                 .style("top", (socialHeight+40+parseInt(thisRect.attr("y"),10))+'px')
                 .style('opacity', 1)
             d3.select("#title")
