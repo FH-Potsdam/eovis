@@ -231,7 +231,9 @@
             eventsDataKeys[d.id] = i;
             // eventsData[d.id] = d;
 
-            d.lineIndex = getLineIndex(d.startDate.doy, d.closedDate.doy)
+            var endDOY = d.closedDate.doy;
+            // var endDOY = (d.endDate) ? d.endDate.doy : d.closedDate.doy;
+            d.lineIndex = getLineIndex(d.startDate.doy, endDOY);
             // d.lineIndex = getLineIndex(i);
 
             // Social Media data
@@ -257,22 +259,19 @@
             // socialData = socialData.concat(d.youtube.items);
         });
 
-        // Height of social timeline
-        socialHeight = (2*radius)*(getMaxOfArray(timePointItemsArray)+1);
-        // socialHeight = (2*radius)*(data.analytics.maxDOY+1);
-
-        d3.select("#text").style('margin-top', socialHeight+'px');
+        // Events Timeline
+        eventsHeight = (getMaxIndex(linesArray))*(lineSize+lineSpacing);
+        drawEventsTimeline();
 
         // Social Timeline
-        sg.attr("transform", "translate(0,0)");
+        sg.attr("transform", "translate(0,"+eventsHeight+")");
+        socialHeight = (2*radius)*(getMaxOfArray(timePointItemsArray)+1);
         drawSocialTimeline();
 
-        // Events Timeline
-        eg.attr("transform", "translate(0," + socialHeight + ")");
-        drawEventsTimeline();
-        eventsHeight = (1+getMaxIndex(linesArray))*(lineSize+lineSpacing);
+        // Text positioning
+        d3.select("#text").style('margin-top', socialHeight+'px');
 
-        console.log("social height: " + socialHeight);
+
         // Update svg
         svg.attr("width", visWidth)
            .attr("height", eventsHeight + socialHeight)
@@ -296,7 +295,8 @@
             .attr("cx", function(d) { return x(d.publishedAt.doy); })
             // .attr("cy", function(d) { return (2*radius)*(data.analytics.maxDOY+1) + radius; })
             // .transition().duration(800)
-            .attr("cy", function(d) { return socialHeight-(2*radius*d.pointPos) + radius; })
+            .attr("cy", function(d) { return (2*radius*d.pointPos) + radius; })
+            // .attr("cy", function(d) { return socialHeight-(2*radius*d.pointPos) + radius; })
             // .attr("cy", function(d) { return (2*radius)*(data.analytics.maxDOY-itemsPerTimePoint(d.publishedAt.doy)+1) + radius; })
             .attr("r", function(d) { return radius; })
 
@@ -378,13 +378,13 @@
             .attr("id", function(d) { return d.id; })
             .attr("class", function(d) { return d.categories[0].slug; })
             .attr("x", function(d) { return x(d.startDate.doy); })
-            .attr("y", function(d) { return (lineSize+lineSpacing)*d.lineIndex; })
+            .attr("y", function(d) { return eventsHeight-(lineSize+lineSpacing)*d.lineIndex; })
             // .attr("y", function(d) { return (lineSize+lineSpacing)*getLineIndex(d.startDate.doy, d.closedDate.doy); })
             .attr("rx", 0.5*lineSize)
             .attr("ry", 0.5*lineSize)
             .attr("height", lineSize)
-            .attr("width", 0)
-            .transition().duration(800)
+            // .attr("width", 0)
+            // .transition().duration(800)
             .attr("width", function(d) { return x(d.closedDate.doy-d.startDate.doy+1); });
             // .attr("width", function(d) { var endDOY = (d.endDate) ? d.endDate.doy : d.closedDate.doy; return x(endDOY-d.startDate.doy+1); });
 
