@@ -35,7 +35,7 @@
         z-index: 9;
         text-align: center;
         width: 400px;
-        margin: 0 auto 45px;
+        margin: 0 auto 60px;
 
         /*position: fixed;
         top: 40px;
@@ -105,7 +105,7 @@
 
     #text {
         position: fixed;
-        top: 400px;
+        top: 180px;
         left: 180px;
         width: 300px;
         opacity: 0;
@@ -269,7 +269,7 @@
         drawSocialTimeline();
 
         // Text positioning
-        d3.select("#text").style('margin-top', socialHeight+'px');
+        d3.select("#text").style('margin-top', (eventsHeight+socialHeight)+'px');
 
 
         // Update svg
