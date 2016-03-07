@@ -63,6 +63,14 @@
         position: relative;
         display: block;
         margin: 0 auto;
+
+        margin-left: -210px;
+        /*padding: 40px;*/
+    }
+
+    svg {
+        /*margin-left: -250px;*/
+        /*padding: 40px;*/
     }
 
     #sg, #eg {
@@ -77,22 +85,33 @@
         stroke-width: 1;
         /*stroke-width: 3;*/
         stroke: white;
-    }
 
-    rect:hover,
-    circle:hover {
+        transition: fill-opacity .15s ease-in-out;
+    }
+        /*rect { fill-opacity: 0.5; }
+        circle { fill-opacity: 0.4; }*/
+
+    rect:hover, rect.active,
+    circle:hover, circle.active {
         fill-opacity: 0.8;
         cursor: pointer;
     }
+        /*rect:hover, rect.active { fill-opacity: 0.8; }
+        circle:hover, circle.active { fill-opacity: 0.9; }*/
+
+    rect.off, circle.off {
+        fill-opacity: 0.3;
+    }
 
     #text {
-        position: absolute;
-        /*top: 350px;
-        left: 180px;*/
+        position: fixed;
+        top: 400px;
+        left: 180px;
         width: 300px;
         opacity: 0;
-        padding: 10px;
+        /*padding: 10px;*/
 
+        padding: 5px 8px;
         background-color: rgba(255,255,255,0.8);
     }
         #text #cat {
@@ -163,17 +182,20 @@
         socialHeight,
         eventsHeight;
 
-    var eventsData;
+    var data = [],
+        eventsData = [],
+        eventsDataKeys = [],
+        socialData = [];
 
     var x;
 
     // Points vis
     var timePointItemsArray = [];
-    var radius = 3;
+    var radius = 2;
 
     // Lines vis
     var linesArray = [];
-    var lineSize = 6,
+    var lineSize = 2*radius,
         lineSpacing = 0;
 
     var svg = d3.select("svg"),
@@ -182,16 +204,17 @@
 
 
     // On load data
-    d3.json("../data/social/eonet-events-2015-social.json", function(json) {
+    d3.json("../data/social/eonet-events-2015-social-a.json", function(json) {
 
+        data = json;
         eventsData = json.events;
 
         // Sort data
         //data.sort(sortEventsByStartTime);
         // data = data.slice(data.length-40, data.length-1)
 
-        // visWidth = 2*radius*365;
-        visWidth = 1100;
+        visWidth = 2*radius*365;
+        // visWidth = 1100;
         // var visWidth = (lineSize + 3) * 365;
         // var visWidth = (lineSize+2)*(12+6);
 
@@ -201,21 +224,57 @@
         x.range([0, visWidth])
          .domain([0, 365])
 
+        // Loop social data
+        eventsData.forEach(function(d, i) {
+
+            // lodash https://lodash.com/
+            eventsDataKeys[d.id] = i;
+            // eventsData[d.id] = d;
+
+            // Social Media data
+            if (d.youtube) {
+                var youtubeItems = d.youtube.items;
+                youtubeItems.forEach(function(item, i) {
+                    item.parent = d.id;
+                    item.source = 'youtube';
+                    item.pointPos = itemsPerTimePoint(item.publishedAt.doy);
+                    socialData.push(item);
+                });
+            }
+
+            /*if (d.twitter) {
+                var twitterStatuses = d.twitter.statuses;
+                twitterStatuses.forEach(function(item, i) {
+                    item.parent = d.id;
+                    item.source = 'twitter';
+                    socialData.push(item);
+                });
+            }*/
+
+            // socialData = socialData.concat(d.youtube.items);
+        });
+
+        // Height of social timeline
+        socialHeight = (2*radius)*(getMaxOfArray(timePointItemsArray)+1);
+        // socialHeight = (2*radius)*(data.analytics.maxDOY+1);
+
+        d3.select("#text").style('margin-top', socialHeight+'px');
+
         // Social Timeline
         sg.attr("transform", "translate(0,0)");
-
         drawSocialTimeline();
-        socialHeight = (2*radius)*(getMaxOfArray(timePointItemsArray)+1);
 
         // Events Timeline
         eg.attr("transform", "translate(0," + socialHeight + ")");
         drawEventsTimeline();
         eventsHeight = (1+getMaxIndex(linesArray))*(lineSize+lineSpacing);
 
+        console.log("social height: " + socialHeight);
         // Update svg
         svg.attr("width", visWidth)
            .attr("height", eventsHeight + socialHeight)
     });
+
 
     /////////////////////
     // Social Timeline
@@ -223,27 +282,36 @@
 
     function drawSocialTimeline() {
 
-        var data = eventsData[0].youtube.items;
+        youtubeData = socialData;
+        // var youtubeData = eventsData[index].youtube.items;
 
         var circle = sg.selectAll("circle")
-            .data(data);
+            .data(youtubeData);
 
         circle.enter().append("circle")
-            .attr("class", function(d) { return 'youtube'; })
+            .attr("class", function(d) { return d.source + " " + d.parent })
             .attr("cx", function(d) { return x(d.publishedAt.doy); })
-            .attr("cy", function(d) { return radius + (2*radius)*itemsPerTimePoint(d.publishedAt.doy); })
+            // .attr("cy", function(d) { return (2*radius)*(data.analytics.maxDOY+1) + radius; })
+            // .transition().duration(800)
+            .attr("cy", function(d) { return socialHeight-(2*radius*d.pointPos) + radius; })
+            // .attr("cy", function(d) { return (2*radius)*(data.analytics.maxDOY-itemsPerTimePoint(d.publishedAt.doy)+1) + radius; })
             .attr("r", function(d) { return radius; })
-            // .attr("transform", function(d, i) {
-            //     return "translate(0," + 2*itemsPerTimePoint(getItemStartMonth(d))*radius + ")";
-            // });
 
         circle.on('mouseover',function(d) {
 
             var thisCircle = d3.select(this);
 
+            // Related event
+            eg.selectAll('rect').classed('off', true);
+            eg.select('#'+d.parent).classed('active', true).classed('off', false);
+
+            // Other social media
+            sg.selectAll('circle').classed('off', true);
+            thisCircle.classed('off', false);
+
             d3.select("#text")
-                .style("left", (-10+parseInt(thisCircle.attr("cx"),10))+'px')
-                .style("top", (40+parseInt(thisCircle.attr("cy"),10))+'px')
+                // .style("left", (-10+parseInt(thisCircle.attr("cx"),10))+'px')
+                // .style("top", (30+parseInt(thisCircle.attr("cy"),10))+'px')
                 .style('opacity', 1)
             d3.select("#title")
                 .append("text")
@@ -263,6 +331,14 @@
             //     .text(d.description)
         })
         .on('mouseout',function(d){
+
+            // Related event
+            eg.selectAll('rect.off').classed('off', false);
+            eg.select('#'+d.parent).classed('active', false);
+
+            // Other social media
+            sg.selectAll('circle.off').classed('off', false);
+
             d3.select(this)
                 .attr('fill','grey')
                 .attr('fill-opacity', 0)
@@ -283,18 +359,20 @@
         circle.exit().remove();
     }
 
+
     /////////////////////
     // Events Timeline
     /////////////////////
 
     function drawEventsTimeline() {
 
-        var data = eventsData;
+        // var data = eventsData;
 
         var rect = eg.selectAll("rect")
-            .data(data);
+            .data(eventsData);
 
         rect.enter().append("rect")
+            .attr("id", function(d) { return d.id; })
             .attr("class", function(d) { return d.categories[0].slug; })
             .attr("x", function(d) { return x(d.startDate.doy); })
             .attr("y", function(d) { return (lineSize+lineSpacing)*getLineIndex(d.startDate.doy, d.closedDate.doy); })
@@ -304,18 +382,26 @@
             .attr("ry", 0.5*lineSize)
             .attr("height", lineSize)
             .attr("width", 0)
-            .transition().duration(500)
+            .transition().duration(800)
             .attr("width", function(d) { return x(d.closedDate.doy-d.startDate.doy+1); });
+            // .attr("width", function(d) { var endDOY = (d.endDate) ? d.endDate.doy : d.closedDate.doy; return x(endDOY-d.startDate.doy+1); });
 
         rect.on('mouseover',function(d) {
 
             var thisRect = d3.select(this);
 
+            // Related social media
+            sg.selectAll('circle').classed('off', true);
+            sg.selectAll('circle.'+d.id).classed('active', true).classed('off', false);
+
+            // Other events
+            eg.selectAll('rect').classed('off', true);
+            thisRect.classed('off', false);
+
+            // Text
             d3.select("#text")
-                // .style("left", (-10+parseInt(thisCircle.attr("cx"),10))+'px')
-                // .style("top", (40+parseInt(thisCircle.attr("cy"),10))+'px')
-                .style("left", -10+parseInt(thisRect.attr("x"),10)+'px')
-                .style("top", (socialHeight+40+parseInt(thisRect.attr("y"),10))+'px')
+                // .style("left", -10+parseInt(thisRect.attr("x"),10)+'px')
+                // .style("top", (30+socialHeight+parseInt(thisRect.attr("y"),10))+'px')
                 .style('opacity', 1)
             d3.select("#title")
                 .append("text")
@@ -332,6 +418,14 @@
                 .text(d.description)
         })
         .on('mouseout',function(d){
+
+            // Related social media
+            sg.selectAll('circle.off').classed('off', false);
+            sg.selectAll('circle.'+d.id).classed('active', false);
+
+            // Other events
+            eg.selectAll('rect.off').classed('off', false);
+
             d3.select(this)
                 .attr('fill','grey')
                 .attr('fill-opacity', 0)
@@ -348,6 +442,26 @@
         });
 
         rect.exit().remove();
+    }
+
+
+    ////////////////
+    // Date utils
+    ////////////////
+
+    function getMonth(date) {
+        var day = new Date(date);
+        return (day.getMonth()+1);
+    }
+
+    function getDay(date) {
+        var day = new Date(date);
+        return day.getDOY();
+    }
+
+    function getDateStr(date) {
+        var day = new Date(date);
+        return day.toDateString();
     }
 
 
@@ -374,25 +488,6 @@
         });
         return max;
         //return Math.max.apply(null, numArray);
-    }
-
-    ////////////////
-    // Date utils
-    ////////////////
-
-    function getMonth(date) {
-        var day = new Date(date);
-        return (day.getMonth()+1);
-    }
-
-    function getDay(date) {
-        var day = new Date(date);
-        return day.getDOY();
-    }
-
-    function getDateStr(date) {
-        var day = new Date(date);
-        return day.toDateString();
     }
 
     ///////////////
