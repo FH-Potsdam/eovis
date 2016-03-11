@@ -69,8 +69,8 @@
     }
 
     svg {
-        /*margin-left: -250px;*/
-        /*padding: 40px;*/
+        margin: 0 auto;
+        display: block;
     }
 
     #sg, #eg {
@@ -105,8 +105,10 @@
 
     #text {
         position: fixed;
-        top: 180px;
-        left: 180px;
+        top: 100px;
+        left: 50%;
+        margin-left: -594px;
+
         width: 300px;
         opacity: 0;
         /*padding: 10px;*/
@@ -377,7 +379,7 @@
         rect.enter().append("rect")
             .attr("id", function(d) { return d.id; })
             .attr("class", function(d) { return d.categories[0].slug; })
-            .attr("x", function(d) { return x(d.startDate.doy); })
+            .attr("x", function(d) { return x(d.startDate.doy)-radius; })
             .attr("y", function(d) { return eventsHeight-(lineSize+lineSpacing)*d.lineIndex; })
             // .attr("y", function(d) { return (lineSize+lineSpacing)*getLineIndex(d.startDate.doy, d.closedDate.doy); })
             .attr("rx", 0.5*lineSize)

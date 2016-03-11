@@ -69,8 +69,8 @@
     }
 
     svg {
-        /*margin-left: -250px;*/
-        /*padding: 40px;*/
+        margin: 0 auto;
+        display: block;
     }
 
     #sg, #eg {
@@ -105,8 +105,10 @@
 
     #text {
         position: fixed;
-        top: 400px;
-        left: 180px;
+        top: 310px;
+        left: 50%;
+        margin-left: -594px;
+
         width: 300px;
         opacity: 0;
         /*padding: 10px;*/
@@ -182,6 +184,8 @@
         socialHeight,
         eventsHeight;
 
+    var showMedia = true;
+
     var data = [],
         eventsData = [],
         eventsDataKeys = [],
@@ -189,12 +193,16 @@
 
     var x;
 
-    // Points vis
-    var timePointItemsArray = [];
+    // Media vis
+    var mediaTimePointsArray = [];
     var radius = 2;
 
-    // Lines vis
-    var linesArray = [];
+    // Events vis
+    var eventTimelinesArray = [],
+        eventTimePointsArray = [],
+        eventVisMethod = 0;
+
+
     var lineSize = 2*radius,
         lineSpacing = 0;
 
@@ -231,8 +239,12 @@
             eventsDataKeys[d.id] = i;
             // eventsData[d.id] = d;
 
-            d.lineIndex = getLineIndex(d.startDate.doy, d.closedDate.doy)
-            // d.lineIndex = getLineIndex(i);
+            if (eventVisMethod == 0) {
+                d.lineIndex = getLineIndex(eventTimelinesArray, d.startDate.doy, d.closedDate.doy)
+                // d.lineIndex = getLineIndex(i);
+            } else {
+                d.pointPos = itemsPerTimePoint(eventTimePointsArray, d.startDate.doy);
+            }
 
             // Social Media data
             if (d.youtube) {
@@ -240,7 +252,7 @@
                 youtubeItems.forEach(function(item, i) {
                     item.parent = d.id;
                     item.source = 'youtube';
-                    item.pointPos = itemsPerTimePoint(item.publishedAt.doy);
+                    item.pointPos = itemsPerTimePoint(mediaTimePointsArray, item.publishedAt.doy);
                     socialData.push(item);
                 });
             }
@@ -257,20 +269,32 @@
             // socialData = socialData.concat(d.youtube.items);
         });
 
-        // Height of social timeline
-        socialHeight = (2*radius)*(getMaxOfArray(timePointItemsArray)+1);
-        // socialHeight = (2*radius)*(data.analytics.maxDOY+1);
+        if (showMedia) {
+            // Height of social timeline
+            socialHeight = (2*radius)*(getMaxOfArray(mediaTimePointsArray));
+            // socialHeight = (2*radius)*(data.analytics.maxDOY+1);
 
-        d3.select("#text").style('margin-top', socialHeight+'px');
+            d3.select("#text").style('margin-top', socialHeight+'px');
 
-        // Social Timeline
-        sg.attr("transform", "translate(0,0)");
-        drawSocialTimeline();
+            // Social Timeline
+            sg.attr("transform", "translate(0,0)");
+            drawMediaTimePoints();
+        } else {
+            socialHeight = 0;
+        }
 
         // Events Timeline
-        eg.attr("transform", "translate(0," + socialHeight + ")");
-        drawEventsTimeline();
-        eventsHeight = (1+getMaxIndex(linesArray))*(lineSize+lineSpacing);
+        var egY = socialHeight;
+        if (eventVisMethod == 0) {
+            drawEventsTimelines();
+            eventsHeight = (1+getMaxIndex(eventTimelinesArray))*(lineSize+lineSpacing);
+        } else {
+            drawEventsTimePoints();
+            eventsHeight = (2*radius)*(getMaxOfArray(eventTimePointsArray)+1);
+            egY += 3*radius;
+        }
+
+        eg.attr("transform", "translate(0," + egY + ")");
 
         console.log("social height: " + socialHeight);
         // Update svg
@@ -283,7 +307,7 @@
     // Social Timeline
     /////////////////////
 
-    function drawSocialTimeline() {
+    function drawMediaTimePoints() {
 
         youtubeData = socialData;
         // var youtubeData = eventsData[index].youtube.items;
@@ -294,8 +318,8 @@
         circle.enter().append("circle")
             .attr("class", function(d) { return d.source + " " + d.parent })
             .attr("cx", function(d) { return x(d.publishedAt.doy); })
-            // .attr("cy", function(d) { return (2*radius)*(data.analytics.maxDOY+1) + radius; })
-            // .transition().duration(800)
+            .attr("cy", function(d) { return (2*radius)*(data.analytics.maxDOY+1) + radius; })
+            .transition().duration(800)
             .attr("cy", function(d) { return socialHeight-(2*radius*d.pointPos) + radius; })
             // .attr("cy", function(d) { return (2*radius)*(data.analytics.maxDOY-itemsPerTimePoint(d.publishedAt.doy)+1) + radius; })
             .attr("r", function(d) { return radius; })
@@ -367,7 +391,7 @@
     // Events Timeline
     /////////////////////
 
-    function drawEventsTimeline() {
+    function drawEventsTimelines() {
 
         // var data = eventsData;
 
@@ -377,7 +401,7 @@
         rect.enter().append("rect")
             .attr("id", function(d) { return d.id; })
             .attr("class", function(d) { return d.categories[0].slug; })
-            .attr("x", function(d) { return x(d.startDate.doy); })
+            .attr("x", function(d) { return x(d.startDate.doy)-radius; })
             .attr("y", function(d) { return (lineSize+lineSpacing)*d.lineIndex; })
             // .attr("y", function(d) { return (lineSize+lineSpacing)*getLineIndex(d.startDate.doy, d.closedDate.doy); })
             .attr("rx", 0.5*lineSize)
@@ -446,6 +470,98 @@
         rect.exit().remove();
     }
 
+    /////////////////////
+    // Social Timeline
+    /////////////////////
+
+    function drawEventsTimePoints() {
+
+        var circle = eg.selectAll("circle")
+            .data(eventsData);
+
+        circle.enter().append("circle")
+            .attr("class", function(d) { return d.categories[0].slug; })
+            .attr("cx", function(d) { return x(d.startDate.doy); })
+            .attr("cy", function(d) { return (2*radius*d.pointPos); })
+            .attr("r", function(d) { return radius; })
+
+        circle.on('mouseover',function(d) {
+
+            var thisCircle = d3.select(this);
+
+            // Related social media
+            sg.selectAll('circle').classed('off', true);
+            sg.selectAll('circle.'+d.id).classed('active', true).classed('off', false);
+
+            // Other events
+            eg.selectAll('circle').classed('off', true);
+            thisCircle.classed('off', false);
+
+            console.log("x: " + thisCircle.attr("cx") + ", y: " + thisCircle.attr("cy"))
+
+            eg.append("rect")
+                .attr("id", d.id + "-span")
+                .attr("class", d.categories[0].slug)
+                .attr("x", thisCircle.attr("cx")-radius)
+                .attr("y", -2*radius)
+                // .attr("y", thisCircle.attr("cy")-radius)
+                .attr("rx", 0.5*lineSize)
+                .attr("ry", 0.5*lineSize)
+                .attr("height", lineSize)
+                .attr("width", 0)
+                .transition().duration(300)
+                .attr("width", x(d.closedDate.doy-d.startDate.doy+1));
+                // .attr("width", function(d) { var endDOY = (d.endDate) ? d.endDate.doy : d.closedDate.doy; return x(endDOY-d.startDate.doy+1); });
+
+
+            // Text
+            d3.select("#text")
+                // .style("left", -10+parseInt(thisRect.attr("x"),10)+'px')
+                // .style("top", (30+socialHeight+parseInt(thisRect.attr("y"),10))+'px')
+                .style('opacity', 1)
+            d3.select("#title")
+                .append("text")
+                .text(d.title)
+            d3.select("#date")
+                .append("text")
+                .text(getItemStartDateStr(d) + " - " + getItemEndDateStr(d))
+            d3.select("#cat")
+                .append("text")
+                .attr("class", titleToSlug(d.categories[0].title))
+                .text(d.categories[0].title)
+            d3.select("#desc")
+                .append("text")
+                .text(d.description)
+        })
+        .on('mouseout',function(d){
+
+            // Related social media
+            sg.selectAll('circle.off').classed('off', false);
+            sg.selectAll('circle.'+d.id).classed('active', false);
+
+            // Other events
+            eg.selectAll('circle.off').classed('off', false);
+
+            svg.select("#" + d.id + "-span").remove();
+
+            d3.select(this)
+                .attr('fill','grey')
+                .attr('fill-opacity', 0)
+            d3.select("#text")
+                .style('opacity', 0)
+            d3.select("#title")
+                .select("text").remove()
+            d3.select("#date")
+                .select("text").remove()
+            d3.select("#cat")
+                .select("text").remove()
+            d3.select("#desc")
+                .select("text").remove()
+        });
+
+        circle.exit().remove();
+    }
+
 
     ////////////////
     // Date utils
@@ -497,27 +613,27 @@
     ///////////////
 
     // Items per time point
-    function itemsPerTimePoint(timepoint) {
+    function itemsPerTimePoint(array, timepoint) {
 
-        if (!timePointItemsArray[timepoint]) {
-            timePointItemsArray[timepoint] = 1;
+        if (!array[timepoint]) {
+            array[timepoint] = 1;
         } else {
-            timePointItemsArray[timepoint] = timePointItemsArray[timepoint]+1;
+            array[timepoint] = array[timepoint]+1;
         }
-        return timePointItemsArray[timepoint];
+        return array[timepoint];
     }
 
     // Items per time line
-    function getLineIndex(start, end) {
+    function getLineIndex(array, start, end) {
 
         var index = null;
 
         // Loop through the lines
-        for (var i=0; i<linesArray.length; i++) {
+        for (var i=0; i<array.length; i++) {
 
             // If we found an empty line, we set our element there
-            if (start > linesArray[i].end) {
-                linesArray[i] = { start: start, end: end };
+            if (start > array[i].end) {
+                array[i] = { start: start, end: end };
                 index = i;
                 break;
             }
@@ -525,8 +641,8 @@
 
         // If no previous line was found, we add another
         if (index == null) {
-            linesArray.push({ start: start, end: end, index: linesArray.length });
-            index = linesArray.length - 1;
+            array.push({ start: start, end: end, index: array.length });
+            index = array.length - 1;
         }
 
         return index;
