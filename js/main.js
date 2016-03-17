@@ -17,7 +17,8 @@ mapboxgl.accessToken = config.mapbox.accessToken;
 
 var map = new mapboxgl.Map({
     container: 'map', // container id
-    style: 'mapbox://styles/mapbox/light-v8', //stylesheet location
+    style: config.mapbox.style, //stylesheet location
+    //style: 'mapbox://styles/mapbox/light-v8', //stylesheet location
     center: [0, 0], // starting position
     zoom: 0 // starting zoom
 });
@@ -25,7 +26,10 @@ var map = new mapboxgl.Map({
 // Load events on map load
 map.on('style.load', function () {
     console.log("map loaded");
-    loadEvents();
+
+    if (config.mapbox.loadEvents) {
+        loadEvents();
+    }
 });
 
 
