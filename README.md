@@ -5,7 +5,12 @@ Visualization of the Natural Hazards listed by the [NASA's Earth Observatory](ht
 ## Sources
 
 - [NASA's EONET](http://eonet.sci.gsfc.nasa.gov/): Natural Hazards
-- [USGS Earthquakes](http://earthquake.usgs.gov/earthquakes/search/): Earthquakes
+- [USGS Earthquakes](http://earthquake.usgs.gov/earthquakes/eqinthenews/2015/): Earthquakes
+
+## Prepare data
+
+- Clean file with `scraper/clean.js`. To export the file as GeoJSON use `scraper/cleanGeoJSON.js` instead.
+- Load social media `scraper/social.js`, or load social media and automatically add analytics `scraper/social-analytics.js`.
 
 ## EONET
 

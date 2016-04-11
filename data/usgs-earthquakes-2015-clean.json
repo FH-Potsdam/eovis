@@ -1,0 +1,4221 @@
+{
+ "type": "FeatureCollection",
+ "metadata": {
+  "generated": 1460366648000,
+  "url": "http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&callback=eqfeed_callback&starttime=2015-01-01&endtime=2015-12-31T23:59:59&minsig=650",
+  "title": "USGS Earthquakes",
+  "status": 200,
+  "api": "1.5.2",
+  "count": 105
+ },
+ "features": [
+  {
+   "id": "usc000tbfq",
+   "title": "M 5.0 - 9km E of Challis, Idaho",
+   "titleShort": "Challis, Idaho Earthquake",
+   "description": "Earthquake of magnitude 5 at 9km E of Challis, Idaho. Alert: green",
+   "mag": 5,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-01-03T17:44:03.530Z",
+    "doy": 3
+   },
+   "endDate": {
+    "date": "2015-10-24T20:18:50.375Z",
+    "doy": 297
+   },
+   "closedDate": {
+    "date": "2015-10-24T20:18:50.375Z",
+    "doy": 297
+   },
+   "location": "44.5074,-114.112",
+   "locationRadius": 109,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -114.112,
+      44.5074,
+      8.5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ci37301704",
+   "title": "M 4.3 - 14km N of Castaic, CA",
+   "titleShort": "Castaic, CA Earthquake",
+   "description": "Earthquake of magnitude 4.25 at 14km N of Castaic, CA. Alert: green",
+   "mag": 4.25,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-01-04T03:18:09.480Z",
+    "doy": 4
+   },
+   "endDate": {
+    "date": "2016-03-11T22:56:42.530Z",
+    "doy": 71
+   },
+   "closedDate": {
+    "date": "2016-03-11T22:56:42.530Z",
+    "doy": 71
+   },
+   "location": "34.6173333,-118.6301667",
+   "locationRadius": 114,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -118.6301667,
+      34.6173333,
+      7.821
+     ]
+    }
+   ]
+  },
+  {
+   "id": "usc000tca7",
+   "title": "M 3.6 - 6km NE of Irving, Texas",
+   "titleShort": "Irving, Texas Earthquake",
+   "description": "Earthquake of magnitude 3.6 at 6km NE of Irving, Texas. Alert: null",
+   "mag": 3.6,
+   "tsunami": 0,
+   "alert": null,
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-01-07T00:52:09.050Z",
+    "doy": 7
+   },
+   "endDate": {
+    "date": "2015-05-19T17:27:29.897Z",
+    "doy": 139
+   },
+   "closedDate": {
+    "date": "2015-05-19T17:27:29.897Z",
+    "doy": 139
+   },
+   "location": "32.847,-96.8922",
+   "locationRadius": 106,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -96.8922,
+      32.847,
+      5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "usc000tcba",
+   "title": "M 6.5 - 236km S of Punta de Burica, Panama",
+   "titleShort": "Punta de Burica, Panama Earthquake",
+   "description": "Earthquake of magnitude 6.5 at 236km S of Punta de Burica, Panama. Alert: green",
+   "mag": 6.5,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-01-07T05:07:07.510Z",
+    "doy": 7
+   },
+   "endDate": {
+    "date": "2015-03-27T07:02:25.040Z",
+    "doy": 86
+   },
+   "closedDate": {
+    "date": "2015-03-27T07:02:25.040Z",
+    "doy": 86
+   },
+   "location": "5.9045,-82.6576",
+   "locationRadius": 336,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -82.6576,
+      5.9045,
+      8
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nc72383481",
+   "title": "M 4.4 - 27km ENE of Greenfield, California",
+   "titleShort": "Greenfield, California Earthquake",
+   "description": "Earthquake of magnitude 4.43 at 27km ENE of Greenfield, California. Alert: green",
+   "mag": 4.43,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-01-20T13:21:36.970Z",
+    "doy": 20
+   },
+   "endDate": {
+    "date": "2016-03-12T02:41:16.592Z",
+    "doy": 72
+   },
+   "closedDate": {
+    "date": "2016-03-12T02:41:16.592Z",
+    "doy": 72
+   },
+   "location": "36.4333333,-120.971",
+   "locationRadius": 127,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -120.971,
+      36.4333333,
+      9.39
+     ]
+    }
+   ]
+  },
+  {
+   "id": "usc000tihy",
+   "title": "M 6.8 - 80km NNE of Port-Vila, Vanuatu",
+   "titleShort": "Port-Vila, Vanuatu Earthquake",
+   "description": "Earthquake of magnitude 6.8 at 80km NNE of Port-Vila, Vanuatu. Alert: green",
+   "mag": 6.8,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-01-23T03:47:27.050Z",
+    "doy": 23
+   },
+   "endDate": {
+    "date": "2015-04-24T16:55:09.040Z",
+    "doy": 114
+   },
+   "closedDate": {
+    "date": "2015-04-24T16:55:09.040Z",
+    "doy": 114
+   },
+   "location": "-17.0309,168.52",
+   "locationRadius": 180,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      168.52,
+      -17.0309,
+      219.96
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nc72387946",
+   "title": "M 5.7 - 40km SW of Ferndale, California",
+   "titleShort": "Ferndale, California Earthquake",
+   "description": "Earthquake of magnitude 5.73 at 40km SW of Ferndale, California. Alert: green",
+   "mag": 5.73,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-01-28T21:08:53.710Z",
+    "doy": 28
+   },
+   "endDate": {
+    "date": "2016-01-07T06:15:00.388Z",
+    "doy": 7
+   },
+   "closedDate": {
+    "date": "2016-01-07T06:15:00.388Z",
+    "doy": 7
+   },
+   "location": "40.3178333,-124.6066667",
+   "locationRadius": 140,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -124.6066667,
+      40.3178333,
+      17.17
+     ]
+    }
+   ]
+  },
+  {
+   "id": "usc000tkwv",
+   "title": "M 6.3 - 91km NW of La Punta, Argentina",
+   "titleShort": "La Punta, Argentina Earthquake",
+   "description": "Earthquake of magnitude 6.3 at 91km NW of La Punta, Argentina. Alert: green",
+   "mag": 6.3,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-02-02T10:49:48.530Z",
+    "doy": 33
+   },
+   "endDate": {
+    "date": "2015-05-02T14:07:06.040Z",
+    "doy": 122
+   },
+   "closedDate": {
+    "date": "2015-05-02T14:07:06.040Z",
+    "doy": 122
+   },
+   "location": "-32.7183,-67.1231",
+   "locationRadius": 191,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -67.1231,
+      -32.7183,
+      172
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ci37314320",
+   "title": "M 4.9 - 87km ESE of Maneadero, B.C., MX",
+   "titleShort": "Maneadero, B.C., MX Earthquake",
+   "description": "Earthquake of magnitude 4.89 at 87km ESE of Maneadero, B.C., MX. Alert: green",
+   "mag": 4.89,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-02-09T01:45:03.110Z",
+    "doy": 40
+   },
+   "endDate": {
+    "date": "2016-03-11T04:30:52.175Z",
+    "doy": 71
+   },
+   "closedDate": {
+    "date": "2016-03-11T04:30:52.175Z",
+    "doy": 71
+   },
+   "location": "31.5236667,-115.6743333",
+   "locationRadius": 187,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -115.6743333,
+      31.5236667,
+      12.503
+     ]
+    }
+   ]
+  },
+  {
+   "id": "usc000tp1s",
+   "title": "M 6.7 - 102km W of El Aguilar, Argentina",
+   "titleShort": "El Aguilar, Argentina Earthquake",
+   "description": "Earthquake of magnitude 6.7 at 102km W of El Aguilar, Argentina. Alert: green",
+   "mag": 6.7,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-02-11T18:57:22.460Z",
+    "doy": 42
+   },
+   "endDate": {
+    "date": "2015-05-04T22:47:55.040Z",
+    "doy": 124
+   },
+   "closedDate": {
+    "date": "2015-05-04T22:47:55.040Z",
+    "doy": 124
+   },
+   "location": "-23.1125,-66.688",
+   "locationRadius": 202,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -66.688,
+      -23.1125,
+      223
+     ]
+    }
+   ]
+  },
+  {
+   "id": "usb000tp5q",
+   "title": "M 7.1 - Northern Mid-Atlantic Ridge",
+   "titleShort": "Earthquake",
+   "description": "Earthquake of magnitude 7.1 at Northern Mid-Atlantic Ridge. Alert: green",
+   "mag": 7.1,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-02-13T18:59:12.230Z",
+    "doy": 44
+   },
+   "endDate": {
+    "date": "2015-05-11T23:20:12.040Z",
+    "doy": 132
+   },
+   "closedDate": {
+    "date": "2015-05-11T23:20:12.040Z",
+    "doy": 132
+   },
+   "location": "52.6487,-31.9016",
+   "locationRadius": 100,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -31.9016,
+      52.6487,
+      16.68
+     ]
+    }
+   ]
+  },
+  {
+   "id": "usb000tpvj",
+   "title": "M 6.7 - 83km ENE of Miyako, Japan",
+   "titleShort": "Miyako, Japan Earthquake",
+   "description": "Earthquake of magnitude 6.7 at 83km ENE of Miyako, Japan. Alert: green",
+   "mag": 6.7,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-02-16T23:06:28.270Z",
+    "doy": 48
+   },
+   "endDate": {
+    "date": "2015-05-20T18:52:24.646Z",
+    "doy": 140
+   },
+   "closedDate": {
+    "date": "2015-05-20T18:52:24.646Z",
+    "doy": 140
+   },
+   "location": "39.8558,142.8808",
+   "locationRadius": 183,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      142.8808,
+      39.8558,
+      23
+     ]
+    }
+   ]
+  },
+  {
+   "id": "usc000ttkd",
+   "title": "M 7.0 - 130km N of Nebe, Indonesia",
+   "titleShort": "Nebe, Indonesia Earthquake",
+   "description": "Earthquake of magnitude 7 at 130km N of Nebe, Indonesia. Alert: green",
+   "mag": 7,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-02-27T13:45:05.370Z",
+    "doy": 58
+   },
+   "endDate": {
+    "date": "2015-05-19T00:28:56.040Z",
+    "doy": 139
+   },
+   "closedDate": {
+    "date": "2015-05-19T00:28:56.040Z",
+    "doy": 139
+   },
+   "location": "-7.2968,122.5348",
+   "locationRadius": 230,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      122.5348,
+      -7.2968,
+      552.06
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10001ldx",
+   "title": "M 6.2 - 9km NNE of Aratoca, Colombia",
+   "titleShort": "Aratoca, Colombia Earthquake",
+   "description": "Earthquake of magnitude 6.2 at 9km NNE of Aratoca, Colombia. Alert: green",
+   "mag": 6.2,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-03-10T20:55:44.370Z",
+    "doy": 69
+   },
+   "endDate": {
+    "date": "2015-05-28T00:48:41.040Z",
+    "doy": 148
+   },
+   "closedDate": {
+    "date": "2015-05-28T00:48:41.040Z",
+    "doy": 148
+   },
+   "location": "6.7757,-72.9875",
+   "locationRadius": 109,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -72.9875,
+      6.7757,
+      155
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10001ppx",
+   "title": "M 6.4 - 45km ESE of Putre, Chile",
+   "titleShort": "Putre, Chile Earthquake",
+   "description": "Earthquake of magnitude 6.4 at 45km ESE of Putre, Chile. Alert: green",
+   "mag": 6.4,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-03-23T04:51:38.010Z",
+    "doy": 82
+   },
+   "endDate": {
+    "date": "2015-06-09T21:30:02.040Z",
+    "doy": 160
+   },
+   "closedDate": {
+    "date": "2015-06-09T21:30:02.040Z",
+    "doy": 160
+   },
+   "location": "-18.3534,-69.1663",
+   "locationRadius": 145,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -69.1663,
+      -18.3534,
+      130
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10001rvu",
+   "title": "M 7.5 - 53km SE of Kokopo, Papua New Guinea",
+   "titleShort": "Kokopo, Papua New Guinea Earthquake",
+   "description": "Earthquake of magnitude 7.5 at 53km SE of Kokopo, Papua New Guinea. Alert: green",
+   "mag": 7.5,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-03-29T23:48:31.010Z",
+    "doy": 89
+   },
+   "endDate": {
+    "date": "2015-06-12T01:53:28.040Z",
+    "doy": 163
+   },
+   "closedDate": {
+    "date": "2015-06-12T01:53:28.040Z",
+    "doy": 163
+   },
+   "location": "-4.7294,152.5623",
+   "locationRadius": 153,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      152.5623,
+      -4.7294,
+      41
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10001ryu",
+   "title": "M 6.5 - 91km ENE of Hihifo, Tonga",
+   "titleShort": "Hihifo, Tonga Earthquake",
+   "description": "Earthquake of magnitude 6.5 at 91km ENE of Hihifo, Tonga. Alert: green",
+   "mag": 6.5,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-03-30T08:48:25.340Z",
+    "doy": 89
+   },
+   "endDate": {
+    "date": "2015-06-12T01:53:29.040Z",
+    "doy": 163
+   },
+   "closedDate": {
+    "date": "2015-06-12T01:53:29.040Z",
+    "doy": 163
+   },
+   "location": "-15.4994,-173.0293",
+   "locationRadius": 191,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -173.0293,
+      -15.4994,
+      11
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nc72424876",
+   "title": "M 3.6 - 1km NNW of San Ramon, California",
+   "titleShort": "San Ramon, California Earthquake",
+   "description": "Earthquake of magnitude 3.61 at 1km NNW of San Ramon, California. Alert: null",
+   "mag": 3.61,
+   "tsunami": 0,
+   "alert": null,
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-04-02T07:06:03.870Z",
+    "doy": 92
+   },
+   "endDate": {
+    "date": "2016-01-27T22:29:48.425Z",
+    "doy": 27
+   },
+   "closedDate": {
+    "date": "2016-01-27T22:29:48.425Z",
+    "doy": 27
+   },
+   "location": "37.792,-121.9868333",
+   "locationRadius": 101,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -121.9868333,
+      37.792,
+      9.89
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us200027c2",
+   "title": "M 6.5 - 181km SSW of Sigave, Wallis and Futuna",
+   "titleShort": "Sigave, Wallis and Futuna Earthquake",
+   "description": "Earthquake of magnitude 6.5 at 181km SSW of Sigave, Wallis and Futuna. Alert: green",
+   "mag": 6.5,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-04-17T15:52:51.480Z",
+    "doy": 107
+   },
+   "endDate": {
+    "date": "2015-06-26T23:15:55.040Z",
+    "doy": 178
+   },
+   "closedDate": {
+    "date": "2015-06-26T23:15:55.040Z",
+    "doy": 178
+   },
+   "location": "-15.8815,-178.6005",
+   "locationRadius": 281,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -178.6005,
+      -15.8815,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us200027ps",
+   "title": "M 6.4 - 64km SE of Su'ao, Taiwan",
+   "titleShort": "Su'ao, Taiwan Earthquake",
+   "description": "Earthquake of magnitude 6.4 at 64km SE of Su'ao, Taiwan. Alert: green",
+   "mag": 6.4,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-04-20T01:42:58.380Z",
+    "doy": 110
+   },
+   "endDate": {
+    "date": "2015-06-26T23:15:57.040Z",
+    "doy": 178
+   },
+   "closedDate": {
+    "date": "2015-06-26T23:15:57.040Z",
+    "doy": 178
+   },
+   "location": "24.2026,122.3158",
+   "locationRadius": 164,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      122.3158,
+      24.2026,
+      29
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20002926",
+   "title": "M 7.8 - 36km E of Khudi, Nepal",
+   "titleShort": "Khudi, Nepal Earthquake",
+   "description": "Earthquake of magnitude 7.8 at 36km E of Khudi, Nepal. Alert: red",
+   "mag": 7.8,
+   "tsunami": 0,
+   "alert": "red",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-04-25T06:11:25.950Z",
+    "doy": 115
+   },
+   "endDate": {
+    "date": "2016-03-03T23:16:27.351Z",
+    "doy": 64
+   },
+   "closedDate": {
+    "date": "2016-03-03T23:16:27.351Z",
+    "doy": 64
+   },
+   "location": "28.2305,84.7314",
+   "locationRadius": 136,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      84.7314,
+      28.2305,
+      8.22
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20002bi4",
+   "title": "M 6.1 - 1km E of Banepa, Nepal",
+   "titleShort": "Banepa, Nepal Earthquake",
+   "description": "Earthquake of magnitude 6.1 at 1km E of Banepa, Nepal. Alert: yellow",
+   "mag": 6.1,
+   "tsunami": 0,
+   "alert": "yellow",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-04-25T06:15:22.910Z",
+    "doy": 115
+   },
+   "endDate": {
+    "date": "2015-07-03T00:23:39.040Z",
+    "doy": 184
+   },
+   "closedDate": {
+    "date": "2015-07-03T00:23:39.040Z",
+    "doy": 184
+   },
+   "location": "27.6285,85.5398",
+   "locationRadius": 101,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      85.5398,
+      27.6285,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us2000292y",
+   "title": "M 6.6 - 44km E of Lamjung, Nepal",
+   "titleShort": "Lamjung, Nepal Earthquake",
+   "description": "Earthquake of magnitude 6.6 at 44km E of Lamjung, Nepal. Alert: yellow",
+   "mag": 6.6,
+   "tsunami": 0,
+   "alert": "yellow",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-04-25T06:45:21.320Z",
+    "doy": 115
+   },
+   "endDate": {
+    "date": "2015-07-03T00:23:39.040Z",
+    "doy": 184
+   },
+   "closedDate": {
+    "date": "2015-07-03T00:23:39.040Z",
+    "doy": 184
+   },
+   "location": "28.2244,84.8216",
+   "locationRadius": 144,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      84.8216,
+      28.2244,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us200029bt",
+   "title": "M 6.7 - 21km SSE of Kodari, Nepal",
+   "titleShort": "Kodari, Nepal Earthquake",
+   "description": "Earthquake of magnitude 6.7 at 21km SSE of Kodari, Nepal. Alert: yellow",
+   "mag": 6.7,
+   "tsunami": 0,
+   "alert": "yellow",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-04-26T07:09:10.670Z",
+    "doy": 116
+   },
+   "endDate": {
+    "date": "2015-07-03T00:23:41.040Z",
+    "doy": 184
+   },
+   "closedDate": {
+    "date": "2015-07-03T00:23:41.040Z",
+    "doy": 184
+   },
+   "location": "27.7711,86.0173",
+   "locationRadius": 121,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      86.0173,
+      27.7711,
+      22.91
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20002ag9",
+   "title": "M 6.7 - 125km SSW of Kokopo, Papua New Guinea",
+   "titleShort": "Kokopo, Papua New Guinea Earthquake",
+   "description": "Earthquake of magnitude 6.7 at 125km SSW of Kokopo, Papua New Guinea. Alert: green",
+   "mag": 6.7,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-04-30T10:45:02.930Z",
+    "doy": 120
+   },
+   "endDate": {
+    "date": "2015-07-09T22:00:03.040Z",
+    "doy": 190
+   },
+   "closedDate": {
+    "date": "2015-07-09T22:00:03.040Z",
+    "doy": 190
+   },
+   "location": "-5.375,151.7706",
+   "locationRadius": 225,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      151.7706,
+      -5.375,
+      31
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20002am6",
+   "title": "M 6.8 - 108km SSW of Kokopo, Papua New Guinea",
+   "titleShort": "Kokopo, Papua New Guinea Earthquake",
+   "description": "Earthquake of magnitude 6.8 at 108km SSW of Kokopo, Papua New Guinea. Alert: green",
+   "mag": 6.8,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-05-01T08:06:03.480Z",
+    "doy": 121
+   },
+   "endDate": {
+    "date": "2015-07-09T22:00:04.040Z",
+    "doy": 190
+   },
+   "closedDate": {
+    "date": "2015-07-09T22:00:04.040Z",
+    "doy": 190
+   },
+   "location": "-5.2005,151.7773",
+   "locationRadius": 208,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      151.7773,
+      -5.2005,
+      44
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20002avh",
+   "title": "M 4.2 - 5km S of Galesburg, Michigan",
+   "titleShort": "Galesburg, Michigan Earthquake",
+   "description": "Earthquake of magnitude 4.2 at 5km S of Galesburg, Michigan. Alert: green",
+   "mag": 4.2,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-05-02T16:23:07.580Z",
+    "doy": 122
+   },
+   "endDate": {
+    "date": "2016-03-05T04:23:36.536Z",
+    "doy": 65
+   },
+   "closedDate": {
+    "date": "2016-03-05T04:23:36.536Z",
+    "doy": 65
+   },
+   "location": "42.2357,-85.4285",
+   "locationRadius": 105,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -85.4285,
+      42.2357,
+      4.48
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ci37374008",
+   "title": "M 3.8 - 1km W of View Park-Windsor Hills, CA",
+   "titleShort": "View Park-Windsor Hills, CA Earthquake",
+   "description": "Earthquake of magnitude 3.8 at 1km W of View Park-Windsor Hills, CA. Alert: null",
+   "mag": 3.8,
+   "tsunami": 0,
+   "alert": null,
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-05-03T11:07:18.080Z",
+    "doy": 123
+   },
+   "endDate": {
+    "date": "2016-03-11T08:14:47.219Z",
+    "doy": 71
+   },
+   "closedDate": {
+    "date": "2016-03-11T08:14:47.219Z",
+    "doy": 71
+   },
+   "location": "33.9936667,-118.3613333",
+   "locationRadius": 101,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -118.3613333,
+      33.9936667,
+      11.11
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20002bnf",
+   "title": "M 7.5 - 130km SSW of Kokopo, Papua New Guinea",
+   "titleShort": "Kokopo, Papua New Guinea Earthquake",
+   "description": "Earthquake of magnitude 7.5 at 130km SSW of Kokopo, Papua New Guinea. Alert: green",
+   "mag": 7.5,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-05-05T01:44:06.380Z",
+    "doy": 125
+   },
+   "endDate": {
+    "date": "2015-07-09T22:00:11.040Z",
+    "doy": 190
+   },
+   "closedDate": {
+    "date": "2015-07-09T22:00:11.040Z",
+    "doy": 190
+   },
+   "location": "-5.4624,151.8751",
+   "locationRadius": 230,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      151.8751,
+      -5.4624,
+      55
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ci37375632",
+   "title": "M 3.7 - 4km NNW of San Jacinto, CA",
+   "titleShort": "San Jacinto, CA Earthquake",
+   "description": "Earthquake of magnitude 3.72 at 4km NNW of San Jacinto, CA. Alert: null",
+   "mag": 3.72,
+   "tsunami": 0,
+   "alert": null,
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-05-06T07:39:46.970Z",
+    "doy": 126
+   },
+   "endDate": {
+    "date": "2016-03-12T02:50:40.632Z",
+    "doy": 72
+   },
+   "closedDate": {
+    "date": "2016-03-12T02:50:40.632Z",
+    "doy": 72
+   },
+   "location": "33.8128333,-116.9795",
+   "locationRadius": 104,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -116.9795,
+      33.8128333,
+      14.86
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20002das",
+   "title": "M 7.1 - 143km SW of Panguna, Papua New Guinea",
+   "titleShort": "Panguna, Papua New Guinea Earthquake",
+   "description": "Earthquake of magnitude 7.1 at 143km SW of Panguna, Papua New Guinea. Alert: green",
+   "mag": 7.1,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-05-07T07:10:19.590Z",
+    "doy": 127
+   },
+   "endDate": {
+    "date": "2015-07-17T07:05:54.040Z",
+    "doy": 198
+   },
+   "closedDate": {
+    "date": "2015-07-17T07:05:54.040Z",
+    "doy": 198
+   },
+   "location": "-7.2175,154.5567",
+   "locationRadius": 243,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      154.5567,
+      -7.2175,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20002dm8",
+   "title": "M 4.0 - 5km N of Venus, Texas",
+   "titleShort": "Venus, Texas Earthquake",
+   "description": "Earthquake of magnitude 4 at 5km N of Venus, Texas. Alert: green",
+   "mag": 4,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-05-07T22:58:05.200Z",
+    "doy": 127
+   },
+   "endDate": {
+    "date": "2016-01-22T03:50:12.071Z",
+    "doy": 22
+   },
+   "closedDate": {
+    "date": "2016-01-22T03:50:12.071Z",
+    "doy": 22
+   },
+   "location": "32.4817,-97.1006",
+   "locationRadius": 105,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -97.1006,
+      32.4817,
+      2.54
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20002ejl",
+   "title": "M 7.3 - 19km SE of Kodari, Nepal",
+   "titleShort": "Kodari, Nepal Earthquake",
+   "description": "Earthquake of magnitude 7.3 at 19km SE of Kodari, Nepal. Alert: orange",
+   "mag": 7.3,
+   "tsunami": 0,
+   "alert": "orange",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-05-12T07:05:19.730Z",
+    "doy": 132
+   },
+   "endDate": {
+    "date": "2016-01-15T09:21:56.995Z",
+    "doy": 15
+   },
+   "closedDate": {
+    "date": "2016-01-15T09:21:56.995Z",
+    "doy": 15
+   },
+   "location": "27.8087,86.0655",
+   "locationRadius": 119,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      86.0655,
+      27.8087,
+      15
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20002et4",
+   "title": "M 6.8 - 32km SE of Ofunato, Japan",
+   "titleShort": "Ofunato, Japan Earthquake",
+   "description": "Earthquake of magnitude 6.8 at 32km SE of Ofunato, Japan. Alert: green",
+   "mag": 6.8,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-05-12T21:12:58.890Z",
+    "doy": 132
+   },
+   "endDate": {
+    "date": "2015-07-17T07:06:13.040Z",
+    "doy": 198
+   },
+   "closedDate": {
+    "date": "2015-07-17T07:06:13.040Z",
+    "doy": 198
+   },
+   "location": "38.9056,142.0317",
+   "locationRadius": 132,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      142.0317,
+      38.9056,
+      35
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10002a93",
+   "title": "M 3.3 - 5km N of Irving, Texas",
+   "titleShort": "Irving, Texas Earthquake",
+   "description": "Earthquake of magnitude 3.3 at 5km N of Irving, Texas. Alert: null",
+   "mag": 3.3,
+   "tsunami": 0,
+   "alert": null,
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-05-18T18:14:29.920Z",
+    "doy": 138
+   },
+   "endDate": {
+    "date": "2015-12-03T21:47:01.399Z",
+    "doy": 337
+   },
+   "closedDate": {
+    "date": "2015-12-03T21:47:01.399Z",
+    "doy": 337
+   },
+   "location": "32.8675,-96.9566",
+   "locationRadius": 105,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -96.9566,
+      32.8675,
+      5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10002aj3",
+   "title": "M 6.7 - Pacific-Antarctic Ridge",
+   "titleShort": "Earthquake",
+   "description": "Earthquake of magnitude 6.7 at Pacific-Antarctic Ridge. Alert: green",
+   "mag": 6.7,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-05-19T15:25:21.080Z",
+    "doy": 139
+   },
+   "endDate": {
+    "date": "2015-07-23T01:04:11.040Z",
+    "doy": 204
+   },
+   "closedDate": {
+    "date": "2015-07-23T01:04:11.040Z",
+    "doy": 204
+   },
+   "location": "-54.3312,-132.1618",
+   "locationRadius": 100,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -132.1618,
+      -54.3312,
+      7.2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10002b03",
+   "title": "M 6.8 - 182km W of Lata, Solomon Islands",
+   "titleShort": "Lata, Solomon Islands Earthquake",
+   "description": "Earthquake of magnitude 6.8 at 182km W of Lata, Solomon Islands. Alert: green",
+   "mag": 6.8,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-05-20T22:48:53.420Z",
+    "doy": 140
+   },
+   "endDate": {
+    "date": "2015-07-23T01:04:14.040Z",
+    "doy": 204
+   },
+   "closedDate": {
+    "date": "2015-07-23T01:04:14.040Z",
+    "doy": 204
+   },
+   "location": "-10.8759,164.1694",
+   "locationRadius": 282,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      164.1694,
+      -10.8759,
+      11
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nc72453246",
+   "title": "M 4.1 - 10km ENE of Yountville, California",
+   "titleShort": "Yountville, California Earthquake",
+   "description": "Earthquake of magnitude 4.09 at 10km ENE of Yountville, California. Alert: green",
+   "mag": 4.09,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-05-22T02:53:00.780Z",
+    "doy": 142
+   },
+   "endDate": {
+    "date": "2016-02-26T16:22:33.988Z",
+    "doy": 57
+   },
+   "closedDate": {
+    "date": "2016-02-26T16:22:33.988Z",
+    "doy": 57
+   },
+   "location": "38.4316667,-122.2503333",
+   "locationRadius": 110,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -122.2503333,
+      38.4316667,
+      12.83
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nn00495477",
+   "title": "M 5.3 - 37km SSW of Caliente, Nevada",
+   "titleShort": "Caliente, Nevada Earthquake",
+   "description": "Earthquake of magnitude 5.27 at 37km SSW of Caliente, Nevada. Alert: green",
+   "mag": 5.27,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-05-22T18:47:42.980Z",
+    "doy": 142
+   },
+   "endDate": {
+    "date": "2016-03-11T21:18:19.687Z",
+    "doy": 71
+   },
+   "closedDate": {
+    "date": "2016-03-11T21:18:19.687Z",
+    "doy": 71
+   },
+   "location": "37.2925,-114.6546",
+   "locationRadius": 137,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -114.6546,
+      37.2925,
+      4.0328
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10002bnk",
+   "title": "M 6.9 - 205km ESE of Kirakira, Solomon Islands",
+   "titleShort": "Kirakira, Solomon Islands Earthquake",
+   "description": "Earthquake of magnitude 6.9 at 205km ESE of Kirakira, Solomon Islands. Alert: green",
+   "mag": 6.9,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-05-22T21:45:19.480Z",
+    "doy": 142
+   },
+   "endDate": {
+    "date": "2015-07-29T01:35:34.040Z",
+    "doy": 210
+   },
+   "closedDate": {
+    "date": "2015-07-29T01:35:34.040Z",
+    "doy": 210
+   },
+   "location": "-11.0559,163.6959",
+   "locationRadius": 305,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      163.6959,
+      -11.0559,
+      11.19
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10002bpw",
+   "title": "M 6.8 - 159km ESE of Kirakira, Solomon Islands",
+   "titleShort": "Kirakira, Solomon Islands Earthquake",
+   "description": "Earthquake of magnitude 6.8 at 159km ESE of Kirakira, Solomon Islands. Alert: green",
+   "mag": 6.8,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-05-22T23:59:33.770Z",
+    "doy": 143
+   },
+   "endDate": {
+    "date": "2015-07-29T01:35:34.040Z",
+    "doy": 210
+   },
+   "closedDate": {
+    "date": "2015-07-29T01:35:34.040Z",
+    "doy": 210
+   },
+   "location": "-11.1093,163.2154",
+   "locationRadius": 259,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      163.2154,
+      -11.1093,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ak11610140",
+   "title": "M 6.7 - 99km NNW of Chirikof Island, Alaska",
+   "titleShort": "Chirikof Island, Alaska Earthquake",
+   "description": "Earthquake of magnitude 6.7 at 99km NNW of Chirikof Island, Alaska. Alert: green",
+   "mag": 6.7,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-05-29T07:00:09.000Z",
+    "doy": 149
+   },
+   "endDate": {
+    "date": "2015-08-08T00:48:58.040Z",
+    "doy": 220
+   },
+   "closedDate": {
+    "date": "2015-08-08T00:48:58.040Z",
+    "doy": 220
+   },
+   "location": "56.594,-156.43",
+   "locationRadius": 199,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -156.43,
+      56.594,
+      72.6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20002ki3",
+   "title": "M 7.8 - 189km WNW of Chichi-shima, Japan",
+   "titleShort": "Chichi-shima, Japan Earthquake",
+   "description": "Earthquake of magnitude 7.8 at 189km WNW of Chichi-shima, Japan. Alert: green",
+   "mag": 7.8,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-05-30T11:23:02.110Z",
+    "doy": 150
+   },
+   "endDate": {
+    "date": "2015-08-08T00:49:15.040Z",
+    "doy": 220
+   },
+   "closedDate": {
+    "date": "2015-08-08T00:49:15.040Z",
+    "doy": 220
+   },
+   "location": "27.8386,140.4931",
+   "locationRadius": 289,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      140.4931,
+      27.8386,
+      664
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20002m5s",
+   "title": "M 6.0 - 14km WNW of Ranau, Malaysia",
+   "titleShort": "Ranau, Malaysia Earthquake",
+   "description": "Earthquake of magnitude 6 at 14km WNW of Ranau, Malaysia. Alert: green",
+   "mag": 6,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-06-04T23:15:43.910Z",
+    "doy": 156
+   },
+   "endDate": {
+    "date": "2015-09-21T06:02:53.301Z",
+    "doy": 264
+   },
+   "closedDate": {
+    "date": "2015-09-21T06:02:53.301Z",
+    "doy": 264
+   },
+   "location": "5.9867,116.5409",
+   "locationRadius": 114,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      116.5409,
+      5.9867,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ci37394832",
+   "title": "M 3.2 - 3km NNE of Gardena, CA",
+   "titleShort": "Gardena, CA Earthquake",
+   "description": "Earthquake of magnitude 3.2 at 3km NNE of Gardena, CA. Alert: null",
+   "mag": 3.2,
+   "tsunami": 0,
+   "alert": null,
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-06-07T04:54:23.880Z",
+    "doy": 158
+   },
+   "endDate": {
+    "date": "2016-03-12T06:36:47.521Z",
+    "doy": 72
+   },
+   "closedDate": {
+    "date": "2016-03-12T06:36:47.521Z",
+    "doy": 72
+   },
+   "location": "33.9168333,-118.297",
+   "locationRadius": 103,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -118.297,
+      33.9168333,
+      11.366
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20002qn7",
+   "title": "M 7.0 - Southern Mid-Atlantic Ridge",
+   "titleShort": "Earthquake",
+   "description": "Earthquake of magnitude 7 at Southern Mid-Atlantic Ridge. Alert: green",
+   "mag": 7,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-06-17T12:51:32.790Z",
+    "doy": 168
+   },
+   "endDate": {
+    "date": "2015-08-20T00:44:01.040Z",
+    "doy": 232
+   },
+   "closedDate": {
+    "date": "2015-08-20T00:44:01.040Z",
+    "doy": 232
+   },
+   "location": "-35.3639,-17.1605",
+   "locationRadius": 100,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -17.1605,
+      -35.3639,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10002ke8",
+   "title": "M 6.4 - 73km WNW of Talcahuano, Chile",
+   "titleShort": "Talcahuano, Chile Earthquake",
+   "description": "Earthquake of magnitude 6.4 at 73km WNW of Talcahuano, Chile. Alert: green",
+   "mag": 6.4,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-06-20T02:10:07.100Z",
+    "doy": 171
+   },
+   "endDate": {
+    "date": "2015-09-01T00:53:51.040Z",
+    "doy": 244
+   },
+   "closedDate": {
+    "date": "2015-09-01T00:53:51.040Z",
+    "doy": 244
+   },
+   "location": "-36.3601,-73.812",
+   "locationRadius": 173,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -73.812,
+      -36.3601,
+      11
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10002l37",
+   "title": "M 6.5 - 256km WNW of Chichi-shima, Japan",
+   "titleShort": "Chichi-shima, Japan Earthquake",
+   "description": "Earthquake of magnitude 6.5 at 256km WNW of Chichi-shima, Japan. Alert: green",
+   "mag": 6.5,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-06-23T12:18:30.270Z",
+    "doy": 174
+   },
+   "endDate": {
+    "date": "2015-09-01T00:53:55.040Z",
+    "doy": 244
+   },
+   "closedDate": {
+    "date": "2015-09-01T00:53:55.040Z",
+    "doy": 244
+   },
+   "location": "27.7375,139.7254",
+   "locationRadius": 356,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      139.7254,
+      27.7375,
+      460
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ak11632992",
+   "title": "M 5.7 - 102km W of Willow, Alaska",
+   "titleShort": "Willow, Alaska Earthquake",
+   "description": "Earthquake of magnitude 5.7 at 102km W of Willow, Alaska. Alert: green",
+   "mag": 5.7,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-06-24T22:32:21.000Z",
+    "doy": 175
+   },
+   "endDate": {
+    "date": "2015-09-01T00:53:56.040Z",
+    "doy": 244
+   },
+   "closedDate": {
+    "date": "2015-09-01T00:53:56.040Z",
+    "doy": 244
+   },
+   "location": "61.6644,-151.962",
+   "locationRadius": 202,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -151.962,
+      61.6644,
+      114.2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hv60968241",
+   "title": "M 5.2 - 11km SSE of Volcano, Hawaii",
+   "titleShort": "Volcano, Hawaii Earthquake",
+   "description": "Earthquake of magnitude 5.2 at 11km SSE of Volcano, Hawaii. Alert: green",
+   "mag": 5.2,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-06-28T08:10:10.480Z",
+    "doy": 179
+   },
+   "endDate": {
+    "date": "2016-03-20T16:48:58.790Z",
+    "doy": 80
+   },
+   "closedDate": {
+    "date": "2016-03-20T16:48:58.790Z",
+    "doy": 80
+   },
+   "location": "19.335,-155.2093333",
+   "locationRadius": 111,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -155.2093333,
+      19.335,
+      8.55
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10002n4w",
+   "title": "M 6.4 - 97km SE of Yilkiqi, China",
+   "titleShort": "Yilkiqi, China Earthquake",
+   "description": "Earthquake of magnitude 6.4 at 97km SE of Yilkiqi, China. Alert: yellow",
+   "mag": 6.4,
+   "tsunami": 0,
+   "alert": "yellow",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-07-03T01:07:47.290Z",
+    "doy": 184
+   },
+   "endDate": {
+    "date": "2015-09-30T00:20:52.040Z",
+    "doy": 273
+   },
+   "closedDate": {
+    "date": "2015-09-30T00:20:52.040Z",
+    "doy": 273
+   },
+   "location": "37.4593,78.1542",
+   "locationRadius": 197,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      78.1542,
+      37.4593,
+      20
+     ]
+    }
+   ]
+  },
+  {
+   "id": "uw61037147",
+   "title": "M 4.2 - 15km ENE of Springfield, Oregon",
+   "titleShort": "Springfield, Oregon Earthquake",
+   "description": "Earthquake of magnitude 4.21 at 15km ENE of Springfield, Oregon. Alert: green",
+   "mag": 4.21,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-07-04T15:42:18.100Z",
+    "doy": 185
+   },
+   "endDate": {
+    "date": "2016-04-01T23:35:06.836Z",
+    "doy": 93
+   },
+   "closedDate": {
+    "date": "2016-04-01T23:35:06.836Z",
+    "doy": 93
+   },
+   "location": "44.0816667,-122.837",
+   "locationRadius": 115,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -122.837,
+      44.0816667,
+      9.889
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20002whh",
+   "title": "M 6.7 - 155km SSW of Dadali, Solomon Islands",
+   "titleShort": "Dadali, Solomon Islands Earthquake",
+   "description": "Earthquake of magnitude 6.7 at 155km SSW of Dadali, Solomon Islands. Alert: green",
+   "mag": 6.7,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-07-10T04:12:42.540Z",
+    "doy": 191
+   },
+   "endDate": {
+    "date": "2015-10-09T20:19:10.040Z",
+    "doy": 282
+   },
+   "closedDate": {
+    "date": "2015-10-09T20:19:10.040Z",
+    "doy": 282
+   },
+   "location": "-9.307,158.403",
+   "locationRadius": 255,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      158.403,
+      -9.307,
+      12
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20002xx1",
+   "title": "M 6.5 - 127km NE of Bathsheba, Barbados",
+   "titleShort": "Bathsheba, Barbados Earthquake",
+   "description": "Earthquake of magnitude 6.5 at 127km NE of Bathsheba, Barbados. Alert: green",
+   "mag": 6.5,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-07-16T15:16:33.780Z",
+    "doy": 197
+   },
+   "endDate": {
+    "date": "2015-10-14T21:05:36.040Z",
+    "doy": 287
+   },
+   "closedDate": {
+    "date": "2015-10-14T21:05:36.040Z",
+    "doy": 287
+   },
+   "location": "13.8672,-58.5479",
+   "locationRadius": 227,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -58.5479,
+      13.8672,
+      20
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20002yaw",
+   "title": "M 7.0 - 83km WNW of Lata, Solomon Islands",
+   "titleShort": "Lata, Solomon Islands Earthquake",
+   "description": "Earthquake of magnitude 7 at 83km WNW of Lata, Solomon Islands. Alert: green",
+   "mag": 7,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-07-18T02:27:33.820Z",
+    "doy": 199
+   },
+   "endDate": {
+    "date": "2015-10-14T21:05:40.040Z",
+    "doy": 287
+   },
+   "closedDate": {
+    "date": "2015-10-14T21:05:40.040Z",
+    "doy": 287
+   },
+   "location": "-10.4012,165.1409",
+   "locationRadius": 183,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      165.1409,
+      -10.4012,
+      11
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20002yq7",
+   "title": "M 4.4 - 13km NE of Cherokee, Oklahoma",
+   "titleShort": "Cherokee, Oklahoma Earthquake",
+   "description": "Earthquake of magnitude 4.4 at 13km NE of Cherokee, Oklahoma. Alert: green",
+   "mag": 4.4,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-07-20T20:19:03.400Z",
+    "doy": 201
+   },
+   "endDate": {
+    "date": "2016-02-13T17:29:10.443Z",
+    "doy": 44
+   },
+   "closedDate": {
+    "date": "2016-02-13T17:29:10.443Z",
+    "doy": 44
+   },
+   "location": "36.842,-98.2593",
+   "locationRadius": 113,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -98.2593,
+      36.842,
+      4.079
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nc72490826",
+   "title": "M 4.0 - 3km NNE of Fremont, California",
+   "titleShort": "Fremont, California Earthquake",
+   "description": "Earthquake of magnitude 3.98 at 3km NNE of Fremont, California. Alert: green",
+   "mag": 3.98,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-07-21T09:41:14.480Z",
+    "doy": 202
+   },
+   "endDate": {
+    "date": "2016-03-31T07:53:16.331Z",
+    "doy": 91
+   },
+   "closedDate": {
+    "date": "2016-03-31T07:53:16.331Z",
+    "doy": 91
+   },
+   "location": "37.5776667,-121.974",
+   "locationRadius": 103,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -121.974,
+      37.5776667,
+      8.37
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ci37213455",
+   "title": "M 4.2 - 1km ESE of Fontana, CA",
+   "titleShort": "Fontana, CA Earthquake",
+   "description": "Earthquake of magnitude 4.17 at 1km ESE of Fontana, CA. Alert: green",
+   "mag": 4.17,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-07-25T12:54:06.990Z",
+    "doy": 206
+   },
+   "endDate": {
+    "date": "2016-03-11T19:26:13.297Z",
+    "doy": 71
+   },
+   "closedDate": {
+    "date": "2016-03-11T19:26:13.297Z",
+    "doy": 71
+   },
+   "location": "34.092,-117.445",
+   "locationRadius": 101,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -117.445,
+      34.092,
+      5.079
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us200030aq",
+   "title": "M 6.9 - 73km SSW of Nikolski, Alaska",
+   "titleShort": "Nikolski, Alaska Earthquake",
+   "description": "Earthquake of magnitude 6.9 at 73km SSW of Nikolski, Alaska. Alert: green",
+   "mag": 6.9,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-07-27T04:49:46.400Z",
+    "doy": 208
+   },
+   "endDate": {
+    "date": "2015-10-22T20:05:02.040Z",
+    "doy": 295
+   },
+   "closedDate": {
+    "date": "2015-10-22T20:05:02.040Z",
+    "doy": 295
+   },
+   "location": "52.376,-169.4458",
+   "locationRadius": 173,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -169.4458,
+      52.376,
+      29
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us200030gd",
+   "title": "M 4.5 - 4km NNE of Crescent, Oklahoma",
+   "titleShort": "Crescent, Oklahoma Earthquake",
+   "description": "Earthquake of magnitude 4.5 at 4km NNE of Crescent, Oklahoma. Alert: green",
+   "mag": 4.5,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-07-27T18:12:15.400Z",
+    "doy": 208
+   },
+   "endDate": {
+    "date": "2016-03-31T00:19:19.898Z",
+    "doy": 91
+   },
+   "closedDate": {
+    "date": "2016-03-31T00:19:19.898Z",
+    "doy": 91
+   },
+   "location": "35.9889,-97.5717",
+   "locationRadius": 104,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -97.5717,
+      35.9889,
+      5
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us200030kn",
+   "title": "M 7.0 - 228km W of Abepura, Indonesia",
+   "titleShort": "Abepura, Indonesia Earthquake",
+   "description": "Earthquake of magnitude 7 at 228km W of Abepura, Indonesia. Alert: green",
+   "mag": 7,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-07-27T21:41:21.710Z",
+    "doy": 208
+   },
+   "endDate": {
+    "date": "2015-10-22T20:05:08.040Z",
+    "doy": 295
+   },
+   "closedDate": {
+    "date": "2015-10-22T20:05:08.040Z",
+    "doy": 295
+   },
+   "location": "-2.6286,138.5277",
+   "locationRadius": 328,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      138.5277,
+      -2.6286,
+      48
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ak11661615",
+   "title": "M 6.3 - 70km SSW of Redoubt Volcano, Alaska",
+   "titleShort": "Redoubt Volcano, Alaska Earthquake",
+   "description": "Earthquake of magnitude 6.3 at 70km SSW of Redoubt Volcano, Alaska. Alert: green",
+   "mag": 6.3,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-07-29T02:35:59.000Z",
+    "doy": 210
+   },
+   "endDate": {
+    "date": "2015-10-22T20:05:12.040Z",
+    "doy": 295
+   },
+   "closedDate": {
+    "date": "2015-10-22T20:05:12.040Z",
+    "doy": 295
+   },
+   "location": "59.8935,-153.1961",
+   "locationRadius": 170,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -153.1961,
+      59.8935,
+      119.3
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us100030pg",
+   "title": "M 6.6 - 179km SW of Dadali, Solomon Islands",
+   "titleShort": "Dadali, Solomon Islands Earthquake",
+   "description": "Earthquake of magnitude 6.6 at 179km SW of Dadali, Solomon Islands. Alert: green",
+   "mag": 6.6,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-08-10T04:12:15.810Z",
+    "doy": 222
+   },
+   "endDate": {
+    "date": "2015-11-06T18:06:24.040Z",
+    "doy": 310
+   },
+   "closedDate": {
+    "date": "2015-11-06T18:06:24.040Z",
+    "doy": 310
+   },
+   "location": "-9.3438,158.0525",
+   "locationRadius": 279,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      158.0525,
+      -9.3438,
+      22
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us100031me",
+   "title": "M 6.5 - 177km SE of Gizo, Solomon Islands",
+   "titleShort": "Gizo, Solomon Islands Earthquake",
+   "description": "Earthquake of magnitude 6.5 at 177km SE of Gizo, Solomon Islands. Alert: green",
+   "mag": 6.5,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-08-12T18:49:24.080Z",
+    "doy": 224
+   },
+   "endDate": {
+    "date": "2015-11-06T18:06:26.040Z",
+    "doy": 310
+   },
+   "closedDate": {
+    "date": "2015-11-06T18:06:26.040Z",
+    "doy": 310
+   },
+   "location": "-9.3293,157.8772",
+   "locationRadius": 277,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      157.8772,
+      -9.3293,
+      6.43
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nc72507396",
+   "title": "M 4.0 - 1km N of Piedmont, California",
+   "titleShort": "Piedmont, California Earthquake",
+   "description": "Earthquake of magnitude 4.01 at 1km N of Piedmont, California. Alert: green",
+   "mag": 4.01,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-08-17T13:49:17.320Z",
+    "doy": 229
+   },
+   "endDate": {
+    "date": "2016-01-27T22:57:20.595Z",
+    "doy": 27
+   },
+   "closedDate": {
+    "date": "2016-01-27T22:57:20.595Z",
+    "doy": 27
+   },
+   "location": "37.8366667,-122.2321667",
+   "locationRadius": 101,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -122.2321667,
+      37.8366667,
+      4.69
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20003j4u",
+   "title": "M 6.7 - 95km SW of Topolobampo, Mexico",
+   "titleShort": "Topolobampo, Mexico Earthquake",
+   "description": "Earthquake of magnitude 6.7 at 95km SW of Topolobampo, Mexico. Alert: green",
+   "mag": 6.7,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-09-13T08:14:08.560Z",
+    "doy": 256
+   },
+   "endDate": {
+    "date": "2016-02-04T20:13:14.000Z",
+    "doy": 35
+   },
+   "closedDate": {
+    "date": "2016-02-04T20:13:14.000Z",
+    "doy": 35
+   },
+   "location": "24.913,-109.6226",
+   "locationRadius": 195,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -109.6226,
+      24.913,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ci37243591",
+   "title": "M 4.0 - 13km SSE of Big Bear Lake, CA",
+   "titleShort": "Big Bear Lake, CA Earthquake",
+   "description": "Earthquake of magnitude 4 at 13km SSE of Big Bear Lake, CA. Alert: green",
+   "mag": 4,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-09-16T16:10:47.340Z",
+    "doy": 259
+   },
+   "endDate": {
+    "date": "2016-03-11T15:37:22.924Z",
+    "doy": 71
+   },
+   "closedDate": {
+    "date": "2016-03-11T15:37:22.924Z",
+    "doy": 71
+   },
+   "location": "34.1371667,-116.858",
+   "locationRadius": 113,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -116.858,
+      34.1371667,
+      9.55
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20003k7a",
+   "title": "M 8.3 - 48km W of Illapel, Chile",
+   "titleShort": "Illapel, Chile Earthquake",
+   "description": "Earthquake of magnitude 8.3 at 48km W of Illapel, Chile. Alert: orange",
+   "mag": 8.3,
+   "tsunami": 1,
+   "alert": "orange",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-09-16T22:54:32.860Z",
+    "doy": 259
+   },
+   "endDate": {
+    "date": "2016-02-26T17:51:49.163Z",
+    "doy": 57
+   },
+   "closedDate": {
+    "date": "2016-02-26T17:51:49.163Z",
+    "doy": 57
+   },
+   "location": "-31.5729,-71.6744",
+   "locationRadius": 148,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -71.6744,
+      -31.5729,
+      22.44
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20003k7w",
+   "title": "M 7.0 - 25km WNW of Illapel, Chile",
+   "titleShort": "Illapel, Chile Earthquake",
+   "description": "Earthquake of magnitude 7 at 25km WNW of Illapel, Chile. Alert: green",
+   "mag": 7,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-09-16T23:18:41.850Z",
+    "doy": 260
+   },
+   "endDate": {
+    "date": "2016-02-04T20:13:36.000Z",
+    "doy": 35
+   },
+   "closedDate": {
+    "date": "2016-02-04T20:13:36.000Z",
+    "doy": 35
+   },
+   "location": "-31.5622,-71.4262",
+   "locationRadius": 125,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -71.4262,
+      -31.5622,
+      28.41
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20003kfj",
+   "title": "M 6.5 - 54km WNW of Illapel, Chile",
+   "titleShort": "Illapel, Chile Earthquake",
+   "description": "Earthquake of magnitude 6.5 at 54km WNW of Illapel, Chile. Alert: green",
+   "mag": 6.5,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-09-17T03:55:15.430Z",
+    "doy": 260
+   },
+   "endDate": {
+    "date": "2015-12-21T23:16:13.040Z",
+    "doy": 356
+   },
+   "closedDate": {
+    "date": "2015-12-21T23:16:13.040Z",
+    "doy": 356
+   },
+   "location": "-31.4244,-71.6876",
+   "locationRadius": 154,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -71.6876,
+      -31.4244,
+      27
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20003kfv",
+   "title": "M 6.7 - 61km WNW of Illapel, Chile",
+   "titleShort": "Illapel, Chile Earthquake",
+   "description": "Earthquake of magnitude 6.7 at 61km WNW of Illapel, Chile. Alert: green",
+   "mag": 6.7,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-09-17T04:10:27.780Z",
+    "doy": 260
+   },
+   "endDate": {
+    "date": "2016-03-02T18:03:16.852Z",
+    "doy": 62
+   },
+   "closedDate": {
+    "date": "2016-03-02T18:03:16.852Z",
+    "doy": 62
+   },
+   "location": "-31.5173,-71.804",
+   "locationRadius": 161,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -71.804,
+      -31.5173,
+      23
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20003mi0",
+   "title": "M 6.6 - 22km WSW of Illapel, Chile",
+   "titleShort": "Illapel, Chile Earthquake",
+   "description": "Earthquake of magnitude 6.6 at 22km WSW of Illapel, Chile. Alert: green",
+   "mag": 6.6,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-09-21T17:40:00.060Z",
+    "doy": 264
+   },
+   "endDate": {
+    "date": "2016-02-04T20:14:17.000Z",
+    "doy": 35
+   },
+   "closedDate": {
+    "date": "2016-02-04T20:14:17.000Z",
+    "doy": 35
+   },
+   "location": "-31.7275,-71.3792",
+   "locationRadius": 122,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -71.3792,
+      -31.7275,
+      35
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20003nqr",
+   "title": "M 6.6 - 29km N of Sorong, Indonesia",
+   "titleShort": "Sorong, Indonesia Earthquake",
+   "description": "Earthquake of magnitude 6.6 at 29km N of Sorong, Indonesia. Alert: green",
+   "mag": 6.6,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-09-24T15:53:27.740Z",
+    "doy": 267
+   },
+   "endDate": {
+    "date": "2016-03-02T18:56:55.625Z",
+    "doy": 62
+   },
+   "closedDate": {
+    "date": "2016-03-02T18:56:55.625Z",
+    "doy": 62
+   },
+   "location": "-0.6212,131.2622",
+   "locationRadius": 129,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      131.2622,
+      -0.6212,
+      18
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20003p9y",
+   "title": "M 6.3 - 26km SSW of Ovalle, Chile",
+   "titleShort": "Ovalle, Chile Earthquake",
+   "description": "Earthquake of magnitude 6.3 at 26km SSW of Ovalle, Chile. Alert: green",
+   "mag": 6.3,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-09-26T02:51:18.830Z",
+    "doy": 269
+   },
+   "endDate": {
+    "date": "2016-02-04T20:14:54.000Z",
+    "doy": 35
+   },
+   "closedDate": {
+    "date": "2016-02-04T20:14:54.000Z",
+    "doy": 35
+   },
+   "location": "-30.8148,-71.3217",
+   "locationRadius": 126,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -71.3217,
+      -30.8148,
+      46
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10003mnu",
+   "title": "M 4.4 - 20km WSW of Medford, Oklahoma",
+   "titleShort": "Medford, Oklahoma Earthquake",
+   "description": "Earthquake of magnitude 4.4 at 20km WSW of Medford, Oklahoma. Alert: green",
+   "mag": 4.4,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-10-10T09:20:43.000Z",
+    "doy": 283
+   },
+   "endDate": {
+    "date": "2016-01-11T21:07:18.040Z",
+    "doy": 11
+   },
+   "closedDate": {
+    "date": "2016-01-11T21:07:18.040Z",
+    "doy": 11
+   },
+   "location": "36.7187,-97.9311",
+   "locationRadius": 120,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -97.9311,
+      36.7187,
+      5.629
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nc72540765",
+   "title": "M 3.6 - 1km NE of San Ramon, California",
+   "titleShort": "San Ramon, California Earthquake",
+   "description": "Earthquake of magnitude 3.6 at 1km NE of San Ramon, California. Alert: null",
+   "mag": 3.6,
+   "tsunami": 0,
+   "alert": null,
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-10-19T23:21:17.680Z",
+    "doy": 293
+   },
+   "endDate": {
+    "date": "2016-01-15T20:51:19.040Z",
+    "doy": 15
+   },
+   "closedDate": {
+    "date": "2016-01-15T20:51:19.040Z",
+    "doy": 15
+   },
+   "location": "37.7918333,-121.9635",
+   "locationRadius": 101,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -121.9635,
+      37.7918333,
+      7.4
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10003q0q",
+   "title": "M 7.1 - 34km NE of Port-Olry, Vanuatu",
+   "titleShort": "Port-Olry, Vanuatu Earthquake",
+   "description": "Earthquake of magnitude 7.1 at 34km NE of Port-Olry, Vanuatu. Alert: green",
+   "mag": 7.1,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-10-20T21:52:02.560Z",
+    "doy": 293
+   },
+   "endDate": {
+    "date": "2016-02-19T01:58:03.000Z",
+    "doy": 50
+   },
+   "closedDate": {
+    "date": "2016-02-19T01:58:03.000Z",
+    "doy": 50
+   },
+   "location": "-14.8595,167.3028",
+   "locationRadius": 134,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      167.3028,
+      -14.8595,
+      135
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10003qv5",
+   "title": "M 5.6 - 10km NNW of Dajal, Pakistan",
+   "titleShort": "Dajal, Pakistan Earthquake",
+   "description": "Earthquake of magnitude 5.6 at 10km NNW of Dajal, Pakistan. Alert: yellow",
+   "mag": 5.6,
+   "tsunami": 0,
+   "alert": "yellow",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-10-23T00:27:39.560Z",
+    "doy": 296
+   },
+   "endDate": {
+    "date": "2016-03-02T18:38:46.506Z",
+    "doy": 62
+   },
+   "closedDate": {
+    "date": "2016-03-02T18:38:46.506Z",
+    "doy": 62
+   },
+   "location": "29.6377,70.326",
+   "locationRadius": 110,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      70.326,
+      29.6377,
+      11
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10003re5",
+   "title": "M 7.5 - 45km E of Farkhar, Afghanistan",
+   "titleShort": "Farkhar, Afghanistan Earthquake",
+   "description": "Earthquake of magnitude 7.5 at 45km E of Farkhar, Afghanistan. Alert: orange",
+   "mag": 7.5,
+   "tsunami": 0,
+   "alert": "orange",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-10-26T09:09:42.560Z",
+    "doy": 299
+   },
+   "endDate": {
+    "date": "2016-02-04T20:08:56.000Z",
+    "doy": 35
+   },
+   "closedDate": {
+    "date": "2016-02-04T20:08:56.000Z",
+    "doy": 35
+   },
+   "location": "36.5244,70.3676",
+   "locationRadius": 145,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      70.3676,
+      36.5244,
+      231
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us2000419p",
+   "title": "M 4.0 - 7km NNE of Black Canyon City, Arizona",
+   "titleShort": "Black Canyon City, Arizona Earthquake",
+   "description": "Earthquake of magnitude 4 at 7km NNE of Black Canyon City, Arizona. Alert: green",
+   "mag": 4,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-11-02T06:29:07.090Z",
+    "doy": 306
+   },
+   "endDate": {
+    "date": "2016-03-11T19:33:38.846Z",
+    "doy": 71
+   },
+   "closedDate": {
+    "date": "2016-03-11T19:33:38.846Z",
+    "doy": 71
+   },
+   "location": "34.1357,-112.132",
+   "locationRadius": 107,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -112.132,
+      34.1357,
+      5.92
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us200041ty",
+   "title": "M 6.5 - 80km WNW of Dili, East Timor",
+   "titleShort": "Dili, East Timor Earthquake",
+   "description": "Earthquake of magnitude 6.5 at 80km WNW of Dili, East Timor. Alert: green",
+   "mag": 6.5,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-11-04T03:44:15.190Z",
+    "doy": 308
+   },
+   "endDate": {
+    "date": "2016-03-25T13:56:54.000Z",
+    "doy": 85
+   },
+   "closedDate": {
+    "date": "2016-03-25T13:56:54.000Z",
+    "doy": 85
+   },
+   "location": "-8.3381,124.8754",
+   "locationRadius": 180,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      124.8754,
+      -8.3381,
+      20
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10003vgt",
+   "title": "M 6.8 - 39km SW of Ovalle, Chile",
+   "titleShort": "Ovalle, Chile Earthquake",
+   "description": "Earthquake of magnitude 6.8 at 39km SW of Ovalle, Chile. Alert: green",
+   "mag": 6.8,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-11-07T07:31:43.870Z",
+    "doy": 311
+   },
+   "endDate": {
+    "date": "2016-03-25T13:57:13.000Z",
+    "doy": 85
+   },
+   "closedDate": {
+    "date": "2016-03-25T13:57:13.000Z",
+    "doy": 85
+   },
+   "location": "-30.8796,-71.4519",
+   "locationRadius": 139,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -71.4519,
+      -30.8796,
+      46
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10003vry",
+   "title": "M 6.6 - 128km NW of Sabang, Indonesia",
+   "titleShort": "Sabang, Indonesia Earthquake",
+   "description": "Earthquake of magnitude 6.6 at 128km NW of Sabang, Indonesia. Alert: green",
+   "mag": 6.6,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-11-08T16:47:02.160Z",
+    "doy": 312
+   },
+   "endDate": {
+    "date": "2016-03-25T13:57:35.000Z",
+    "doy": 85
+   },
+   "closedDate": {
+    "date": "2016-03-25T13:57:35.000Z",
+    "doy": 85
+   },
+   "location": "6.8431,94.648",
+   "locationRadius": 228,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      94.648,
+      6.8431,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10003vyx",
+   "title": "M 6.5 - 99km SE of Atka, Alaska",
+   "titleShort": "Atka, Alaska Earthquake",
+   "description": "Earthquake of magnitude 6.5 at 99km SE of Atka, Alaska. Alert: green",
+   "mag": 6.5,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-11-09T16:03:46.070Z",
+    "doy": 313
+   },
+   "endDate": {
+    "date": "2016-02-05T03:16:39.040Z",
+    "doy": 36
+   },
+   "closedDate": {
+    "date": "2016-02-05T03:16:39.040Z",
+    "doy": 36
+   },
+   "location": "51.6394,-173.0746",
+   "locationRadius": 199,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -173.0746,
+      51.6394,
+      15
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gcmt20151111015438",
+   "title": "M 6.8 - offshore Coquimbo, Chile",
+   "titleShort": "Earthquake",
+   "description": "Earthquake of magnitude 6.8 at offshore Coquimbo, Chile. Alert: null",
+   "mag": 6.8,
+   "tsunami": 0,
+   "alert": null,
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-11-11T01:54:38.000Z",
+    "doy": 315
+   },
+   "endDate": {
+    "date": "2016-03-25T13:57:52.000Z",
+    "doy": 85
+   },
+   "closedDate": {
+    "date": "2016-03-25T13:57:52.000Z",
+    "doy": 85
+   },
+   "location": "-29.51,-72.01",
+   "locationRadius": 100,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -72.01,
+      -29.51,
+      12
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10003x8t",
+   "title": "M 6.9 - 81km NW of Coquimbo, Chile",
+   "titleShort": "Coquimbo, Chile Earthquake",
+   "description": "Earthquake of magnitude 6.9 at 81km NW of Coquimbo, Chile. Alert: green",
+   "mag": 6.9,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-11-11T01:54:38.570Z",
+    "doy": 315
+   },
+   "endDate": {
+    "date": "2016-02-05T03:16:42.040Z",
+    "doy": 36
+   },
+   "closedDate": {
+    "date": "2016-02-05T03:16:42.040Z",
+    "doy": 36
+   },
+   "location": "-29.5067,-72.0068",
+   "locationRadius": 181,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -72.0068,
+      -29.5067,
+      12
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10003x9g",
+   "title": "M 6.9 - 84km NW of Coquimbo, Chile",
+   "titleShort": "Coquimbo, Chile Earthquake",
+   "description": "Earthquake of magnitude 6.9 at 84km NW of Coquimbo, Chile. Alert: green",
+   "mag": 6.9,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-11-11T02:46:19.830Z",
+    "doy": 315
+   },
+   "endDate": {
+    "date": "2016-03-25T13:57:53.000Z",
+    "doy": 85
+   },
+   "closedDate": {
+    "date": "2016-03-25T13:57:53.000Z",
+    "doy": 85
+   },
+   "location": "-29.5097,-72.0585",
+   "locationRadius": 184,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -72.0585,
+      -29.5097,
+      10
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10003y71",
+   "title": "M 6.7 - 140km WSW of Makurazaki, Japan",
+   "titleShort": "Makurazaki, Japan Earthquake",
+   "description": "Earthquake of magnitude 6.7 at 140km WSW of Makurazaki, Japan. Alert: green",
+   "mag": 6.7,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-11-13T20:51:31.030Z",
+    "doy": 317
+   },
+   "endDate": {
+    "date": "2016-03-25T13:58:13.000Z",
+    "doy": 85
+   },
+   "closedDate": {
+    "date": "2016-03-25T13:58:13.000Z",
+    "doy": 85
+   },
+   "location": "31.0009,128.8729",
+   "locationRadius": 240,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      128.8729,
+      31.0009,
+      12
+     ]
+    }
+   ]
+  },
+  {
+   "id": "gcmt20151117071007",
+   "title": "M 6.5 - Greece",
+   "titleShort": "Earthquake",
+   "description": "Earthquake of magnitude 6.5 at Greece. Alert: null",
+   "mag": 6.5,
+   "tsunami": 0,
+   "alert": null,
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-11-17T07:10:07.000Z",
+    "doy": 321
+   },
+   "endDate": {
+    "date": "2016-03-25T13:58:33.000Z",
+    "doy": 85
+   },
+   "closedDate": {
+    "date": "2016-03-25T13:58:33.000Z",
+    "doy": 85
+   },
+   "location": "38.67,20.6",
+   "locationRadius": 100,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      20.6,
+      38.67,
+      11
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10003ywp",
+   "title": "M 6.5 - 10km WSW of Nidri, Greece",
+   "titleShort": "Nidri, Greece Earthquake",
+   "description": "Earthquake of magnitude 6.5 at 10km WSW of Nidri, Greece. Alert: yellow",
+   "mag": 6.5,
+   "tsunami": 0,
+   "alert": "yellow",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-11-17T07:10:07.300Z",
+    "doy": 321
+   },
+   "endDate": {
+    "date": "2016-02-13T02:08:26.040Z",
+    "doy": 44
+   },
+   "closedDate": {
+    "date": "2016-02-13T02:08:26.040Z",
+    "doy": 44
+   },
+   "location": "38.67,20.6",
+   "locationRadius": 110,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      20.6,
+      38.67,
+      11
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10003zcp",
+   "title": "M 6.8 - 115km SW of Dadali, Solomon Islands",
+   "titleShort": "Dadali, Solomon Islands Earthquake",
+   "description": "Earthquake of magnitude 6.8 at 115km SW of Dadali, Solomon Islands. Alert: green",
+   "mag": 6.8,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-11-18T18:31:04.570Z",
+    "doy": 322
+   },
+   "endDate": {
+    "date": "2016-03-25T13:58:43.000Z",
+    "doy": 85
+   },
+   "closedDate": {
+    "date": "2016-03-25T13:58:43.000Z",
+    "doy": 85
+   },
+   "location": "-8.8994,158.4217",
+   "locationRadius": 215,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      158.4217,
+      -8.8994,
+      12.59
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10003zgz",
+   "title": "M 4.7 - 13km SW of Cherokee, Oklahoma",
+   "titleShort": "Cherokee, Oklahoma Earthquake",
+   "description": "Earthquake of magnitude 4.7 at 13km SW of Cherokee, Oklahoma. Alert: green",
+   "mag": 4.7,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-11-19T07:42:12.000Z",
+    "doy": 323
+   },
+   "endDate": {
+    "date": "2016-03-30T02:41:42.961Z",
+    "doy": 90
+   },
+   "closedDate": {
+    "date": "2016-03-30T02:41:42.961Z",
+    "doy": 90
+   },
+   "location": "36.6602,-98.4594",
+   "locationRadius": 113,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -98.4594,
+      36.6602,
+      5.914
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us100040ww",
+   "title": "M 7.6 - 173km WNW of Iberia, Peru",
+   "titleShort": "Iberia, Peru Earthquake",
+   "description": "Earthquake of magnitude 7.6 at 173km WNW of Iberia, Peru. Alert: green",
+   "mag": 7.6,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-11-24T22:45:38.880Z",
+    "doy": 328
+   },
+   "endDate": {
+    "date": "2016-03-25T13:59:25.000Z",
+    "doy": 85
+   },
+   "closedDate": {
+    "date": "2016-03-25T13:59:25.000Z",
+    "doy": 85
+   },
+   "location": "-10.5372,-70.9437",
+   "locationRadius": 273,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -70.9437,
+      -10.5372,
+      606.21
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us100040x6",
+   "title": "M 7.6 - 211km S of Tarauaca, Brazil",
+   "titleShort": "Tarauaca, Brazil Earthquake",
+   "description": "Earthquake of magnitude 7.6 at 211km S of Tarauaca, Brazil. Alert: green",
+   "mag": 7.6,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-11-24T22:50:54.370Z",
+    "doy": 328
+   },
+   "endDate": {
+    "date": "2016-03-25T13:59:26.000Z",
+    "doy": 85
+   },
+   "closedDate": {
+    "date": "2016-03-25T13:59:26.000Z",
+    "doy": 85
+   },
+   "location": "-10.0598,-71.0184",
+   "locationRadius": 311,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -71.0184,
+      -10.0598,
+      620.56
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us100041f1",
+   "title": "M 6.7 - 125km SSW of Tarauaca, Brazil",
+   "titleShort": "Tarauaca, Brazil Earthquake",
+   "description": "Earthquake of magnitude 6.7 at 125km SSW of Tarauaca, Brazil. Alert: green",
+   "mag": 6.7,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-11-26T05:45:18.400Z",
+    "doy": 330
+   },
+   "endDate": {
+    "date": "2016-03-25T13:59:33.000Z",
+    "doy": 85
+   },
+   "closedDate": {
+    "date": "2016-03-25T13:59:33.000Z",
+    "doy": 85
+   },
+   "location": "-9.1825,-71.2574",
+   "locationRadius": 225,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -71.2574,
+      -9.1825,
+      602.75
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us1000424d",
+   "title": "M 4.7 - 26km E of Cherokee, Oklahoma",
+   "titleShort": "Cherokee, Oklahoma Earthquake",
+   "description": "Earthquake of magnitude 4.7 at 26km E of Cherokee, Oklahoma. Alert: green",
+   "mag": 4.7,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-11-30T09:49:12.800Z",
+    "doy": 334
+   },
+   "endDate": {
+    "date": "2016-03-25T13:59:56.000Z",
+    "doy": 85
+   },
+   "closedDate": {
+    "date": "2016-03-25T13:59:56.000Z",
+    "doy": 85
+   },
+   "location": "36.7509,-98.0561",
+   "locationRadius": 126,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -98.0561,
+      36.7509,
+      5.629
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us100043z2",
+   "title": "M 7.1 - Southeast Indian Ridge",
+   "titleShort": "Earthquake",
+   "description": "Earthquake of magnitude 7.1 at Southeast Indian Ridge. Alert: green",
+   "mag": 7.1,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-12-04T22:25:00.110Z",
+    "doy": 338
+   },
+   "endDate": {
+    "date": "2016-03-02T03:36:31.040Z",
+    "doy": 62
+   },
+   "closedDate": {
+    "date": "2016-03-02T03:36:31.040Z",
+    "doy": 62
+   },
+   "location": "-47.6165,85.0913",
+   "locationRadius": 100,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      85.0913,
+      -47.6165,
+      35
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us100044k6",
+   "title": "M 7.2 - 104km W of Murghob, Tajikistan",
+   "titleShort": "Murghob, Tajikistan Earthquake",
+   "description": "Earthquake of magnitude 7.2 at 104km W of Murghob, Tajikistan. Alert: green",
+   "mag": 7.2,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-12-07T07:50:05.950Z",
+    "doy": 341
+   },
+   "endDate": {
+    "date": "2016-03-02T03:36:35.040Z",
+    "doy": 62
+   },
+   "closedDate": {
+    "date": "2016-03-02T03:36:35.040Z",
+    "doy": 62
+   },
+   "location": "38.2107,72.7797",
+   "locationRadius": 204,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      72.7797,
+      38.2107,
+      22
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us20004ft7",
+   "title": "M 6.9 - 107km SE of Amahai, Indonesia",
+   "titleShort": "Amahai, Indonesia Earthquake",
+   "description": "Earthquake of magnitude 6.9 at 107km SE of Amahai, Indonesia. Alert: green",
+   "mag": 6.9,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-12-09T10:21:48.530Z",
+    "doy": 343
+   },
+   "endDate": {
+    "date": "2016-03-02T03:36:40.040Z",
+    "doy": 62
+   },
+   "closedDate": {
+    "date": "2016-03-02T03:36:40.040Z",
+    "doy": 62
+   },
+   "location": "-4.1064,129.5079",
+   "locationRadius": 207,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      129.5079,
+      -4.1064,
+      21
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us100047zq",
+   "title": "M 6.6 - 12km SW of Tres Picos, Mexico",
+   "titleShort": "Tres Picos, Mexico Earthquake",
+   "description": "Earthquake of magnitude 6.6 at 12km SW of Tres Picos, Mexico. Alert: green",
+   "mag": 6.6,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-12-17T19:49:53.050Z",
+    "doy": 351
+   },
+   "endDate": {
+    "date": "2016-03-12T02:29:14.040Z",
+    "doy": 72
+   },
+   "closedDate": {
+    "date": "2016-03-12T02:29:14.040Z",
+    "doy": 72
+   },
+   "location": "15.8015,-93.633",
+   "locationRadius": 112,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -93.633,
+      15.8015,
+      85
+     ]
+    }
+   ]
+  },
+  {
+   "id": "nn00523696",
+   "title": "M 4.4 - 11km SSE of Reno, Nevada",
+   "titleShort": "Reno, Nevada Earthquake",
+   "description": "Earthquake of magnitude 4.4 at 11km SSE of Reno, Nevada. Alert: green",
+   "mag": 4.4,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-12-23T06:46:07.342Z",
+    "doy": 357
+   },
+   "endDate": {
+    "date": "2016-03-12T02:29:22.040Z",
+    "doy": 72
+   },
+   "closedDate": {
+    "date": "2016-03-12T02:29:22.040Z",
+    "doy": 72
+   },
+   "location": "39.4309,-119.7845",
+   "locationRadius": 111,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -119.7845,
+      39.4309,
+      9.7
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us100049i1",
+   "title": "M 6.3 - 42km WSW of Ashkasham, Afghanistan",
+   "titleShort": "Ashkasham, Afghanistan Earthquake",
+   "description": "Earthquake of magnitude 6.3 at 42km WSW of Ashkasham, Afghanistan. Alert: green",
+   "mag": 6.3,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-12-25T19:14:47.190Z",
+    "doy": 359
+   },
+   "endDate": {
+    "date": "2016-03-18T01:13:01.040Z",
+    "doy": 78
+   },
+   "closedDate": {
+    "date": "2016-03-18T01:13:01.040Z",
+    "doy": 78
+   },
+   "location": "36.4935,71.1263",
+   "locationRadius": 142,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      71.1263,
+      36.4935,
+      206
+     ]
+    }
+   ]
+  },
+  {
+   "id": "us10004a85",
+   "title": "M 4.3 - 6km ENE of Edmond, Oklahoma",
+   "titleShort": "Edmond, Oklahoma Earthquake",
+   "description": "Earthquake of magnitude 4.3 at 6km ENE of Edmond, Oklahoma. Alert: green",
+   "mag": 4.3,
+   "tsunami": 0,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-12-29T11:39:19.200Z",
+    "doy": 363
+   },
+   "endDate": {
+    "date": "2016-03-18T01:13:06.040Z",
+    "doy": 78
+   },
+   "closedDate": {
+    "date": "2016-03-18T01:13:06.040Z",
+    "doy": 78
+   },
+   "location": "35.6654,-97.4054",
+   "locationRadius": 106,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -97.4054,
+      35.6654,
+      6.532
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ci37507576",
+   "title": "M 4.4 - 4km SSW of Devore, CA",
+   "titleShort": "Devore, CA Earthquake",
+   "description": "Earthquake of magnitude 4.4 at 4km SSW of Devore, CA. Alert: green",
+   "mag": 4.4,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-12-30T01:48:57.310Z",
+    "doy": 364
+   },
+   "endDate": {
+    "date": "2016-03-18T01:13:07.040Z",
+    "doy": 78
+   },
+   "closedDate": {
+    "date": "2016-03-18T01:13:07.040Z",
+    "doy": 78
+   },
+   "location": "34.191,-117.4131667",
+   "locationRadius": 104,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -117.4131667,
+      34.191,
+      6.98
+     ]
+    }
+   ]
+  },
+  {
+   "id": "uw61114971",
+   "title": "M 4.8 - 17km NNE of Victoria, Canada",
+   "titleShort": "Victoria, Canada Earthquake",
+   "description": "Earthquake of magnitude 4.79 at 17km NNE of Victoria, Canada. Alert: green",
+   "mag": 4.79,
+   "tsunami": 1,
+   "alert": "green",
+   "categories": [
+    {
+     "id": 15,
+     "title": "Earthquakes",
+     "slug": "earthquakes"
+    }
+   ],
+   "startDate": {
+    "date": "2015-12-30T07:39:29.310Z",
+    "doy": 364
+   },
+   "endDate": {
+    "date": "2016-03-27T06:53:13.880Z",
+    "doy": 87
+   },
+   "closedDate": {
+    "date": "2016-03-27T06:53:13.880Z",
+    "doy": 87
+   },
+   "location": "48.5865,-123.3003333",
+   "locationRadius": 117,
+   "geometries": [
+    {
+     "type": "Point",
+     "coordinates": [
+      -123.3003333,
+      48.5865,
+      52.521
+     ]
+    }
+   ]
+  }
+ ],
+ "bbox": [
+  -178.6005,
+  -54.3312,
+  2.54,
+  168.52,
+  61.6644,
+  664
+ ]
+}
