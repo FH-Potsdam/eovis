@@ -4,7 +4,8 @@ var request = require('request');
 var qs = require('querystring');
 var config = require('./config');
 
-var contents = fs.readFileSync('../social/eonet-events-2015-social.json');
+var contents = fs.readFileSync('../social/usgs-earthquakes-2015-social.json');
+// var contents = fs.readFileSync('../social/eonet-events-2015-social.json');
 var data = JSON.parse(contents);
 
 var events = data.events;
@@ -51,7 +52,8 @@ data.analytics.twitterCount = twitterCount;
 data.analytics.twitterTotalResults = twitterTotalResults;
 data.analytics.maxDOY = getMaxOfArray(timePointItemsArray);
 
-fs.writeFile('../social/eonet-events-2015-social-a.json', JSON.stringify(data, null, 1), function (err) {
+fs.writeFile('../social/usgs-earthquakes-2015-social-a.json', JSON.stringify(data, null, 1), function (err) {
+// fs.writeFile('../social/eonet-events-2015-social-a.json', JSON.stringify(data, null, 1), function (err) {
     if (err) throw err;
     console.log('Analytics file saved!');
 });

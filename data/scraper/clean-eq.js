@@ -25,8 +25,8 @@ for (var i=0; i<events.length; i++) {
 
     eventClean.id = event.id;
     eventClean.title = event.properties.title;
-    eventClean.titleShort = cleanEarthquakeTitle(event.properties.title);
-    eventClean.description = "Earthquake of magnitude " + event.properties.mag + " at " + event.properties.place + ". Alert: " + event.properties.alert;
+    eventClean.titleShort = "Earthquake";//cleanEarthquakeTitle(event.properties.title);
+    eventClean.description = "Earthquake of magnitude " + event.properties.mag + " at " + event.properties.place;
 
     eventClean.mag = event.properties.mag;
     eventClean.tsunami = event.properties.tsunami;
@@ -86,9 +86,15 @@ for (var i=0; i<events.length; i++) {
 // console.log(JSON.stringify(eventsClean));
 
 // Update file contents
-data.features = eventsClean;
+// data.features = eventsClean;
 
-fs.writeFile('../usgs-earthquakes-2015-clean.json', JSON.stringify(data, null, 1), function (err) {
+var newData = {};
+newData.metadata = {};
+newData.metadata = data.metadata;
+newData.events = {};
+newData.events = eventsClean;
+
+fs.writeFile('../usgs-earthquakes-2015-clean.json', JSON.stringify(newData, null, 1), function (err) {
     if (err) throw err;
     console.log('Clean file saved!');
 });

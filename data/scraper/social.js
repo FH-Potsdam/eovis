@@ -4,7 +4,8 @@ var request = require('request');
 var qs = require('querystring');
 var config = require('./config');
 
-var contents = fs.readFileSync('../eonet-events-2015-clean.json');
+var contents = fs.readFileSync('../usgs-earthquakes-2015-clean.json');
+// var contents = fs.readFileSync('../eonet-events-2015-clean.json');
 var data = JSON.parse(contents);
 
 var events = data.events;
@@ -49,9 +50,10 @@ function onYoutubeDataLoaded(err, i, videosData) {
         console.log(" ");
 
         console.log("----- LOAD TWITTER DATA")
-
         loadTweetsByIndex(twitterIt, onTwitterDataLoaded);
-        //saveFile('../social/eonet-events-2015-short-social.json');
+
+        // saveFile('../social/usgs-earthquakes-2015-social.json');
+        // saveFile('../social/eonet-events-2015-short-social.json');
     }
 }
 
@@ -83,7 +85,8 @@ function onTwitterDataLoaded(err, i, twitterData) {
         console.log("----- TWITTER DATA LOADING FINISHED!!!")
         console.log(" ");
 
-        saveFile('../social/eonet-events-2015-social.json');
+        saveFile('../social/usgs-earthquakes-2015-social.json');
+        // saveFile('../social/eonet-events-2015-social.json');
     }
 }
 
