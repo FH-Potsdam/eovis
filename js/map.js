@@ -141,7 +141,8 @@ var eonetServer = "http://eonet.sci.gsfc.nasa.gov/api/v2.1";
 function loadEONETEvents(onComplete) {
 
   // Closed Events in the last year
-  $.getJSON('data/eonet-events-2015.json').done(onEONETEventsLoaded);
+  $.getJSON('data/eonet-events-2015-clean.json').done(onEONETEventsLoaded);
+  // $.getJSON('data/usgs-earthquakes-2015.geojson').done(onEONETEventsGeoJSONLoaded);
 
   // $.getJSON( eonetServer + "/events", {
   //     status: "closed",
@@ -155,15 +156,25 @@ function loadEONETEvents(onComplete) {
   // }).done(onEONETEventsLoaded);
 }
 
+function onEONETEventsGeoJSONLoaded(data) {
+    mapEONETEvents(data);
+}
+
 // Prepare and map event data when loaded
 function onEONETEventsLoaded(data) {
   console.log("EONET returned " + data.events.length + " events");
 
-  // Convert events form return format to GeoJSON to use them with MapboxGL
-  var geojson = eonetDataToGeoJSON(data);
+  $.getJSON('data/usgs-earthquakes-2015-clean.json').done(function(dataEQ) {
 
-  // Map events
-  mapEONETEvents(geojson);
+    // Merge all events into data.events
+    Array.prototype.push.apply(data.events, dataEQ.events);
+
+    // Convert events form return format to GeoJSON to use them with MapboxGL
+    var geojson = eonetDataToGeoJSON(data);
+
+    // Map events
+    mapEONETEvents(geojson);
+  });
 }
 
 
@@ -177,6 +188,8 @@ function mapEONETEvents(markers) {
 
   // Markers source
   var sourceObj = map.getSource('markers');
+
+  console.log(markers);
 
   if (!sourceObj) {
     console.log("Create markers source");
@@ -374,10 +387,10 @@ function eonetEventToGeoJSONPoint(event) {
           title: event.title,
           title_clean: cleanEventTitle(event.title),
           description: event.description,
-          link: event.link,
+        //   link: event.link,
           catslug: titleToSlug(event.categories[0].title),
           categories: event.categories,
-          sources: event.sources,
+        //   sources: event.sources,
           date: event.geometries[0].date
       },
       geometry: {
@@ -671,6 +684,8 @@ function getEventColor(cat) {
     color = "#ED5D5A";
   } else if (cat == "floods") {
     color = "#5E7CD3";
+  } else if (cat == "earthquakes") {
+    color = "#747f7c";
   } else {
     color = "rgba(55,148,179,1)";
   }

@@ -316,6 +316,9 @@ body {
 .filter-group label[for="floods"]:before {
   border-color: #5E7CD3 !important;
 }
+.filter-group label[for="earthquakes"]:before {
+  border-color: #747f7c !important;
+}
 .filter-group input[type=checkbox]:checked + label[for="severe-storms"]:before {
   background-color: #26D1F9 !important;
 }
@@ -327,4 +330,7 @@ body {
 }
 .filter-group input[type=checkbox]:checked + label[for="floods"]:before {
   background-color: #5E7CD3 !important;
+}
+.filter-group input[type=checkbox]:checked + label[for="earthquakes"]:before {
+  background-color: #747f7c !important;
 }
